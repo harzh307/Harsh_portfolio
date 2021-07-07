@@ -6,7 +6,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   return (
     <>
-        <div>Loading...</div>
+      <div>Loading...</div>
       <div className={styles.container}></div>
     </>
   );
