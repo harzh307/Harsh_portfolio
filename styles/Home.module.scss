@@ -1,5 +1,7 @@
-@import url(./color.scss);
+@use 'colors' as *;
 
-.main {
-  background-color: $background-color-dark;
+.container {
+  background-color: $background-default;
+  height: 100vh;
+  width: 100vw;
 }

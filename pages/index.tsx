@@ -1,11 +1,17 @@
-import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/Home.module.scss";
 
-export default function Home() {
+const Home = () => {
+  const [loading, setLoading] = useState(false);
   return (
     <>
-      <div className="main">home page</div>
+        <div>Loading...</div>
+      <div className={styles.container}></div>
     </>
   );
-}
+};
+
+Home.displayName = "Home";
+
+export default Home;
