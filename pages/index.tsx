@@ -6,6 +6,11 @@ export default function Home() {
   return (
     <>
       <div className="main">home page</div>
+      <div className="main">home page</div>
+      <div className="main">home page</div>
+      <div className="main">home page</div>
+      <div className="main">home page</div>
+      <div className="main">home page</div>
     </>
   );
 }
