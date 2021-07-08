@@ -1,0 +1,10 @@
+.portfolioList {
+  @apply pt-[100px] pb-[50px];
+}
+.portfolioItems {
+  @apply flex flex-wrap h-full w-full px-[15px] md:px-20 lg:px-32 justify-center;
+}
+
+.backAlign{
+  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid ;
+}

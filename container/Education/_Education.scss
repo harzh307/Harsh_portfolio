@@ -1,0 +1,56 @@
+.alignment {
+  @apply bg-[#f2f2f2] py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px];
+}
+
+.textAlign {
+  @apply text-center;
+}
+
+.leftbox {
+  @apply flex md:flex-row xs:flex-col xs:items-center my-14;
+}
+
+.leftsubbox {
+  @apply bg-[#e5e5e5] py-5 pl-5 sm:mr-5 sm:w-[60%] xs:w-[90%] rounded-xl;
+}
+
+.leftTextAlign {
+  @apply leading-none pb-1 text-black;
+}
+
+.bars {
+  @apply flex items-center gap-4 px-5;
+}
+
+.baralign {
+  @apply flex flex-col w-full;
+}
+
+.percentfield {
+  @apply text-3xl font-black text-black mt-8;
+}
+
+.bar {
+  @apply relative bg-[#0b0b131a];
+}
+
+.ht {
+  @apply h-3 bg-[#333333] animate-pulse;
+}
+.ht2 {
+  @apply w-[80%] h-3 bg-[#333333] animate-pulse;
+}
+.ht3 {
+  @apply w-[72%] h-3 bg-[#333333] animate-pulse;
+}
+.ht4 {
+  @apply w-[85%] h-3 bg-[#333333] animate-pulse;
+}
+
+.viewMore {
+  @apply flex-1 flex justify-center items-center;
+}
+
+.block {
+  @apply w-[100%] flex-col;
+}

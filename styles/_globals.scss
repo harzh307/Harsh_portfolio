@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import '../component/TextInput/_TextInput.scss';
+@import '../container/About/_About.scss';
+@import '../container/Services/_Service.scss';
+@import '../container/Contact/_Contact.scss';
+@import '../container/Education/_Education.scss';
+@import '../container/Portfolio/portPortfolio';
+@import '../container/Home/portHome';
+@import '../container/Blog/blog.scss';
+@import '../container/Testimonial/portTestimonial';
+
+@import '../pages/SingleBlog/singleBlog.scss';
+@import '../pages/Resume/resume.scss';
+@import '../pages/BlogPage/blogsPage.scss';
+@import '../pages/PortfolioPage/portfolioPage.scss';
+@import '../container/PageLoader/pageLoader';
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import '../component/Navigation/portNav.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+}
+
+.light-theme {
+  --color-fill: #ffffff;
+  --color-button-accent: #222222;
+  --color-button-accent-hover: #ffffff;
+  --color-button-disable: 34, 34, 34;
+  --color-text-base: #222222;
+  --color-text-dull: #484848;
+  --color-text-inverted: #ffffff;
+  --color-text-inverted-dull: #eeeeee;
+  --color-button-service: #e3e3e3;
+  --color-text-copyright: #aaaaaa;
+  --color-text-date: #748182;
+  --color-text-navbar: #000000;
+}
+
+.dark-theme {
+  --bg-background-primary: black;
+  --bg-background-secondary: #14191d;
+  --bg-background-ternary: #000000;
+}
+// blog card style
+.blogContent {
+  @apply w-full h-44 pt-0 px-4 pb-4 bg-white;
+}
+.blogContent h3 {
+  @apply text-black mb-4;
+}
+.blogContent p {
+  height: 3.7rem;
+  @apply pb-5 mb-0 mt-0 border-b-2 border-solid border-white line-clamp-3;
+}
+.blogContent .blogMeta {
+  @apply pt-6;
+  display: flex;
+  justify-content: space-between;
+}
+.blogContent .blogMeta span {
+  @apply text-black inline-block border-b-2 border-solid border-white;
+}
+.blogContent .blogMeta span a {
+  color: inherit;
+}
+.blogContent .blogMeta span + span {
+  float: right color #748182;
+  @apply inline-block;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+//portfolio card styles
+.itemContent {
+  position: relative;
+  overflow: hidden;
+}
+.itemContent:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+}
+.itemOverlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}

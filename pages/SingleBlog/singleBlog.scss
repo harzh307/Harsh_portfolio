@@ -1,0 +1,41 @@
+.cmtmain {
+  @apply p-4;
+}
+.Cmtimg {
+  @apply h-32 w-32;
+}
+.commentImg {
+  @apply flex;
+}
+.reply {
+  @apply flex justify-between;
+}
+.title {
+  @apply py-8;
+}
+.line {
+  @apply w-full h-[0.5px] bg-gray-300 mb-5;
+}
+.nameContent {
+  @apply p-2  flex-col flex;
+}
+// -my-5 -space-y-4
+.img {
+  @apply h-[100%] lg:w-[50%] md:w-[50%] sm:w-[50%] xs:w-[94%] mt-20;
+}
+
+// .mainDiv {
+//   @apply bg-red-50;
+// }
+
+.imgdiv {
+  @apply flex justify-center flex-col items-center py-4;
+}
+
+.content {
+  @apply leading-8 text-left;
+}
+
+.textDiv {
+  @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 xl:mx-[20.5rem] lg:mx-[11rem] md:mx-[10rem] sm:mx-[5rem] xs:mx-0 gap-5;
+}

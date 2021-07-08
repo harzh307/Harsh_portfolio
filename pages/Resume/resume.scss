@@ -1,0 +1,74 @@
+.Skillbar {
+  @apply relative bg-[#0b0b131a];
+}
+
+.resumeMain {
+  @apply p-24 sm:p-16 xs:p-4 leading-10 space-y-24;
+}
+
+.workPara {
+  @apply flex-1 flex flex-col xl:ml-[4em] lg:ml-[4em] md:ml-[2em];
+}
+
+.workExp {
+  @apply line-clamp-2 p-[-20px];
+}
+
+.education {
+  @apply lg:ml-[9.5rem] md:ml-[6rem] gap-6 text-[19px] -mt-3 md:flex flex-col;
+}
+
+.blockTable {
+  @apply flex-1 flex md:mb-20 xs:mb-10 md:flex-row xs:gap-10 xs:flex-col;
+}
+
+.day {
+  @apply grid w-full lg:grid-cols-2 md:grid-cols-1 lg:px-24 md:pl-14 -mt-6;
+}
+// .dayRow {
+//   @apply flex md:flex-row xs:flex-col;
+// }
+
+.college {
+  @apply hover:border-solid border-t-0 hover:transform border-b border-l-0 border-r-0 border-black;
+}
+
+.workEp {
+  @apply flex-1 flex md:flex-row xs:flex-col xs:gap-4;
+}
+
+.Skillbars {
+  @apply flex items-center gap-4 w-full pr-10;
+}
+
+.Skillblock {
+  @apply w-auto justify-center flex-1;
+}
+
+.Skillht1 {
+  @apply w-[92%] h-3 bg-[#333333] animate-pulse;
+}
+.Skillht2 {
+  @apply w-[80%] h-3 bg-[#333333] animate-pulse;
+}
+
+.Skillht3 {
+  @apply w-[72%] h-3 bg-[#333333] animate-pulse;
+}
+
+.Skillht4 {
+  @apply w-[75%] h-3 bg-[#333333] animate-pulse;
+}
+.Skillht5 {
+  @apply w-[85%] h-3 bg-[#333333] animate-pulse;
+}
+.Skillht6 {
+  @apply w-[88%] h-3 bg-[#333333] animate-pulse;
+}
+.Skillht7 {
+  @apply w-[65%] h-3 bg-[#333333] animate-pulse;
+}
+
+.sideDiv {
+  @apply flex flex-col sm:flex-row flex-1 w-full md:justify-around;
+}

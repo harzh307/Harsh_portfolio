@@ -1,0 +1,35 @@
+.portHomeButton {
+  @apply bg-backgroundColor-skin-button-accent duration-300 text-[13px] text-textColor-skin-inverted px-[20px] py-[10px]
+  uppercase font-semibold border-2 border-backgroundColor-skin-button-accent border-solid
+  hover:bg-transparent hover:text-backgroundColor-skin-button-accent items-center cursor-pointer;
+}
+
+.portSocialButton {
+  @apply bg-backgroundColor-skin-button-accent duration-300 border-2 border-backgroundColor-skin-button-accent
+  border-solid rounded-[4.2em] items-center justify-center
+  h-[30px] w-[30px] 
+  hover:bg-transparent hover:text-backgroundColor-skin-button-accent;
+}
+
+.portResume {
+  @apply text-white bg-transparent p-2 border-[#222] duration-300 hover:bg-[#222];
+}
+
+.portServiceButton {
+  @apply bg-transparent 
+  flex 
+  border-[1px] border-backgroundColor-skin-button-service border-solid rounded-[4.2em]
+  items-center justify-center
+  duration-300
+  h-[80px] w-[80px]
+  hover:shadow-2xl
+  hover:transform hover:duration-700;
+}
+.portNavButton {
+  @apply border-none md:hidden p-3 top-0 fixed z-30 right-0 bg-transparent text-white;
+}
+
+.disable {
+  @apply cursor-not-allowed bg-backgroundColor-skin-button-disable opacity-50 text-[13px] text-textColor-skin-inverted px-[20px] py-[10px]
+  uppercase font-semibold border-2 border-backgroundColor-skin-button-disable border-solid;
+}

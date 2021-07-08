@@ -1,0 +1,19 @@
+.contactContainer {
+  @apply xs:p-10 sm:flex justify-center sm:py-24 text-[16px] flex-col items-center gap-8 text-center bg-white ;
+}
+
+.contactForm {
+  @apply flex xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
+}
+
+.buttonMargin {
+  @apply mt-10;
+}
+
+.borderBottom{
+  @apply  border-red-500 ;
+}
+
+.validMsg{
+  @apply text-left text-red-500;
+}

@@ -1,0 +1,7 @@
+.contactInput {
+  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px] font-opensans text-[14px] focus:border-black;
+}
+
+.contactTextArea {
+  @apply resize-none w-full h-32 leading-6 shadow-none  p-[10px] border-t-0 border-r-0 border-l-0 border-b-2 border-black font-opensans text-[14px];
+}

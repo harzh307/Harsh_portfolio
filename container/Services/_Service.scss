@@ -1,0 +1,20 @@
+.Service {
+  @apply bg-[#f2f2f2] text-center py-[100px] px-[50px];
+}
+
+.headsec h1 {
+  @apply mt-1;
+}
+
+.mainbox {
+  // @apply flex gap-10 py-10 lg:flex-col sm:flex-col xs:flex-col sm:gap-10 sm:px-[10px] md:gap-12 md:px-[60px] lg:px-[160px] lg:gap-12;
+  @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-10 m-10;
+}
+
+.divRow {
+  @apply flex lg:flex-row md:flex-col xs:flex-col sm:flex-col;
+}
+
+.box {
+  @apply flex flex-col items-center lg:m-3;
+}

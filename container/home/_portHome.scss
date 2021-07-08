@@ -1,0 +1,41 @@
+.banner {
+  background-image: url(/image/Home/img-2.jpg);
+  @apply w-full h-screen relative bg-cover z-0;
+}
+
+.banner::after {
+  content: '';
+  @apply inset-0 bg-black opacity-50 absolute z-0;
+}
+
+.containerH {
+  @apply container;
+}
+.caption {
+  @apply absolute z-[9] top-[24%] md:top-[33%] left-[5%] lg:pl-24;
+  & h1 {
+    @apply m-0 text-textColor-skin-inverted font-black font-Raleway text-[46px] md:text-[75px] lg:text-[88px];
+  }
+  & p {
+    @apply text-textColor-skin-inverted-dull font-Raleway text-[17px] md:text-[21px] lg:text-[24px] mt-12;
+  }
+}
+
+// .header {
+//   @apply text-[46px] md:text-[75px] lg:text-[88px];
+// }
+.desc {
+  @apply text-[17px] md:text-[21px] lg:text-[24px] mt-0 md:-mt-8 lg:-mt-12;
+}
+.caption b {
+  @apply opacity-100;
+}
+.caption b + b {
+  @apply opacity-0;
+}
+.arrow {
+  @apply absolute bottom-[6vh] z-20 xs:pl-12 lg:pl-52 animate-bounce;
+}
+.arrow img {
+  @apply text-white w-16;
+}

@@ -1,0 +1,103 @@
+.cardSetBlog {
+  overflow: hidden;
+  @apply my-8 flex justify-center items-center;
+}
+
+.cardBlog {
+  scroll-snap-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 10%);
+  // @apply lg:w-[30%] md:w-[48%] sm:w-[60%] xs:w-[100%];
+}
+
+.sliderShow {
+  gap: 2%;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: 2s;
+  inline-size: auto;
+  padding-bottom: 2rem;
+  @apply md:w-[85%] sm:w-[80%] xs:w-[80%];
+}
+@media screen and (min-width: 768px) {
+  .cardBlog {
+    scroll-snap-align: start;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 370px) {
+  .sliderShow {
+    width: 90%;
+  }
+  .cardBlog {
+    width: 250px;
+  }
+}
+.sliderShow::-webkit-scrollbar {
+  display: none;
+}
+
+// .sliderShow::-webkit-scrollbar-track {
+//   background: rgb(179, 177, 177);
+//   border-radius: 10px;
+// }
+
+// .sliderShow::-webkit-scrollbar-thumb {
+//   background: rgb(136, 136, 136);
+//   border-radius: 10px;
+// }
+
+// .sliderShow::-webkit-scrollbar-thumb:hover {
+//   background: rgb(100, 100, 100);
+//   border-radius: 10px;
+// }
+
+// .sliderShow::-webkit-scrollbar-thumb:active {
+//   background: rgb(68, 68, 68);
+//   border-radius: 10px;
+// }
+/* the slides */
+.slick-slide {
+  padding: 10px 0px;
+  @apply lg:px-5 md:px-4 sm:px-1 xs:px-1;
+}
+
+.slick-list {
+  margin: 0 -5px;
+  @apply flex;
+  & .slick-track {
+    width: auto !important;
+  }
+}
+
+.blogAlign {
+  @apply flex flex-col;
+}
+
+.cardSideData {
+  @apply flex flex-row justify-between;
+}
+
+.blogHeading {
+  @apply flex flex-col;
+}
+
+.cardPadding {
+  @apply p-4;
+}
+
+.blogSpacing {
+  @apply py-[70px];
+}
+
+.portImgHover {
+  @apply duration-500 ease-in-out w-screen h-screen;
+  &:hover {
+    @apply transform scale-110 duration-500 ease-in-out;
+  }
+}
+.breakClass {
+  @apply line-clamp-4;
+}

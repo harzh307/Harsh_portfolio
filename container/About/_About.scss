@@ -1,0 +1,60 @@
+.portAbtMain {
+  @apply bg-white md:pl-20 lg:pl-40 lg:pr-16 py-14 justify-center  w-full flex flex-wrap;
+}
+.abtImage {
+  @apply lg:w-1/3 lg:h-1/3 sm:mt-10  md:w-1/2 md:h-1/2 xs:w-[90%] xs:h-[90%];
+}
+
+.abtImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portSocial {
+  @apply my-8 flex flex-row;
+}
+
+.portSocialBtn {
+  @apply mx-1 flex items-center flex-col fill-current ease-in-out text-white;
+  &:hover {
+    .btnHover {
+      @apply fill-current ease-in-out text-black cursor-pointer;
+    }
+  }
+}
+
+.portTextDiv {
+  @apply md:pl-8 sm:pl-10 xs:p-8  w-full md:w-1/2 lg:w-2/3 md:py-9;
+  & h1 {
+    @apply text-textColor-skin-base font-semibold lg:text-[32px] md:text-[31px] sm:text-[30px] xs:text-[24px] m-0 uppercase font-Raleway;
+  }
+  & h4 {
+    @apply my-2 uppercase text-[18px] m-0 text-textColor-skin-base  font-medium font-Raleway;
+  }
+  & p {
+    @apply text-[16px] text-textColor-skin-dull font-thin leading-[28px] font-opensans;
+  }
+}
+
+.portBody {
+  @apply text-lg font-sans font-light;
+}
+
+.portSubHead {
+  @apply font-Raleway text-xl font-light;
+}
+
+.portImg {
+  @apply h-60 w-56  bg-blue-600  m-5 z-10 flex duration-500 ease-in-out;
+  &:hover {
+    @apply transform  duration-500  z-10 ease-in-out;
+  }
+}
+
+.portInput {
+  @apply flex bg-red-100 gap-8;
+}
+
+.portHeading {
+  @apply text-black text-3xl font-Raleway font-normal;
+}

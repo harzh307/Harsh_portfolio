@@ -1,0 +1,7 @@
+.simple {
+  @apply bg-red-500;
+}
+.hover {
+  @apply bg-purple-600 hover:border-indigo-600 
+  hover:bg-white text-white hover:text-black border-2 px-5 py-2.5 ;
+}

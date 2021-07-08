@@ -1,0 +1,14 @@
+.blogContent {
+  @apply flex gap-4 flex-wrap justify-center;
+}
+
+.blogImg {
+  @apply h-44 w-full;
+}
+.blogText {
+  @apply px-32 py-14 bg-red-700 h-52;
+}
+
+.logo {
+  @apply stroke-current text-purple-600;
+}

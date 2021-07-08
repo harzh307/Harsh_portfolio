@@ -1,0 +1,51 @@
+.center {
+  @apply flex justify-center pt-24 pb-16;
+}
+
+.portfolio {
+  @apply max-w-screen-xl px-2;
+}
+.row {
+  @apply flex flex-col;
+}
+.headText {
+  @apply mb-12 text-center;
+}
+
+.pFilter {
+  @apply mb-10 text-center font-Raleway;
+}
+.pFilter ul {
+  @apply m-0 p-0;
+}
+.selItem {
+  @apply font-semibold;
+}
+.pFilter ul li {
+  @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
+}
+.pFilter ul li::before {
+  content: '/';
+  @apply absolute -right-4 font-normal;
+}
+.pFilter ul li:last-child::before {
+  @apply hidden;
+}
+
+.item {
+  @apply flex flex-wrap justify-center;
+}
+.hoverContext {
+  @apply flex flex-col items-center;
+}
+.hoverContext span {
+  box-shadow: 0 0 10px rgb(0 0 0 / 45%);
+  @apply h-10 w-10 bg-white flex items-center justify-center opacity-100 rounded-lg;
+}
+
+.relativeP {
+  @apply relative h-full w-full;
+}
+.align {
+  @apply flex justify-center mt-8;
+}

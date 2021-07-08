@@ -1,0 +1,9 @@
+.basic {
+  @apply animate-spin -ml-1 mr-3 h-5 w-5 text-white;
+  & > circle {
+    @apply opacity-25;
+  }
+  & > path {
+    @apply opacity-75;
+  }
+}

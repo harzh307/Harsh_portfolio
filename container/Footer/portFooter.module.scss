@@ -1,0 +1,30 @@
+.main {
+  @apply bg-[#222222] md:gap-6 sm:gap-5 py-6 h-full lg:px-20 md:px-20;
+}
+.footerMain {
+  @apply lg:grid-cols-4 md:grid-cols-2 grid;
+}
+.footerText {
+  @apply text-center;
+}
+.footerLine {
+  @apply h-[1px] col-span-4 my-6 bg-gray-500;
+}
+.footText {
+  @apply sm:col-span-4  sm:justify-self-center justify-self-center text-center text-gray-700;
+}
+
+.text {
+  @apply text-[#aaaaaa];
+}
+.jCenter {
+  @apply flex mb-0 mt-10 justify-center;
+}
+.portSocialBtn {
+  @apply mr-3 flex items-center flex-col fill-current ease-in-out text-white;
+  &:hover {
+    .btnHover {
+      @apply fill-current ease-in-out text-[#aaaaaa] cursor-pointer;
+    }
+  }
+}
