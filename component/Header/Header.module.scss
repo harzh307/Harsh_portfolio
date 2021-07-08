@@ -1,11 +1,11 @@
 .portScrollNavbar {
-  @apply md:p-8 sm:p-6 xs:p-4 bg-[#222222] text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
+  @apply md:p-8 sm:p-6 xs:p-4 bg-black text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
 }
 .spanNav {
   @apply items-center flex justify-end gap-6 uppercase;
 }
 .portNavText {
-  @apply font-Raleway border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-[13px] xs:text-sm;
+  @apply font-Raleway max-w-[70%] border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-[13px] xs:text-sm;
 }
 // .headerCenter {
 //   @apply flex lg:p-16 md:p-12 sm:p-6 xs:p-4 flex-col justify-center items-center;

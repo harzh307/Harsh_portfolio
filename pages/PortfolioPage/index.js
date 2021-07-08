@@ -1,14 +1,13 @@
 import Card from '../../component/Card';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
-import Footer from '../../container/Footer';
 import Search from '../../public/svg/search.svg';
 
 const PortfolioPage = () => (
   <div className="light-theme">
     <Header>
       <PortText variant="portSingleBlog">Portfolio List</PortText>
-      <a className="backAlign" href="javascript:history.go(-1)">
+      <a className="backAlign" href="/">
         Back
       </a>
     </Header>

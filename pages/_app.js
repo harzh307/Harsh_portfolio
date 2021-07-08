@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/prop-types */
 import { SWRConfig } from 'swr';
 import Layout from '../container/Layout';
 import '../styles/_globals.scss';

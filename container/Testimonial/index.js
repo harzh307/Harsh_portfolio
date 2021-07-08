@@ -20,7 +20,7 @@ const Testimonial = ({ data }) => (
         {data.map(x => (
           <div key={x.id} className="containerTest">
             <div className="authorImg">
-              <img src="/image/testimonial/img-1.jpg" alt="" />
+              <img src="/about.jpg" alt="" />
             </div>
             <PortText variant="portTestimonialText">{x.personName}</PortText>
             <PortText variant="portTestimonialRoleText">{x.jobTitle}</PortText>

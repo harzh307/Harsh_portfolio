@@ -6,7 +6,6 @@ import Search from '../../public/svg/search.svg';
 const Portfolio = ({ data }) => {
   function liClicked() {
     const item = document.querySelector('listItems');
-    console.log(item);
     // x.classList.add('selItem');
   }
   return (
@@ -36,7 +35,7 @@ const Portfolio = ({ data }) => {
                   <div className="cardContent">
                     <Card variant="hoverPort">
                       <div className="hoverContext">
-                        <PortText variant="portHoverCardText">Application</PortText>
+                        <PortText variant="portHoverCardText">{x.title}</PortText>
                         <span>
                           <Search className="searchIcon" height={28} width={28} />
                         </span>

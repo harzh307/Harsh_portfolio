@@ -1,6 +1,12 @@
 .banner {
-  background-image: url(/image/Home/img-2.jpg);
-  @apply w-full h-screen relative bg-cover z-0;
+  background-image: url(/laptop.jpg);
+  @apply h-screen bg-cover;
+  @media only screen and (max-width: 990px) {
+    background-image: url(/banner.jpg);
+  }
+  @media only screen and (max-width: 590px) {
+    background-image: url(/small.jpg);
+  }
 }
 
 .banner::after {
@@ -9,6 +15,9 @@
 }
 
 .containerH {
+  .rotating {
+    @apply absolute text-[25px] z-[1] text-textColor-skin-inverted font-Raleway xs:top-[45%] xs:left-[4%] sm:top-[60%] sm:left-[5%] md:top-[63%] lg:pl-24;
+  }
   @apply container;
 }
 .caption {
@@ -16,10 +25,13 @@
   & h1 {
     @apply m-0 text-textColor-skin-inverted font-black font-Raleway text-[46px] md:text-[75px] lg:text-[88px];
   }
-  & p {
-    @apply text-textColor-skin-inverted-dull font-Raleway text-[17px] md:text-[21px] lg:text-[24px] mt-12;
+  & h2 {
+    @apply text-textColor-skin-inverted-dull font-Raleway  mt-12;
   }
 }
+// .rotating {
+//   @apply;
+// }
 
 // .header {
 //   @apply text-[46px] md:text-[75px] lg:text-[88px];

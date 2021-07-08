@@ -1,5 +1,4 @@
 import Header from '../../component/Header';
-import Footer from '../../container/Footer';
 import Contact from '../../container/Contact';
 import PortText from '../../component/PortText';
 
@@ -7,13 +6,13 @@ const SingleBlog = () => (
   <div className="light-theme">
     <Header>
       <PortText variant="portSingleBlog">Single Blog</PortText>
-      <a className="backAlign" href="javascript:history.go(-1)">
+      <a className="backAlign" href="/blogpage">
         Back
       </a>
     </Header>
     <div className="mainDiv">
       <div className="imgdiv">
-        <img src="/image/blog/img-6.jpg" alt="this is main image" className="img" />
+        <img src="/image/blog/img-6.jpg" alt="this is main" className="img" />
       </div>
       <div className="textDiv">
         <div>
@@ -60,7 +59,7 @@ const SingleBlog = () => (
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
                   <PortText variant="portHeadingCaption">
-                    <a href="#">Reply</a>
+                    <a href="/singleblog">Reply</a>
                   </PortText>
                 </div>
                 <PortText variant="portCardDateText">May 1, 2018 at 14:35</PortText>
@@ -79,7 +78,7 @@ const SingleBlog = () => (
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
                   <PortText variant="portHeadingCaption">
-                    <a href="#">Reply</a>
+                    <a href="/singleblog">Reply</a>
                   </PortText>
                 </div>
                 <PortText variant="portCardDateText">May 1, 2018 at 14:35</PortText>
@@ -98,7 +97,7 @@ const SingleBlog = () => (
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
                   <PortText variant="portHeadingCaption">
-                    <a href="#">Reply</a>
+                    <a href="/singleblog">Reply</a>
                   </PortText>
                 </div>
                 <PortText variant="portCardDateText">May 1, 2018 at 14:35</PortText>

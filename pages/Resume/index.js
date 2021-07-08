@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable prettier/prettier */
 import Header from '../../component/Header';
-import Footer from '../../container/Footer';
 import PortText from '../../component/PortText';
 
 const Skills = () => (
   <div className="light-theme">
     <Header>
       <PortText variant="portSingleBlog">Resume</PortText>
-      <a className="backAlign" href="javascript:history.go(-1)">
+      <a className="backAlign" href="/">
         Back
       </a>
     </Header>
@@ -113,7 +114,8 @@ const Skills = () => (
         </div>
         <div className="workPara">
           <PortText variant="portHeadingCaption">
-            <b>FRONT-END DEVELOPER </b> (from Nov 2020 to present)
+            <b>FRONT-END DEVELOPER </b>
+            (from Nov 2020 to present)
           </PortText>
           <PortText variant="portAboutCaption">
             At{' '}

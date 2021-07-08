@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
 import useBlog from '../../hooks/useBlog';
@@ -9,7 +10,7 @@ const BlogPage = () => {
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Blog List</PortText>
-        <a className="backAlign" href="javascript:history.go(-1)">
+        <a className="backAlign" href="/">
           Back
         </a>
       </Header>
@@ -17,7 +18,7 @@ const BlogPage = () => {
         <div className="items">
           {blogData.blogs.map(x => (
             <div key={x.id} className="cardBlog">
-              <Image
+              <image
                 src="/image/blog/img-2.jpg"
                 className="portImgHover"
                 height="250vh"

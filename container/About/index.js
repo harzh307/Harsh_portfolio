@@ -20,24 +20,16 @@ const About = ({ data }) => {
         media="(min-width:1024px,min-width:768px)"
         srcSet="/image/portfolio/about-img-lg.jpg,/image/portfolio/about-img-md.jpg"
       /> */}
-        <source
-          media="(min-width:1024px)"
-          srcSet="/image/portfolio/about-img-lg.jpg "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width:768px)"
-          srcSet="/image/portfolio/about-img-md.jpg"
-          type="image/jpg"
-        />
-        <img src="/image/portfolio/about-img.jpeg" />
+        <source media="(min-width:1024px)" srcSet="/about.jpg " type="image/jpg" />
+        <source media="(min-width:768px)" srcSet="/about.jpg" type="image/jpg" />
+        <img src="/about.jpg" />
       </picture>
       <div className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />
         {/* <PortText variant="portHeadingText">ABOUT ME.</PortText>
         <PortText variant="portAboutCaption1">UI/UX Designer & Web Developer</PortText>
         <PortText variant="portParaAboutText">
-          I'm
+          I'm /#F2F2F2
           <b> Harsh Patel </b>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took
