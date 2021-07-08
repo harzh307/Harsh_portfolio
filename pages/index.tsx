@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.scss";
+import Banner from "../container/home";
 
 const Home = () => {
-  const [loading, setLoading] = useState(false);
   return (
     <>
-      <div>Loading...</div>
+      <Banner />
       <div className={styles.container}></div>
     </>
   );
