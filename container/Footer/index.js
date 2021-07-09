@@ -58,12 +58,7 @@ const Footer = ({ data }) => (
           <Gmail className={style.btnHover} height={18} width={18} />
         </Button>
       </a>
-      <a href="fb://profile/fbID">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Facebook className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=+919737814945&amp;text=Hi there!">
+      {/* <a href="https://api.whatsapp.com/send?phone=+919737814945&amp;text=Hi there!">
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Whatsapp className={style.btnHover} height={18} width={18} />
         </Button>
@@ -72,7 +67,7 @@ const Footer = ({ data }) => (
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Instagram className={style.btnHover} height={18} width={18} />
         </Button>
-      </a>
+      </a> */}
     </div>
     <div className={style.footText}>
       <div className={style.footerLine} />

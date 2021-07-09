@@ -36,13 +36,14 @@ const SignupForm = ({ data }) => {
     },
     validate,
     onSubmit: (values, { resetForm }) => {
+      alert(JSON.stringify(values));
       if (!values) {
         formik.errors.msg = 'Both Fields Required';
       }
       resetForm();
       return axios({
         method: 'post',
-        url: 'http://localhost:1337/contact-forms',
+        url: 'http://localhost:1337/contact-forms/',
         data: {
           name: values.name,
           email: values.email,
@@ -58,9 +59,9 @@ const SignupForm = ({ data }) => {
         <div className="contactContainer">
           <div>
             <PortText variant="portHeadingCaption" component="h1">
-              {data.contactHeader.Title}
+              {data?.contactHeader?.Title}
             </PortText>
-            <PortText variant="portHeadingText">{data.contactHeader.Caption}</PortText>
+            <PortText variant="portHeadingText">{data?.contactHeader?.Caption}</PortText>
           </div>
           <div>
             <div className="contactForm">
@@ -73,7 +74,7 @@ const SignupForm = ({ data }) => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   variant="contactInput"
-                  placeholder={data.contactHeader.name}
+                  placeholder={data?.contactHeader?.name}
                   className={formik.errors.name ? 'borderBottom' : null}
                 />
               </div>

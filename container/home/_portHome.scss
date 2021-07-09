@@ -1,12 +1,14 @@
 .banner {
-  background-image: url(/laptop.jpg);
-  @apply h-screen bg-cover;
-  @media only screen and (max-width: 990px) {
-    background-image: url(/banner.jpg);
-  }
-  @media only screen and (max-width: 590px) {
-    background-image: url(/small.jpg);
-  }
+  background-image: url(/blackB.jpg);
+  @apply h-screen bg-cover bg-center bg-fixed;
+  // @media only screen and (max-width: 990px) {
+  //   background-image: url(/banner.jpg);
+  //   @apply bg-fixed;
+  // }
+  // @media only screen and (max-width: 745px) {
+  //   background-image: url(/small.jpg);
+  //   @apply bg-fixed;
+  // }
 }
 
 .banner::after {
@@ -46,8 +48,8 @@
   @apply opacity-0;
 }
 .arrow {
-  @apply absolute bottom-[6vh] z-20 xs:pl-12 lg:pl-52 animate-bounce;
+  @apply absolute top-[80vh] right-[10%] z-20  xs:pl-12 lg:pl-52 animate-pulse;
 }
 .arrow img {
-  @apply text-white w-16;
+  @apply text-white  w-16;
 }

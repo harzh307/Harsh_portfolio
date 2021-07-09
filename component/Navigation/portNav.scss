@@ -113,7 +113,8 @@
 /*Navbar Toogle*/
 .navbar-toggler {
   border: none;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   padding: 10px 6px;
   outline: none !important;
   margin: 2px;
@@ -124,7 +125,23 @@
   width: 22px;
   height: 2px;
   border-radius: 1px;
-  background-color: black;
+  background-color: white;
+}
+.scrollSpan {
+  border: none;
+  color: black;
+  background-color: transparent;
+  padding: 10px 6px;
+  outline: none !important;
+  margin: 2px;
+  cursor: pointer;
+  > span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+  }
 }
 .navbar-toggler span + span {
   margin-top: 4px;
@@ -183,12 +200,12 @@
     margin: 0;
     justify-content: flex-start;
     background-color: black;
-    // opacity: 0.95;
+    opacity: 60%;
     gap: 1rem;
   }
   .nav-transparent {
     background-color: white;
-    opacity: 0.95;
+    opacity: 60%;
   }
   .nav-close {
     display: none;
@@ -235,7 +252,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 55px;
+    padding: 15px 25px;
   }
 }
 

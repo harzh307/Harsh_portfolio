@@ -42,7 +42,7 @@ const About = ({ data }) => {
           here', making it look like readable English.
         </PortText> */}
         <div className="portSocial">
-          <a href="https://github.com/iamDevanshiDesai">
+          <a href="https://github.com/harzh307">
             <Button className="portSocialBtn" variant="portSocialButton">
               <Github className="btnHover" height={18} width={18} />
             </Button>
@@ -52,31 +52,26 @@ const About = ({ data }) => {
               <Linkedin className="btnHover" height={18} width={18} />
             </Button>
           </a>
-          <a href="https://twitter.com/UDevanshi">
+          <a href="https://twitter.com/patelharsh307">
             <Button className="portSocialBtn" variant="portSocialButton">
               <Twitter className="btnHover" height={18} width={18} />
             </Button>
           </a>
-          <a href="mailto:Harsh.p.Patel@gmail.com">
+          <a href="mailto:harzh.patel@gmail.com">
             <Button className="portSocialBtn" variant="portSocialButton">
               <Gmail className="btnHover" height={18} width={18} />
             </Button>
           </a>
-          <a href="fb://profile/fbID">
-            <Button className="portSocialBtn" variant="portSocialButton">
-              <Facebook className="btnHover" height={18} width={18} />
-            </Button>
-          </a>
-          <a href="https://wa.me/+919104552342?text=Hi%20there">
+          {/* <a href="https://wa.me/+916355015269?text=Hi%20there">
             <Button className="portSocialBtn" variant="portSocialButton">
               <Whatsapp className="btnHover" height={18} width={18} />
             </Button>
           </a>
-          <a href="http://instagram.com/username">
+          <a href="http://instagram.com/harsh.js">
             <Button className="portSocialBtn" variant="portSocialButton">
               <Instagram className="btnHover" height={18} width={18} />
             </Button>
-          </a>
+          </a> */}
         </div>
         <Button>Download cv</Button>
       </div>

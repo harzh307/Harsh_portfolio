@@ -31,7 +31,7 @@ const Portfolio = ({ data }) => {
             <Card key={x.id} variant="cardPort">
               <div className="relativeP">
                 <a href="/PortfolioPage">
-                  <img src="/image/portfolio/img-1.jpg" alt="" />
+                  <img src="/mobile.jpg" alt="" />
                   <div className="cardContent">
                     <Card variant="hoverPort">
                       <div className="hoverContext">

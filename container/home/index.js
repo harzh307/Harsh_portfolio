@@ -32,7 +32,7 @@ const Home = ({ data }) => {
             />
           </PortText> */}
           <a className="arrow" href="#About">
-            <img src="/svg/expand_more_white_24dp.svg" alt="" />
+            <img src="/svg/scroll-down.svg" height="32px" alt="" />
           </a>
         </div>
       </section>

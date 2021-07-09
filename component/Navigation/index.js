@@ -3,37 +3,25 @@ import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { useRef, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { element } from 'prop-types';
 
-// import './portNav.scss';
-// import Menu from '../../public/svg/menu-outline.svg';
-// import Button from '../Button';
-// import PortText from '../PortText';
-
-const Navigation = ({ whiteHeader }) => {
-  // const onMenuPress = () => {
-  //   let x = document.getElementById('NavbarModal');
-  //   console.log('NavbarModal');
-  //   if (x.className === styles.portNav) {
-  //     return (x.className = styles.portHiddenNav);
-  //   } else {
-  //     return (x.className = styles.portNav);
-  //   }
-  // };
-
+const Navigation = () => {
   const navbarRef = useRef(null);
   const ulRef = useRef(null);
+  const scrollSpan = useRef(null);
   const collapseRef = useRef(null);
   const { pathname } = useRouter();
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY >= 60) {
+        // alert('lol');
         navbarRef.current.classList.add('fixed-header');
         ulRef.current.classList.add('nav-transparent');
+        scrollSpan.current.classList.add('scrollSpan');
       } else {
         navbarRef.current.classList.remove('fixed-header');
         ulRef.current.classList.remove('nav-transparent');
+        scrollSpan.current.classList.remove('scrollSpan');
       }
     };
     window.addEventListener('scroll', onScroll, false);
@@ -84,6 +72,7 @@ const Navigation = ({ whiteHeader }) => {
             {/* / */}
             {/* Mobile Toggle */}
             <button
+              ref={scrollSpan}
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
