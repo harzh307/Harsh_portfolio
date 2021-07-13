@@ -1,8 +1,5 @@
 .banner {
   background-image: url(/blackB.jpg);
-  @apply h-screen bg-cover bg-center bg-fixed;
-}
-/*
   @media only screen and (max-width: 990px) {
     background-image: url(/banner.jpg);
     @apply bg-fixed;
@@ -11,7 +8,9 @@
     background-image: url(/small.jpg);
     @apply bg-fixed;
   }
-*/
+  @apply h-screen bg-cover bg-center bg-fixed;
+}
+
 .banner::after {
   content: '';
   @apply inset-0 bg-black opacity-50 absolute z-0;
