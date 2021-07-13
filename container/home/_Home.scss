@@ -1,83 +1,83 @@
-// .banner {
-//   background-image: url(/blackB.jpg);
-//   @apply h-screen bg-cover bg-center bg-fixed;
-// }
-// /*
-//   @media only screen and (max-width: 990px) {
-//     background-image: url(/banner.jpg);
-//     @apply bg-fixed;
-//   }
-//   @media only screen and (max-width: 745px) {
-//     background-image: url(/small.jpg);
-//     @apply bg-fixed;
-//   }
-// */
-// .banner::after {
-//   content: '';
-//   @apply inset-0 bg-black opacity-50 absolute z-0;
-// }
+.banner {
+  background-image: url(/blackB.jpg);
+  @apply h-screen bg-cover bg-center bg-fixed;
+}
+/*
+  @media only screen and (max-width: 990px) {
+    background-image: url(/banner.jpg);
+    @apply bg-fixed;
+  }
+  @media only screen and (max-width: 745px) {
+    background-image: url(/small.jpg);
+    @apply bg-fixed;
+  }
+*/
+.banner::after {
+  content: '';
+  @apply inset-0 bg-black opacity-50 absolute z-0;
+}
 
-// .containerH {
-//   .rotating {
-//     z-index: 1;
-//     @media (min-width: 320px) {
-//       top: 45%;
-//       left: 4%;
-//     }
-//     @media (min-width: 640px) {
-//       top: 60%;
-//       left: 5%;
-//     }
-//     @media (min-width: 768px) {
-//       top: 63%;
-//     }
-//     @apply absolute text-2xl text-textColor-skin-inverted font-Raleway lg:pl-24;
-//   }
-//   @apply container;
-// }
-// .caption {
-//   z-index: 9;
-//   top: 24%;
-//   left: 5%;
-//   @media (min-width: 768px) {
-//     top: 33%;
-//   }
-//   & h1 {
-//     font-size: 46px;
-//     @media (min-width: 768px) {
-//       font-size: 75px;
-//     }
-//     @media (min-width: 1024px) {
-//       font-size: 88px;
-//     }
-//     @apply m-0 text-textColor-skin-inverted font-black font-Raleway;
-//   }
-//   & h2 {
-//     @apply text-textColor-skin-inverted font-Raleway  mt-12;
-//   }
-//   @apply absolute lg:pl-24;
-// }
-// .desc {
-//   font-size: 17px;
-//   @media (min-width: 768px) {
-//     font-size: 21px;
-//   }
-//   @media (min-width: 1024px) {
-//     font-size: 24px;
-//   }
-//   @apply mt-0 md:-mt-8 lg:-mt-12;
-// }
-// .caption b {
-//   @apply opacity-100;
-// }
-// .caption b + b {
-//   @apply opacity-0;
-// }
-// .arrow {
-//   top: 80vh;
-//   right: 10%;
-//   @apply absolute z-20  xs:pl-12 lg:pl-52 animate-pulse;
-// }
-// .arrow img {
-//   @apply text-white  w-16;
-// }
+.containerH {
+  .rotating {
+    z-index: 1;
+    @media (min-width: 320px) {
+      top: 45%;
+      left: 4%;
+    }
+    @media (min-width: 640px) {
+      top: 60%;
+      left: 5%;
+    }
+    @media (min-width: 768px) {
+      top: 63%;
+    }
+    @apply absolute text-2xl text-textColor-skin-inverted font-Raleway lg:pl-24;
+  }
+  @apply container;
+}
+.caption {
+  z-index: 9;
+  top: 24%;
+  left: 5%;
+  @media (min-width: 768px) {
+    top: 33%;
+  }
+  & h1 {
+    font-size: 46px;
+    @media (min-width: 768px) {
+      font-size: 75px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 88px;
+    }
+    @apply m-0 text-textColor-skin-inverted font-black font-Raleway;
+  }
+  & h2 {
+    @apply text-textColor-skin-inverted font-Raleway  mt-12;
+  }
+  @apply absolute lg:pl-24;
+}
+.desc {
+  font-size: 17px;
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+  @apply mt-0 md:-mt-8 lg:-mt-12;
+}
+.caption b {
+  @apply opacity-100;
+}
+.caption b + b {
+  @apply opacity-0;
+}
+.arrow {
+  top: 80vh;
+  right: 10%;
+  @apply absolute z-20  xs:pl-12 lg:pl-52 animate-pulse;
+}
+.arrow img {
+  @apply text-white  w-16;
+}
