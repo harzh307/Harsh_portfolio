@@ -18,9 +18,17 @@ const About = ({ data }) => {
         media="(min-width:1024px,min-width:768px)"
         srcSet="/image/portfolio/about-img-lg.jpg,/image/portfolio/about-img-md.jpg"
       /> */}
-        <source media="(min-width:1024px)" srcSet="/bannerr.jpg" type="image/jpg" />
-        <source media="(min-width:768px)" srcSet="/bannerr.jpg" type="image/jpg" />
-        <img src="/bannerr.jpg" />
+        {/* <source
+          media="(min-width:1024px)"
+          srcSet={data?.portfolioImage?.formats?.large?.url}
+          type="image/jpg"
+        />
+        <source
+          media="(min-width:768px)"
+          srcSet={data?.portfolioImage?.formats?.large?.url}
+          type="image/jpg"
+        /> */}
+        <img src={data?.portfolioImage?.formats?.small?.url} alt="imharsh" />
       </picture>
       <div className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />

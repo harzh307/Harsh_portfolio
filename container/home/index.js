@@ -12,7 +12,7 @@ const Home = ({ data }) => {
       <section id="Home" className="banner">
         <div className="containerH">
           <ReactRotatingText
-            items={['A Web and Mobile developer', 'An Explorer', 'I love Photography']}
+            items={data.BannerSkills.map(x => x.bannerSkills)}
             className="rotating"
             style={{ color: 'white' }}
           />

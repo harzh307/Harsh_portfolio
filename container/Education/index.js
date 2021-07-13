@@ -5,9 +5,9 @@ import PortText from '../../component/PortText';
 const Education = ({ data }) => (
   <section id="Education" className="alignment">
     <div className="textAlign">
-      <PortText variant="portHeadingCaption">{data.Header.title}</PortText>
+      <PortText variant="portHeadingCaption">{data.Header?.title}</PortText>
       <PortText variant="portHeadingText" component="h1">
-        {data.Header.caption}
+        {data.Header?.caption}
       </PortText>
     </div>
     <div className="leftbox">
