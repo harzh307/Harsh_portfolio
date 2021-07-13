@@ -93,7 +93,7 @@ const Navigation = () => {
             <button onClick={toggleNavbar} className="blankSpace" />
             <ul ref={ulRef} className="navbar-nav">
               <li>
-                <Link href="http://localhost:3000/#Home">
+                <Link href="/#Home">
                   <a
                     className={classNames('nav-link-white', { active: pathname === '#Home' })}
                     onClick={toggleNavbar}>
@@ -107,7 +107,7 @@ const Navigation = () => {
                 </Link>
               </li> */}
               <li>
-                <Link href="http://localhost:3000/#About">
+                <Link href="/#About">
                   <a
                     className={classNames('nav-link-white', { active: pathname === '#About' })}
                     onClick={toggleNavbar}>
@@ -116,7 +116,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <Link href="http://localhost:3000/#Services">
+                <Link href="/#Services">
                   <a
                     className={classNames('nav-link-white', { active: pathname === '#Services' })}
                     onClick={toggleNavbar}>
@@ -125,7 +125,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <Link href="http://localhost:3000/#Work">
+                <Link href="/#Work">
                   <a
                     className={classNames('nav-link-white', { active: pathname === '#Work' })}
                     onClick={toggleNavbar}>
@@ -134,7 +134,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <Link href="http://localhost:3000/#Contact">
+                <Link href="/#Contact">
                   <a
                     className={classNames('nav-link-white', { active: pathname === '#Contact' })}
                     onClick={toggleNavbar}>
