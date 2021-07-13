@@ -23,7 +23,7 @@
   @apply flex mb-0 gap-3 mt-10 justify-center;
 }
 .portSocialBtn {
-  @apply w-screen flex items-center flex-col fill-current ease-in-out;
+  @apply flex items-center flex-col fill-current ease-in-out;
   &:hover {
     .btnHover {
       @apply text-black  ease-in-out;
