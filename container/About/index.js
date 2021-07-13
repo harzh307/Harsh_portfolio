@@ -6,10 +6,8 @@ import Github from '../../public/svg/logo-github.svg';
 import Linkedin from '../../public/svg/linkedin.svg';
 import Twitter from '../../public/svg/logo-twitter.svg';
 import Gmail from '../../public/svg/mail.svg';
-import Facebook from '../../public/svg/logo-facebook.svg';
-import Whatsapp from '../../public/svg/whatsapp.svg';
-import Instagram from '../../public/svg/instagram.svg';
 import useMarkdown from '../../hooks/useMarkdown';
+// import style from './_About.scss';
 
 const About = ({ data }) => {
   const { HTML } = useMarkdown(data.biography);

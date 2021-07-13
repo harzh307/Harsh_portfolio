@@ -1,10 +1,13 @@
 .portfolioList {
-  @apply pt-[100px] pb-[50px];
+  padding-top: 100px;
+  padding-bottom: 50px;
+  // @apply pt-[100px] pb-[50px];
 }
 .portfolioItems {
-  @apply flex flex-wrap h-full w-full px-[15px] md:px-20 lg:px-32 justify-center;
+  padding: 0px 15px;
+  @apply flex flex-wrap h-full w-full md:px-20 lg:px-32 justify-center;
 }
 
-.backAlign{
-  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid ;
+.backAlign {
+  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
 }

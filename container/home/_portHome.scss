@@ -18,14 +18,39 @@
 
 .containerH {
   .rotating {
-    @apply absolute text-[25px] z-[1] text-textColor-skin-inverted font-Raleway xs:top-[45%] xs:left-[4%] sm:top-[60%] sm:left-[5%] md:top-[63%] lg:pl-24;
+    z-index: 1;
+    @media (min-width: 320px) {
+      top: 45%;
+      left: 4%;
+    }
+    @media (min-width: 640px) {
+      top: 60%;
+      left: 5%;
+    }
+    @media (min-width: 768px) {
+      top: 63%;
+    }
+    @apply absolute text-2xl text-textColor-skin-inverted font-Raleway lg:pl-24;
   }
   @apply container;
 }
 .caption {
-  @apply absolute z-[9] top-[24%] md:top-[33%] left-[5%] lg:pl-24;
+  z-index: 9;
+  top: 24%;
+  left: 5%;
+  @media (min-width: 768px) {
+    top: 33%;
+  }
+  @apply absolute lg:pl-24;
   & h1 {
-    @apply m-0 text-textColor-skin-inverted font-black font-Raleway text-[46px] md:text-[75px] lg:text-[88px];
+    font-size: 46px;
+    @media (min-width: 768px) {
+      font-size: 75px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 88px;
+    }
+    @apply m-0 text-textColor-skin-inverted font-black font-Raleway;
   }
   & h2 {
     @apply text-textColor-skin-inverted font-Raleway  mt-12;
@@ -39,7 +64,14 @@
 //   @apply text-[46px] md:text-[75px] lg:text-[88px];
 // }
 .desc {
-  @apply text-[17px] md:text-[21px] lg:text-[24px] mt-0 md:-mt-8 lg:-mt-12;
+  font-size: 17px;
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+  @apply mt-0 md:-mt-8 lg:-mt-12;
 }
 .caption b {
   @apply opacity-100;
@@ -48,7 +80,9 @@
   @apply opacity-0;
 }
 .arrow {
-  @apply absolute top-[80vh] right-[10%] z-20  xs:pl-12 lg:pl-52 animate-pulse;
+  top: 80vh;
+  right: 10%;
+  @apply absolute z-20  xs:pl-12 lg:pl-52 animate-pulse;
 }
 .arrow img {
   @apply text-white  w-16;

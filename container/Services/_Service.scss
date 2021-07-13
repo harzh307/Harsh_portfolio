@@ -1,5 +1,7 @@
 .Service {
-  @apply bg-[#F2F2F2] h-screen  text-center py-[100px] px-[50px];
+  background-color: rgba(242, 242, 242, 1);
+  padding: 100px 50px;
+  @apply h-screen  text-center;
 }
 
 .headsec h1 {

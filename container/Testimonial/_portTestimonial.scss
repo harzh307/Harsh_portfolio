@@ -14,15 +14,20 @@
 }
 
 .slickDotsUp {
-  @apply h-[10px] rounded-[5px] bg-[#e5e7e9] relative;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(229, 231, 233, 1);
+  @apply relative;
 }
 .slickDots {
-  @apply h-[10px] rounded-[5px] bg-gray-500;
+  height: 10px;
+  border-radius: 5px;
+  @apply bg-gray-500;
 }
 .testimonialContainer {
   display: flex;
   justify-content: center;
-  @apply z-10 w-[80%];
+  @apply z-10;
 }
 .slider {
   overflow: hidden;
@@ -32,8 +37,16 @@
   scroll-behavior: smooth;
   display: -webkit-inline-box;
   scroll-snap-type: inline mandatory;
-
-  @apply md:w-[60%] sm:w-[80%] xs:w-[80%];
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+  @media (min-width: 640px) {
+    width: 80%;
+  }
+  @media (min-width: 320px) {
+    width: 80%;
+  }
+  // @apply md:w-[60%] sm:w-[80%] xs:w-[80%];
 }
 .slider::-webkit-scrollbar {
   display: none;
@@ -51,12 +64,14 @@
   @apply flex justify-center;
 }
 .authorImg img {
-  @apply w-28 h-28 rounded-[50%] mb-4;
+  border-radius: 50%;
+  @apply w-28 h-28 mb-4;
 }
 .dot {
   display: flex !important;
   @apply mt-2 p-0 flex-row bottom-0 justify-center;
 }
 .dot button {
-  @apply cursor-pointer h-3 w-5 mx-2 my-1 bg-gray-300 rounded-[30px];
+  border-radius: 30px;
+  @apply cursor-pointer h-3 w-5 mx-2 my-1 bg-gray-300;
 }

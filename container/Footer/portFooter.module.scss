@@ -1,29 +1,32 @@
-// .main {
-//   @apply bg-[#222222] md:gap-6 sm:gap-5 py-6 h-full lg:px-20 md:px-20;
-// }
-// .footerMain {
-//   @apply lg:grid-cols-4 md:grid-cols-2 grid;
-// }
-// .footerText {
-//   @apply text-center;
-// }
-// .footerLine {
-//   @apply h-[1px] col-span-4 my-6 bg-gray-500;
-// }
-// .footText {
-//   @apply sm:col-span-4  sm:justify-self-center justify-self-center text-center text-gray-700;
-// }
-// .text {
-//   @apply text-[#aaaaaa];
-// }
-// .jCenter {
-//   @apply flex mb-0 gap-3 mt-10 justify-center;
-// }
-// .portSocialBtn {
-//   @apply w-screen flex items-center flex-col fill-current ease-in-out;
-//   &:hover {
-//     .btnHover {
-//       @apply text-black  ease-in-out;
-//     }
-//   }
-// }
+.main {
+  background-color: rgba(34, 34, 34, 1);
+  @apply md:gap-6 sm:gap-5 py-6 h-full lg:px-20 md:px-20;
+}
+.footerMain {
+  @apply lg:grid-cols-4 md:grid-cols-2 grid;
+}
+.footerText {
+  @apply text-center;
+}
+.footerLine {
+  height: 1px;
+  @apply col-span-4 my-6 bg-gray-500;
+}
+.footText {
+  @apply sm:col-span-4  sm:justify-self-center justify-self-center text-center text-gray-700;
+}
+.text {
+  color: rgba(170, 170, 170, 1);
+  // @apply text-[#aaaaaa];
+}
+.jCenter {
+  @apply flex mb-0 gap-3 mt-10 justify-center;
+}
+.portSocialBtn {
+  @apply w-screen flex items-center flex-col fill-current ease-in-out;
+  &:hover {
+    .btnHover {
+      @apply text-black  ease-in-out;
+    }
+  }
+}

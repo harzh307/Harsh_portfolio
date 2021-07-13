@@ -14,14 +14,18 @@
   @apply py-8;
 }
 .line {
-  @apply w-full h-[0.5px] bg-gray-300 mb-5;
+  height: 0.5px;
+  @apply w-full bg-gray-300 mb-5;
 }
 .nameContent {
   @apply p-2  flex-col flex;
 }
 // -my-5 -space-y-4
 .img {
-  @apply h-full lg:w-[50%] md:w-[50%] sm:w-[50%] xs:w-[94%] mt-20;
+  @media (min-width: 320px) {
+    width: 94%;
+  }
+  @apply h-full lg:w-2/4 md:w-2/4 sm:w-2/4 mt-20;
 }
 
 // .mainDiv {
@@ -37,5 +41,21 @@
 }
 
 .textDiv {
-  @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 xl:mx-[20.5rem] lg:mx-[11rem] md:mx-[10rem] sm:mx-[5rem] xs:mx-0 gap-5;
+  @media (min-width: 1280px) {
+    margin-left: 20.5rem;
+    margin-right: 20.5rem;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 11rem /* 176px */;
+    margin-right: 11rem /* 176px */;
+  }
+  @media (min-width: 768px) {
+    margin-left: 10rem /* 160px */;
+    margin-right: 10rem /* 160px */;
+  }
+  @media (min-width: 640px) {
+    margin-left: 5rem /* 80px */;
+    margin-right: 5rem /* 80px */;
+  }
+  @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 xs:mx-0 gap-5;
 }
