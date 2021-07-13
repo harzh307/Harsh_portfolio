@@ -13,7 +13,7 @@
   @media (min-width: 320px) and (max-width: 640px) {
     padding: 50px 0px;
   }
-  @apply h-screen;
+  @apply md:h-screen;
   // @apply py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px]
 }
 
