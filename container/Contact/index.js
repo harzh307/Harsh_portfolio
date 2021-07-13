@@ -87,7 +87,7 @@ const SignupForm = ({ data }) => {
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
                   variant="contactInput"
-                  placeholder={data.contactHeader.email}
+                  placeholder={data?.contactHeader?.email}
                   className={formik.errors.email ? 'borderBottom' : null}
                 />
               </div>
@@ -99,7 +99,7 @@ const SignupForm = ({ data }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
-              placeholder={data.contactHeader.message}
+              placeholder={data?.contactHeader?.message}
             />
           </div>
           <Button type="submit" onClick={formik.handleSubmit} className="buttonMargin">

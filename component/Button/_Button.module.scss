@@ -1,15 +1,14 @@
+// tailwindcss
+/*
 .portHomeButton {
-  @apply bg-backgroundColor-skin-button-accent duration-300 text-[13px] text-textColor-skin-inverted px-[20px] py-[10px] uppercase font-semibold border-2 border-backgroundColor-skin-button-accent border-solid hover:bg-transparent hover:text-backgroundColor-skin-button-accent items-center cursor-pointer;
+  @apply bg-backgroundColor-skin-button_accent duration-300 text-[13px] text-textColor-skin-inverted px-[20px] py-[10px] uppercase font-semibold border-2 border-backgroundColor-skin-button-accent border-solid hover:bg-transparent hover:text-backgroundColor-skin-button-accent items-center cursor-pointer;
 }
-
 .portSocialButton {
   @apply bg-backgroundColor-skin-button-accent duration-300 border-2 border-backgroundColor-skin-button-accent border-solid rounded-[4.2em] items-center justify-center h-[30px] w-[30px]  hover:bg-transparent hover:text-backgroundColor-skin-button-accent;
 }
-
 .portResume {
   @apply text-white bg-transparent p-2 border-[#222] duration-300 hover:bg-[#222];
 }
-
 .portServiceButton {
   @apply bg-transparent flex border-[1px] border-backgroundColor-skin-button-service border-solid rounded-[4.2em] items-center justify-center duration-300 h-[80px] w-[80px] hover:shadow-2xl hover:transform hover:duration-700;
 }
@@ -20,3 +19,101 @@
 .disable {
   @apply cursor-not-allowed bg-backgroundColor-skin-button-disable opacity-50 text-[13px] text-textColor-skin-inverted px-[20px] py-[10px] uppercase font-semibold border-2 border-backgroundColor-skin-button-disable border-solid;
 }
+*/
+.portHomeButton {
+  background-color: var(--color-button-accent);
+  transition-duration: 300ms;
+  font-size: 13px;
+  color: var(--color-fill);
+  line-height: 1.75rem;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-width: 2px;
+  border-color: var(--color-button-accent);
+  border-style: solid;
+  align-items: center;
+  cursor: pointer;
+}
+.portHomeButton:hover {
+  background-color: var(--color-fill);
+  color: var(--color-button-accent);
+}
+
+.portSocialButton {
+  background-color: var(--color-button-accent);
+  transition-duration: 300ms;
+  border-width: 2px;
+  border-color: var(--color-button-accent);
+  border-style: solid;
+  border-radius: 100%;
+  color: var(--color-fill);
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.portSocialButton:hover {
+  background: white;
+  color: var(--color-button-accent);
+}
+
+.portResume {
+  color: white;
+  background: transparent;
+  padding: 8px;
+  border-color: var(--color-button-accent);
+  transition-duration: 300ms;
+  :hover {
+    background-color: var(--color-button-accent);
+  }
+}
+
+.portServiceButton {
+  background: transparent;
+  display: flex;
+  padding: 10px;
+  color: var(--color-text-dull);
+  border-width: 1px;
+  border-color: var(--color-button-accent);
+  // border-style: solid;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 300ms;
+}
+.portServiceButton:hover {
+  box-shadow: 0px 10px 10px rgb(154, 154, 154);
+  transform: translateZ(2px);
+  transition-duration: 300ms;
+}
+
+.portNavButton {
+  border-style: none;
+  padding: 12px;
+  top: 0px;
+  position: fixed;
+  z-index: 30;
+  right: 0px;
+  background: transparent;
+  color: white;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.disable {
+  cursor: not-allowed;
+  background-color: var(--color-button-accent);
+  opacity: 0.5;
+  font-size: 13px;
+  color: var(textColor-skin-inverted);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-width: 2px;
+  border-color: var(--color-button-accent);
+  border: solid;
+}
+//*/

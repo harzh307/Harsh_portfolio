@@ -85,7 +85,7 @@ const Blog = ({ data }) => {
       <div className="cardSetBlog">
         {/* <div className='sliderShow}> */}
         <div id="sliderModal" className="sliderShow" ref={blogRef}>
-          {data.blogs.map((x, i) => (
+          {data?.blogs?.map((x, i) => (
             <div
               key={x.id}
               className="cardBlog"

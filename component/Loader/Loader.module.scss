@@ -1,9 +1,23 @@
 .basic {
-  @apply animate-spin -ml-1 mr-3 h-5 w-5 text-white;
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  animation: spin 1s linear infinite;
+  margin-left: -0.25rem;
+  margin-right: 0.75rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: white;
+
+  // @apply animate-spin -ml-1 mr-3 h-5 w-5 text-white;
   & > circle {
-    @apply opacity-25;
+    opacity: 0.25;
+    // @apply opacity-25;
   }
   & > path {
-    @apply opacity-75;
+    opacity: 0.75;
+    // @apply opacity-75;
   }
 }

@@ -1,8 +1,8 @@
-import Button from '../../component/Button';
-import Navigation from '../../component/Navigation';
-import PortText from '../../component/PortText';
-import useMarkdown from '../../hooks/useMarkdown';
 import ReactRotatingText from 'react-rotating-text';
+// import Button from '../../component/Button';
+// import Navigation from '../../component/Navigation';
+// import PortText from '../../component/PortText';
+import useMarkdown from '../../hooks/useMarkdown';
 
 const Home = ({ data }) => {
   const { HTML } = useMarkdown(data.description);

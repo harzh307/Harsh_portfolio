@@ -11,7 +11,7 @@
 }
 
 .portEle {
-  @apply font-Raleway text-white font-light md:text-[13px] xs:text-sm hover:text-gray-300;
+  @apply font-Raleway text-white font-light md:text-sm xs:text-sm hover:text-gray-300;
 }
 
 .onFocusDisplay {
@@ -33,7 +33,7 @@
 }
 
 .portNavText {
-  @apply font-Raleway text-black border-b gap-10 font-light md:text-[13px] xs:text-sm;
+  @apply font-Raleway text-black border-b gap-10 font-light md:text-sm xs:text-sm;
 }
 
 .header-nav {

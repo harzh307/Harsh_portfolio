@@ -16,7 +16,7 @@ const BlogPage = () => {
       </Header>
       <section className="blogList">
         <div className="items">
-          {blogData.blogs.map(x => (
+          {blogData?.blogs?.map(x => (
             <div key={x.id} className="cardBlog">
               <image
                 src="/image/blog/img-2.jpg"

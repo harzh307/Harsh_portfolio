@@ -20,9 +20,9 @@ const About = ({ data }) => {
         media="(min-width:1024px,min-width:768px)"
         srcSet="/image/portfolio/about-img-lg.jpg,/image/portfolio/about-img-md.jpg"
       /> */}
-        <source media="(min-width:1024px)" srcSet="/about.jpg " type="image/jpg" />
-        <source media="(min-width:768px)" srcSet="/about.jpg" type="image/jpg" />
-        <img src="/about.jpg" />
+        <source media="(min-width:1024px)" srcSet="/bannerr.jpg" type="image/jpg" />
+        <source media="(min-width:768px)" srcSet="/bannerr.jpg" type="image/jpg" />
+        <img src="/bannerr.jpg" />
       </picture>
       <div className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />

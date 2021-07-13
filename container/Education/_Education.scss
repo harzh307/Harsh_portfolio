@@ -1,5 +1,20 @@
 .alignment {
-  @apply bg-[#F2F2F2]  py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px];
+  background-color: rgba(242, 242, 242, 1);
+  padding: 70px 60px;
+  @media (min-width: 1024px) and (max-width: 768px) {
+    padding: 50px 200px;
+  }
+  @media (min-width: 768px) and (max-width: 640px) {
+    padding: 50px 70px;
+  }
+  @media (min-width: 640px) and (max-width: 320px) {
+    padding: 50px 30px;
+  }
+  @media (min-width: 320px) and (max-width: 640px) {
+    padding: 50px 0px;
+  }
+  @apply h-screen;
+  // @apply py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px]
 }
 
 .textAlign {
@@ -11,7 +26,8 @@
 }
 
 .leftsubbox {
-  @apply bg-[#e5e5e5]  py-5 pl-5 sm:mr-5 sm:w-[60%] xs:w-[90%] rounded-xl;
+  background-color: rgba(229, 229, 229, 1);
+  @apply py-5 pl-5 sm:mr-5 sm:w-3/5 xs:w-11/12 rounded-xl;
 }
 
 .leftTextAlign {
@@ -31,26 +47,34 @@
 }
 
 .bar {
-  @apply relative bg-[#0b0b131a];
+  background-color: #0b0b131a;
+  @apply relative;
 }
 
 .ht {
-  @apply h-3 bg-[#333333] animate-pulse;
+  background-color: #333333;
+  @apply h-3  animate-pulse;
 }
 .ht2 {
-  @apply w-[80%] h-3 bg-[#333333] animate-pulse;
+  background-color: #333333;
+  @apply w-4/5 h-3  animate-pulse;
 }
 .ht3 {
-  @apply w-[72%] h-3 bg-[#333333] animate-pulse;
+  background-color: #333333;
+  width: 72%;
+  @apply h-3  animate-pulse;
 }
 .ht4 {
-  @apply w-[85%] h-3 bg-[#333333] animate-pulse;
+  background-color: #333333;
+  width: 85%;
+  @apply h-3  animate-pulse;
 }
 
 .viewMore {
+  // background-color: #333333;
   @apply flex-1 flex justify-center items-center;
 }
 
 .block {
-  @apply w-[100%] flex-col;
+  @apply w-full flex-col;
 }

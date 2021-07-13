@@ -21,7 +21,7 @@
 }
 // -my-5 -space-y-4
 .img {
-  @apply h-[100%] lg:w-[50%] md:w-[50%] sm:w-[50%] xs:w-[94%] mt-20;
+  @apply h-full lg:w-[50%] md:w-[50%] sm:w-[50%] xs:w-[94%] mt-20;
 }
 
 // .mainDiv {

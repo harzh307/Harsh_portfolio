@@ -4,49 +4,62 @@
 
 .portLogoText {
   font-family: 'Montserrat', sans-serif;
-  @apply font-extrabold text-[28px] m-0 text-textColor-skin-inverted uppercase z-50 absolute;
+  @apply font-extrabold text-3xl m-0 text-textColor-skin-inverted uppercase z-50 absolute;
 }
 
 .portNavText {
-  @apply text-[13px] font-normal font-Raleway uppercase;
+  @apply text-sm font-normal font-Raleway uppercase;
 }
 
 .portHeaderText {
-  @apply text-textColor-skin-base text-[88px] font-black font-Raleway;
+  font-size: 88px;
+  @apply text-textColor-skin-base font-black font-Raleway;
 }
 .portHeaderHomeText {
   @apply text-textColor-skin-inverted font-black font-Raleway;
 }
 .portHeaderCaption {
-  @apply text-textColor-skin-inverted-dull font-Raleway;
+  @apply text-textColor-skin-dull font-Raleway;
 }
 
 .portHeaderCaptionBold {
-  @apply text-[24px] font-bold font-Raleway text-textColor-skin-inverted-dull;
+  @apply text-2xl font-bold font-Raleway text-textColor-skin-dull;
 }
 
 .portHeadingText {
-  @apply text-textColor-skin-base font-semibold lg:text-[32px] md:text-[31px] sm:text-[30px] xs:text-[24px] m-0 uppercase font-Raleway;
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 31px;
+  }
+  @media (min-width: 640px) {
+    font-size: 30px;
+  }
+  @media (min-width: 320px) {
+    font-size: 24px;
+  }
+  @apply text-textColor-skin-base font-semibold m-0 uppercase font-Raleway;
 }
 
 .portHeadingCaption {
-  @apply uppercase text-[16px] m-0 text-textColor-skin-base  font-medium font-Raleway;
+  @apply uppercase text-base m-0 text-textColor-skin-base  font-medium font-Raleway;
 }
 
 .portParaText {
-  @apply text-[16px] text-textColor-skin-dull font-thin leading-[26.5px] font-opensans;
+  @apply text-base text-textColor-skin-dull font-thin leading-6 font-opensans;
 }
 
 .portAboutCaption {
-  @apply text-[20px] font-Raleway text-textColor-skin-base;
+  @apply text-xl font-Raleway text-textColor-skin-base;
 }
 
 .portParaAboutText {
-  @apply text-[16px] text-textColor-skin-dull font-thin leading-[28px] font-opensans;
+  @apply text-base text-textColor-skin-dull font-thin leading-7 font-opensans;
 }
 
 .portButtonText {
-  @apply text-[13px] font-semibold uppercase  font-Raleway;
+  @apply text-sm font-semibold uppercase  font-Raleway;
 }
 
 .portServiceSubHeadingText {
@@ -54,72 +67,72 @@
 }
 
 .portCounterText {
-  @apply text-[32px] font-extrabold   font-Raleway;
+  @apply text-3xl font-extrabold   font-Raleway;
 }
 
 .portCounterCaption {
-  @apply text-[16px] font-semibold   font-opensans;
+  @apply text-base font-semibold   font-opensans;
 }
 
 .portCardHeaderText {
-  @apply text-textColor-skin-base text-[16px] font-semibold font-Raleway;
+  @apply text-textColor-skin-base text-base font-semibold font-Raleway;
 }
 
 .portCardReadText {
-  @apply text-[13px] font-Raleway  font-semibold  text-textColor-skin-copyright border-b-2 border-gray-600;
+  @apply text-sm font-Raleway  font-semibold  text-textColor-skin-copyright border-b-2 border-gray-600;
 }
 
 .portHeaderTextPCard {
-  @apply text-[32px] font-Raleway mt-0 font-bold text-center;
+  @apply text-3xl font-Raleway mt-0 font-bold text-center;
 }
 
 .portCardDateText {
-  @apply text-[13px] font-Raleway  font-semibold  text-textColor-skin-date;
+  @apply text-sm font-Raleway  font-semibold  text-textColor-skin-date;
 }
 
 .portTestimonialText {
-  @apply text-textColor-skin-inverted text-[24px] font-Raleway font-semibold m-0;
+  @apply text-textColor-skin-inverted text-2xl font-Raleway font-semibold m-0;
 }
 .portCommentText {
-  @apply text-textColor-skin-base text-[24px] font-Raleway font-semibold m-0;
+  @apply text-textColor-skin-base text-2xl font-Raleway font-semibold m-0;
 }
 
 .portTestimonialPText {
-  @apply text-[16px] font-sans text-textColor-skin-inverted;
+  @apply text-base font-sans text-textColor-skin-inverted;
 }
 .portEduLeftText {
   @apply font-sans text-textColor-skin-base;
 }
 
 .portTestimonialRoleText {
-  @apply text-textColor-skin-inverted-dull text-[14px] font-Raleway font-semibold mt-2;
+  @apply text-textColor-skin-dull text-sm font-Raleway font-semibold mt-2;
 }
 
 .portContactHeadingText {
-  @apply font-Raleway  text-[16px] font-bold text-textColor-skin-inverted;
+  @apply font-Raleway  text-base font-bold text-textColor-skin-inverted;
 }
 
 .portContactDetailText {
-  @apply font-opensans  text-[14px] text-textColor-skin-inverted;
+  @apply font-opensans  text-sm text-textColor-skin-inverted;
 }
 .portCommentdetailText {
-  @apply font-opensans  text-[14px] text-textColor-skin-base;
+  @apply font-opensans  text-sm text-textColor-skin-base;
 }
 .portFooterText {
-  @apply font-opensans  text-[14px] text-textColor-skin-copyright;
+  @apply font-opensans  text-sm text-textColor-skin-copyright;
 }
 
 .portFilterText {
-  @apply text-textColor-skin-base text-[14px] font-Raleway uppercase;
+  @apply text-textColor-skin-base text-sm font-Raleway uppercase;
 }
 
 .portHoverCardText {
-  @apply text-textColor-skin-base text-[20px] font-semibold font-Raleway text-center;
+  @apply text-textColor-skin-base text-xl font-semibold font-Raleway text-center;
 }
 .portSingleBlog {
-  @apply font-semibold md:text-[48px] sm:text-[40px] xs:text-[30px] m-0 uppercase font-Raleway;
+  @apply font-semibold md:text-5xl sm:text-4xl xs:text-3xl m-0 uppercase font-Raleway;
 }
 
 .portSingleBlogText {
-  @apply text-textColor-skin-base font-semibold text-[28px] m-0 uppercase font-Raleway;
+  @apply text-textColor-skin-base font-semibold text-3xl m-0 uppercase font-Raleway;
 }

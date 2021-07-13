@@ -38,7 +38,7 @@
     "@babel/preset-env": "^7.14.1",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^7.23.0",
@@ -52,6 +52,7 @@
     "husky": "^6.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.2.1",
+    "resolve-url-loader": "^4.0.0",
     "tailwindcss": "^2.2.4"
   }
 }

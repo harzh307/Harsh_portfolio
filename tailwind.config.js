@@ -24,10 +24,10 @@ module.exports = {
         backgroundColor: {
           skin: {
             fill: 'var(--color-fill)',
-            'button-accent': 'var(--color-button-accent)',
-            'button-accent-hover': 'var(--color-button-accent-hover)',
-            'button-service': 'var(--color-button-service)',
-            'button-disable': ({ opacityValue }) => {
+            button_accent: 'var(--color-button-accent)',
+            button_accent_hover: 'var(--color-button-accent-hover)',
+            button_service: 'var(--color-button-service)',
+            button_disable: ({ opacityValue }) => {
               if (opacityValue == undefined) {
                 return `rgba(var(--color-button-disable), ${opacityValue})`;
               }
@@ -41,7 +41,7 @@ module.exports = {
             base: 'var(--color-text-base)',
             dull: 'var(--color-text-dull)',
             inverted: 'var(--color-text-inverted)',
-            'inverted-dull': 'var(--color-text-inverted-dull)',
+            inverted_dull: 'var(--color-text-inverted-dull)',
             copyright: 'var(--color-text-copyright)',
             date: 'var(--color-text-date)',
             navbar: 'var(--color-text-navbar)',

@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // @import '../component/TextInput/_TextInput.scss';
-@import '../container/About/_About.scss';
-@import '../container/Services/_Service.scss';
-@import '../container/Contact/_Contact.scss';
-@import '../container/Education/_Education.scss';
-@import '../container/Portfolio/portPortfolio';
-@import '../container/Home/portHome';
-@import '../container/Blog/blog.scss';
-@import '../container/Testimonial/portTestimonial';
+// @import '../container/About/_About.scss';
+// @import '../container/Services/_Service.scss';
+// @import '../container/Contact/_Contact.scss';
+// @import '../container/Education/_Education.scss';
+// @import '../container/Portfolio/portPortfolio';
+// @import '../container/Home/portHome';
+// @import '../container/Blog/blog.scss';
+// @import '../container/Testimonial/portTestimonial';
 
-@import '../pages/SingleBlog/singleBlog.scss';
-@import '../pages/Resume/resume.scss';
-@import '../pages/BlogPage/blogsPage.scss';
-@import '../pages/PortfolioPage/portfolioPage.scss';
-@import '../container/PageLoader/pageLoader';
+// @import '../pages/SingleBlog/singleBlog.scss';
+// @import '../pages/Resume/resume.scss';
+// @import '../pages/BlogPage/blogsPage.scss';
+// @import '../pages/PortfolioPage/portfolioPage.scss';
+// @import '../container/PageLoader/pageLoader';
 
-@import 'slick-carousel/slick/slick.css';
-@import 'slick-carousel/slick/slick-theme.css';
-@import '../component/Navigation/portNav.scss';
+// @import 'slick-carousel/slick/slick.css';
+// @import 'slick-carousel/slick/slick-theme.css';
+// @import '../component/Navigation/portNav.scss';
 
 html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -57,6 +58,7 @@ a {
   --bg-background-secondary: #14191d;
   --bg-background-ternary: #000000;
 }
+/*
 // blog card style
 .blogContent {
   @apply w-full h-44 pt-0 px-4 pb-4 bg-white;
@@ -107,3 +109,4 @@ html {
   width: 100%;
   top: 50%;
 }
+*/

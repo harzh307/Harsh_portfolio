@@ -1,24 +1,85 @@
 .portScrollNavbar {
-  @apply md:p-8 sm:p-6 xs:p-4 bg-black text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
+  @media (min-width: 768px) {
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+  }
+  @media (min-width: 320px) {
+    padding: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  display: flex;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  // @apply md:p-8 sm:p-6 xs:p-4 bg-black text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
 }
 .spanNav {
-  @apply items-center flex justify-end gap-6 uppercase;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  // @apply items-center flex justify-end gap-6 uppercase;
 }
 .portNavText {
-  @apply font-Raleway max-w-[70%] border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-[13px] xs:text-sm;
+  max-width: 70%;
+  font-family: Raleway;
+  border-width: solid 0px 0px 1px 0px;
+  gap: 2.5rem;
+  font-weight: 300;
+  @media (min-width: 768px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  @media (min-width: 320px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  // @apply font-Raleway border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-sm xs:text-sm;
 }
 // .headerCenter {
 //   @apply flex lg:p-16 md:p-12 sm:p-6 xs:p-4 flex-col justify-center items-center;
 // }
 
 .headerCenter {
-  @apply flex lg:p-8 mt-14 md:p-6 sm:p-4 xs:p-3 flex-col justify-center items-center;
+  display: flex;
+  @media (min-width: 1024px) {
+    padding: 2rem;
+  }
+  margin-top: 3.5rem;
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    padding: 1rem;
+  }
+  @media (min-width: 320px) {
+    padding: 0.75rem;
+  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // @apply flex lg:p-8 mt-14 md:p-6 sm:p-4 xs:p-3 flex-col justify-center items-center;
 }
 
 .top {
-  @apply flex justify-between;
+  display: flex;
+  justify-content: space-between;
+  // @apply flex justify-between;
 }
 
 .Nav {
-  @apply gap-2 flex-1 flex justify-center;
+  gap: 0.5rem;
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+  // @apply gap-2 flex-1 flex justify-center;
 }

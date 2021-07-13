@@ -7,7 +7,7 @@
   scroll-snap-align: center;
   width: 300px;
   box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 10%);
-  // @apply lg:w-[30%] md:w-[48%] sm:w-[60%] xs:w-[100%];
+  // @apply lg:w-[30%] md:w-[48%] sm:w-[60%] xs:w-full;
 }
 
 .sliderShow {
@@ -19,7 +19,13 @@
   transition: 2s;
   inline-size: auto;
   padding-bottom: 2rem;
-  @apply md:w-[85%] sm:w-[80%] xs:w-[80%];
+  @media (min-width: 768px) {
+    width: 85%;
+  }
+  @media (min-width: 320px) {
+    width: 80%;
+  }
+  // @apply md:w-[85%] xs:w-[80%];
 }
 @media screen and (min-width: 768px) {
   .cardBlog {
@@ -61,11 +67,12 @@
 /* the slides */
 .slick-slide {
   padding: 10px 0px;
-  @apply lg:px-5 md:px-4 sm:px-1 xs:px-1;
+  @apply lg:px-5 md:px-4 xs:px-1;
 }
 
 .slick-list {
   margin: 0 -5px;
+  // display: flex;
   @apply flex;
   & .slick-track {
     width: auto !important;
@@ -89,7 +96,8 @@
 }
 
 .blogSpacing {
-  @apply py-[70px];
+  padding: 70px 0px;
+  // @apply py-[70px];
 }
 
 .portImgHover {
