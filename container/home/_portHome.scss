@@ -1,16 +1,17 @@
 .banner {
   background-image: url(/blackB.jpg);
   @apply h-screen bg-cover bg-center bg-fixed;
-  // @media only screen and (max-width: 990px) {
-  //   background-image: url(/banner.jpg);
-  //   @apply bg-fixed;
-  // }
-  // @media only screen and (max-width: 745px) {
-  //   background-image: url(/small.jpg);
-  //   @apply bg-fixed;
-  // }
 }
-
+/*
+  @media only screen and (max-width: 990px) {
+    background-image: url(/banner.jpg);
+    @apply bg-fixed;
+  }
+  @media only screen and (max-width: 745px) {
+    background-image: url(/small.jpg);
+    @apply bg-fixed;
+  }
+*/
 .banner::after {
   content: '';
   @apply inset-0 bg-black opacity-50 absolute z-0;
@@ -56,13 +57,6 @@
     @apply text-textColor-skin-inverted font-Raleway  mt-12;
   }
 }
-// .rotating {
-//   @apply;
-// }
-
-// .header {
-//   @apply text-[46px] md:text-[75px] lg:text-[88px];
-// }
 .desc {
   font-size: 17px;
   @media (min-width: 768px) {
