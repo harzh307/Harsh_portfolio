@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import '../container/About/_About.scss';
+@import '../container/About/About';
 @import '../container/Services/_Service.scss';
 @import '../container/Contact/_Contact.scss';
 @import '../container/Education/_Education.scss';
@@ -11,7 +11,7 @@
 @import '../pages/BlogPage/blogsPage.scss';
 @import '../pages/PortfolioPage/portfolioPage.scss';
 @import '../container/PageLoader/_pageLoader.scss';
-@import '../container/Home/Home';
+// @import '../container/Home/Home';
 
 // @import 'slick-carousel/slick/slick.css';
 // @import 'slick-carousel/slick/slick-theme.css';
