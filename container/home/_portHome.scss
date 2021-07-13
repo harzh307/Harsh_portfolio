@@ -13,7 +13,7 @@
   }
 */
 .banner::after {
-  content: '';
+  // content: '';
   @apply inset-0 bg-black opacity-50 absolute z-0;
 }
 
