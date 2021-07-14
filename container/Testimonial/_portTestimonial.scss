@@ -64,8 +64,8 @@
   @apply flex justify-center;
 }
 .authorImg img {
-  border-radius: 50%;
-  @apply w-28 h-28 mb-4;
+  border-radius: 100%;
+  @apply h-28 w-28 my-4;
 }
 .dot {
   display: flex !important;

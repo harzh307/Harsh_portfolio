@@ -27,7 +27,7 @@ const Services = ({ data }) => (
       {data.services.map(x => (
         <div key={x.id} className="box">
           <Button variant="portServiceButton">
-            <Laptop height={35} width={35} />
+            <img src={x.icon.url} height={35} width={35} />
           </Button>
           <PortText variant="portServiceSubHeadingText">
             <b>{x.title}</b>

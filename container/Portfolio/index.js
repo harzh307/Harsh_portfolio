@@ -4,6 +4,7 @@ import PortText from '../../component/PortText';
 import Search from '../../public/svg/search.svg';
 
 const Portfolio = ({ data }) => {
+  console.log(data?.projects);
   function liClicked() {
     const item = document.querySelector('listItems');
     // x.classList.add('selItem');
@@ -31,7 +32,7 @@ const Portfolio = ({ data }) => {
             <Card key={x.id} variant="cardPort">
               <div className="relativeP">
                 <a href="/PortfolioPage">
-                  <img src="/mobile.jpg" alt="" />
+                  <img src={x.displayImage?.formats?.small?.url} alt="" />
                   <div className="cardContent">
                     <Card variant="hoverPort">
                       <div className="hoverContext">
