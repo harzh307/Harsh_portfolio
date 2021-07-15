@@ -22,12 +22,12 @@
   // @apply md:p-8 sm:p-6 xs:p-4 bg-black text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
 }
 .spanNav {
-  align-items: center;
-  display: flex;
-  justify-content: end;
-  gap: 1.5rem;
-  text-transform: uppercase;
-  // @apply items-center flex justify-end gap-6 uppercase;
+  // align-items: center;
+  // display: flex;
+  // justify-content: end;
+  // gap: 1.5rem;
+  // text-transform: uppercase;
+  @apply items-center flex justify-end gap-6 uppercase;
 }
 .portNavText {
   max-width: 70%;
