@@ -4,9 +4,11 @@ import Contact from '../container/Contact';
 import Home from '../container/home';
 import Testimonial from '../container/Testimonial';
 import Portfolio from '../container/Portfolio';
+import Blog from '../container/Blog';
 import Education from '../container/Education';
 import useBanner from '../hooks/useBanner';
 import useAbout from '../hooks/useAbout';
+import useBlog from '../hooks/useBlog';
 import useServices from '../hooks/useServices';
 import usePortfolio from '../hooks/usePortfolio';
 import useEducationSkills from '../hooks/useEducationSkills';
@@ -31,7 +33,7 @@ export default function Main() {
   const { data: serviceData } = useServices();
   const { data: portfolioData } = usePortfolio();
   const { data: educationSkillsData } = useEducationSkills();
-  // const { data: blogData } = useBlog();
+  const { data: blogData } = useBlog();
   const { data: testimonialData } = useTestimonial();
   const { data: contactData } = useContact();
   return (
@@ -42,7 +44,7 @@ export default function Main() {
         {serviceData && <Services data={serviceData} />}
         {portfolioData && <Portfolio data={portfolioData} />}
         {educationSkillsData && <Education data={educationSkillsData} />}
-        {/* {blogData && <Blog data={blogData} />} */}
+        {blogData && <Blog data={blogData} />}
         {testimonialData && <Testimonial data={testimonialData} />}
         {contactData && <Contact data={contactData} />}
       </div>

@@ -4,6 +4,7 @@ import PortText from '../../component/PortText';
 import Search from '../../public/svg/search.svg';
 
 const Portfolio = ({ data }) => {
+  const projectData = [...data?.projects?.slice(0, 2)];
   console.log(data?.projects);
   function liClicked() {
     const item = document.querySelector('listItems');
@@ -28,10 +29,10 @@ const Portfolio = ({ data }) => {
         </div>
 
         <div className="item">
-          {data.projects.map(x => (
+          {projectData?.map(x => (
             <Card key={x.id} variant="cardPort">
               <div className="relativeP">
-                <a href="/PortfolioPage">
+                <a href={`work/${x?.id}`}>
                   <img src={x.displayImage?.formats?.small?.url} alt="" />
                   <div className="cardContent">
                     <Card variant="hoverPort">

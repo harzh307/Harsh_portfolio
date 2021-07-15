@@ -1,8 +1,7 @@
 .mainDiv {
-  background-color: colors.$background-light;
-  color: colors.$fontcolor-primary;
+  // background-color: colors.$background-light;
+  // color: colors.$fontcolor-primary;
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -12,13 +11,13 @@
     height: auto;
   }
 }
-.img {
-  width: 50%;
+.sImg {
+  height: 50vh;
 }
 
-.imgdiv {
-  @apply flex justify-center flex-col items-center py-4;
-  width: 50%;
+.singleImg {
+  @apply flex justify-center items-center;
+  width: 37vw;
 }
 
 .content {
@@ -30,7 +29,7 @@
   @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 gap-5;
 }
 .head {
-  text-decoration: underline colors.$fontcolor-secondary;
+  // text-decoration: underline colors.$fontcolor-secondary;
   font-size: x-large;
 }
 .detail {
@@ -39,5 +38,5 @@
 }
 .backAlign {
   @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
-  color: colors.$fontcolor-secondary;
+  // color: colors.$fontcolor-secondary;
 }
