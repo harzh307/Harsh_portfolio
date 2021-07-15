@@ -6,7 +6,7 @@ import Search from '../../public/svg/search.svg';
 const PortfolioPage = () => (
   <div className="light-theme">
     <Header>
-      <PortText variant="portSingleBlog">Portfolio List</PortText>
+      <PortText variant="portPortfolio">Portfolio List</PortText>
       <a className="backAlign" href="/">
         Back
       </a>
@@ -24,7 +24,7 @@ const PortfolioPage = () => (
       <div className="portfolioItems">
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-1.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -42,7 +42,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-2.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -60,7 +60,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-3.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -78,7 +78,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-4.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -96,7 +96,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-5.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -114,7 +114,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-6.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -132,7 +132,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-1.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -150,7 +150,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-2.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -168,7 +168,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-3.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -186,7 +186,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-4.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -204,7 +204,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-5.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">
@@ -222,7 +222,7 @@ const PortfolioPage = () => (
 
         <Card variant="cardPort">
           <div className="relativeP">
-            <a href="/singleBlog">
+            <a href="/Portfolio">
               <img src="/image/portfolio/img-6.jpg" alt="" />
               <div className="cardContent">
                 <Card variant="hoverPort">

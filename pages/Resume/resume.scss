@@ -27,10 +27,10 @@
 
 .education {
   @media (min-width: 1024px) {
-    margin-left: 9.5rem /* 152px */;
+    margin-left: 9.5rem;
   }
   @media (min-width: 768px) {
-    margin-left: 6rem /* 96px */;
+    margin-left: 6rem;
   }
   font-size: 19px;
   @apply -mt-3 md:flex flex-col;
@@ -40,6 +40,9 @@
   @apply flex-1 flex md:mb-20 xs:mb-10 md:flex-row xs:gap-10 xs:flex-col;
 }
 
+.leftTextAlign {
+  @apply my-6;
+}
 .day {
   @apply grid w-full lg:grid-cols-2 md:grid-cols-1 lg:px-24 md:pl-14 -mt-6;
 }
@@ -65,40 +68,44 @@
 
 .Skillht1 {
   background-color: rgba(51, 51, 51, 1);
-  width: 92%;
+  // width: 92%;
   @apply h-3 animate-pulse;
 }
 .Skillht2 {
-  width: 80%;
+  // width: 80%;
   background-color: rgba(51, 51, 51, 1);
   @apply h-3 animate-pulse;
 }
 
 .Skillht3 {
   background-color: rgba(51, 51, 51, 1);
-  width: 72%;
+  // width: 72%;
   @apply h-3 animate-pulse;
 }
 
 .Skillht4 {
-  width: 75%;
+  // width: 75%;
   background-color: rgba(51, 51, 51, 1);
   @apply h-3 animate-pulse;
 }
 .Skillht5 {
   background-color: rgba(51, 51, 51, 1);
-  width: 85%;
+  // width: 85%;
   @apply h-3 animate-pulse;
 }
 .Skillht6 {
   background-color: rgba(51, 51, 51, 1);
-  width: 88%;
+  // width: 88%;
   @apply h-3 animate-pulse;
 }
 .Skillht7 {
   background-color: rgba(51, 51, 51, 1);
-  width: 65%;
+  // width: 65%;
   @apply h-3 animate-pulse;
+}
+
+.dateMargin {
+  @apply my-5;
 }
 
 .sideDiv {

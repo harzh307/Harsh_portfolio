@@ -11,11 +11,13 @@ const Education = ({ data }) => (
       </PortText>
     </div>
     <div className="leftbox">
-      <div className="leftsubbox">
+      <aside className="leftsubbox">
         {data.educations.map(x => (
           <div key={x.id} className="leftTextAlign">
             <PortText variant="portEduLeftText">{`${x.startDate} to ${x.endDate}`}</PortText>
-            <PortText variant="portEduLeftText">{x.degree}</PortText>
+            <PortText className="margin" variant="portEduLeftText">
+              {x.degree}
+            </PortText>
             <PortText variant="portEduLeftText">{x.institute}</PortText>
           </div>
         ))}
@@ -29,7 +31,7 @@ const Education = ({ data }) => (
           <PortText variant="portEduLeftText">Graphic Designer</PortText>
           <PortText variant="portEduLeftText">International Design Institute</PortText>
         </div> */}
-      </div>
+      </aside>
       <div className="baralign">
         {data.skills.map(x => (
           <div key={x.id} className="bars">
@@ -80,7 +82,7 @@ const Education = ({ data }) => (
       </div>
     </div>
     <div className="align">
-      <a href="/Resume">
+      <a data href="/Resume">
         <Button>View More</Button>
       </a>
     </div>

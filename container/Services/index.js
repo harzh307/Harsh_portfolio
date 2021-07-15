@@ -1,12 +1,6 @@
 import PortText from '../../component/PortText';
 import Button from '../../component/Button';
-import Code from '../../public/svg/code-working-outline.svg';
-import Create from '../../public/svg/create-outline.svg';
-import Laptop from '../../public/svg/laptop-outline.svg';
-import Phone from '../../public/svg/phone-portrait-outline.svg';
-import Rocket from '../../public/svg/rocket-outline.svg';
-import Help from '../../public/svg/help-buoy.svg';
-import useMarkdown from '../../hooks/useMarkdown';
+import Card from '../../component/Card';
 
 const Services = ({ data }) => (
   // const { HTML } = useMarkdown(data.header);
@@ -26,15 +20,17 @@ const Services = ({ data }) => (
       {/* r1 c1 */}
       {data.services.map(x => (
         <div key={x.id} className="box">
-          <Button variant="portServiceButton">
-            <img src={x.icon.url} height={35} width={35} />
-          </Button>
-          <PortText variant="portServiceSubHeadingText">
-            <b>{x.title}</b>
-          </PortText>
-          <PortText variant="portParaText" component="p">
-            {x.description}
-          </PortText>
+          <Card className="cardService" variant="cardBlog">
+            <Button variant="portServiceButton">
+              <img src={x.icon.url} height={35} width={35} />
+            </Button>
+            <PortText className="topBottom" variant="portServiceSubHeadingText">
+              <b>{x.title}</b>
+            </PortText>
+            <PortText variant="portParaText" component="p">
+              {x.description}
+            </PortText>
+          </Card>
         </div>
       ))}
     </div>

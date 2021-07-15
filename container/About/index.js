@@ -23,6 +23,11 @@ const About = ({ data }) => {
           srcSet={data?.portfolioImage?.formats?.large?.url}
           type="image/jpg"
         />
+
+        I am a frontend developer who loves to design websites 
+and applications with  amazing frameworks like
+ ReactJS / NextJS(for web applications) and React-Native (for mobile applications). This is all about me and my hobby is photography and if you want to create something great contact me.
+
         <source
           media="(min-width:768px)"
           srcSet={data?.portfolioImage?.formats?.large?.url}
@@ -30,7 +35,7 @@ const About = ({ data }) => {
         /> */}
         <img src={data?.portfolioImage?.formats?.small?.url} alt="imharsh" />
       </picture>
-      <div className="portTextDiv">
+      <article className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />
         {/* <PortText variant="portHeadingText">ABOUT ME.</PortText>
         <PortText variant="portAboutCaption1">UI/UX Designer & Web Developer</PortText>
@@ -80,7 +85,7 @@ const About = ({ data }) => {
           </a> */}
         </div>
         <Button>Download cv</Button>
-      </div>
+      </article>
     </section>
   );
 };

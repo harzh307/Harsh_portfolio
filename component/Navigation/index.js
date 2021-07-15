@@ -31,19 +31,17 @@ const Navigation = () => {
   }, []);
 
   const toggleNavbar = () => {
-    // e.preventDefault();
-    // collapseRef.current.classList.toggle('show');
-    const element = document.getElementById('navbarYagnesh');
-    if (ReactDOM.findDOMNode(element).style.display === 'none') {
-      ReactDOM.findDOMNode(element).style.display = 'flex';
+    // const element = document.getElementById('navbarYagnesh');
+    if (collapseRef.current.style.display === 'flex') {
+      collapseRef.current.style.display = 'none';
     } else {
-      ReactDOM.findDOMNode(element).style.display = 'none';
+      collapseRef.current.style.display = 'flex';
     }
     window.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
-        const element = document.getElementById('navbarYagnesh');
-        if (ReactDOM.findDOMNode(element).style.display === 'flex') {
-          ReactDOM.findDOMNode(element).style.display = 'none';
+        // const element = document.getElementById('navbarYagnesh');
+        if (collapseRef.current.style.display === 'flex') {
+          collapseRef.current.style.display = 'none';
         }
       }
     });

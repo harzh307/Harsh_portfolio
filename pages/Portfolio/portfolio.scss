@@ -1,0 +1,43 @@
+.mainDiv {
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 777px) {
+  .mainDiv {
+    height: auto;
+  }
+}
+.img {
+  width: 50%;
+}
+
+.imgdiv {
+  @apply flex justify-center flex-col items-center py-4;
+  width: 50%;
+}
+
+.content {
+  @apply leading-8 text-left;
+  padding: 20px 0;
+}
+
+.textDiv {
+  @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 gap-5;
+}
+.head {
+  text-decoration: underline colors.$fontcolor-secondary;
+  font-size: x-large;
+}
+.detail {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.backAlign {
+  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  color: colors.$fontcolor-secondary;
+}

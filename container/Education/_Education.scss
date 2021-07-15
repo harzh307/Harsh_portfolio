@@ -27,11 +27,19 @@
 
 .leftsubbox {
   background-color: rgba(229, 229, 229, 1);
-  @apply py-5 pl-5 sm:mr-5 sm:w-3/5 xs:w-11/12 rounded-xl;
+  @apply py-5 pl-5 sm:mr-5 sm:w-3/5 xs:w-11/12 rounded-xl duration-300;
+  &:hover {
+    box-shadow: 30px 20px 40px rgb(154, 154, 154);
+    transform: translateZ(40rem);
+    transition-duration: 300ms;
+  }
 }
 
 .leftTextAlign {
-  @apply leading-none pb-1  text-black;
+  @apply leading-none text-black;
+  .margin {
+    margin: 10px 0px;
+  }
 }
 
 .bars {

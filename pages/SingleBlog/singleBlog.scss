@@ -14,8 +14,9 @@
   @apply py-8;
 }
 .line {
-  height: 0.5px;
-  @apply w-full bg-gray-300 mb-5;
+  height: 0.1px;
+
+  @apply w-full my-4 bg-gray-300;
 }
 .nameContent {
   @apply p-2  flex-col flex;
@@ -23,7 +24,7 @@
 // -my-5 -space-y-4
 .img {
   @media (min-width: 320px) {
-    width: 94%;
+    width: 70%;
   }
   @apply h-full lg:w-2/4 md:w-2/4 sm:w-2/4 mt-20;
 }

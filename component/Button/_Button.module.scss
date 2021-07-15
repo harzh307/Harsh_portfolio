@@ -72,7 +72,7 @@
 
 .portServiceButton {
   background: transparent;
-  display: flex;
+  // display: flex;
   padding: 10px;
   color: var(--color-text-dull);
   border-width: 1px;
@@ -83,11 +83,11 @@
   justify-content: center;
   transition-duration: 300ms;
 }
-.portServiceButton:hover {
-  box-shadow: 0px 10px 10px rgb(154, 154, 154);
-  transform: translateZ(2px);
-  transition-duration: 300ms;
-}
+// .portServiceButton:hover {
+//   box-shadow: 0px 10px 10px rgb(154, 154, 154);
+//   transform: translateZ(2px);
+//   transition-duration: 300ms;
+// }
 
 .portNavButton {
   border-style: none;

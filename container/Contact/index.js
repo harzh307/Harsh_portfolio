@@ -36,7 +36,7 @@ const SignupForm = ({ data }) => {
     },
     validate,
     onSubmit: (values, { resetForm }) => {
-      alert(JSON.stringify(values));
+      // alert(JSON.stringify(values));
       if (!values) {
         formik.errors.msg = 'Both Fields Required';
       }
@@ -74,7 +74,7 @@ const SignupForm = ({ data }) => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   variant="contactInput"
-                  placeholder={data?.contactHeader?.name}
+                  placeholder={data?.name}
                   className={formik.errors.name ? 'borderBottom' : null}
                 />
               </div>
@@ -87,7 +87,7 @@ const SignupForm = ({ data }) => {
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
                   variant="contactInput"
-                  placeholder={data?.contactHeader?.email}
+                  placeholder={data?.email}
                   className={formik.errors.email ? 'borderBottom' : null}
                 />
               </div>
@@ -99,11 +99,11 @@ const SignupForm = ({ data }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
-              placeholder={data?.contactHeader?.message}
+              placeholder={data?.message}
             />
           </div>
           <Button type="submit" onClick={formik.handleSubmit} className="buttonMargin">
-            SEND MESSAGE
+            {data.buttonText}
           </Button>
         </div>
       </div>
