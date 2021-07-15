@@ -28,14 +28,14 @@
     min-height: 50vh;
   }
 }
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .cardService {
-    min-height: 38vh;
+    min-height: 65vh;
   }
 }
-@media (min-width: 320px) and (max-width: 550px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .cardService {
-    min-height: 36vh;
+    min-height: 30vh;
   }
 }
 
