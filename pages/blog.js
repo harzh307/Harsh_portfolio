@@ -1,4 +1,3 @@
-import React from 'react';
 import PageBlog from '../container/BlogPage';
 import useBlog from '../hooks/useBlog';
 

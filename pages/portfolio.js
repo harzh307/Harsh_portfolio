@@ -1,4 +1,3 @@
-import React from 'react';
 import PagePortfolio from '../container/PortfolioPage';
 import usePortfolio from '../hooks/usePortfolio';
 

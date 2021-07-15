@@ -1,4 +1,3 @@
-import React from 'react';
 import Resume from '../container/Resume';
 import useEducation from '../hooks/useEducation';
 
