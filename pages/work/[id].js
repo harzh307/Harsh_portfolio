@@ -1,13 +1,12 @@
 import { useRouter } from 'next/router';
-import usePortfolio from '../../hooks/usePortfolio';
-import Portfolio from '../Portfolio';
-// import styles from '../Portfolio/portfolio.modules.scss';
+import useProjects from '../../hooks/useProjects';
+import Portfolio from '../../container/SinglePortfolio';
 
 const SinglePortfolio = () => {
   const router = useRouter();
   const { id } = router.query;
-  const { data } = usePortfolio(id);
-  return <div>{data && <Portfolio data={data} />}</div>;
+  const { data: projectsData } = useProjects(id);
+  return <>{projectsData && <Portfolio data={projectsData} />}</>;
 };
 
 export default SinglePortfolio;

@@ -84,7 +84,7 @@ const Education = ({ data }) => {
         </div>
       </div>
       <div className="align">
-        <a data href="/Resume">
+        <a data href="/resume">
           <Button>View More</Button>
         </a>
       </div>

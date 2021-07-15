@@ -50,7 +50,7 @@ const Portfolio = ({ data }) => {
           ))}
         </div>
         <div className="align">
-          <a href="/PortfolioPage">
+          <a href="/portfolio">
             <Button>View More</Button>
           </a>
         </div>
