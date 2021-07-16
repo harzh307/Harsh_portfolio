@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { useRef, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 
 const Navigation = () => {
   const navbarRef = useRef(null);
   const ulRef = useRef(null);
   const scrollSpan = useRef(null);
   const collapseRef = useRef(null);
+  const lineRef = useRef(null);
   const { pathname } = useRouter();
 
   useEffect(() => {
@@ -18,10 +18,12 @@ const Navigation = () => {
         navbarRef.current.classList.add('fixed-header');
         ulRef.current.classList.add('nav-transparent');
         scrollSpan.current.classList.add('scrollSpan');
+        lineRef.current.classList.add('nav-link-black');
       } else {
         navbarRef.current.classList.remove('fixed-header');
         ulRef.current.classList.remove('nav-transparent');
         scrollSpan.current.classList.remove('scrollSpan');
+        lineRef.current.classList.remove('nav-link-black');
       }
     };
     window.addEventListener('scroll', onScroll, false);
@@ -93,20 +95,17 @@ const Navigation = () => {
               <li>
                 <Link href="/#Home">
                   <a
+                    ref={lineRef}
                     className={classNames('nav-link-white', { active: pathname === '#Home' })}
                     onClick={toggleNavbar}>
                     Home
                   </a>
                 </Link>
               </li>
-              {/* <li>
-                <Link href="/about">
-                  <a className={classNames('nav-link', { active: pathname === '/about' })}>About</a>
-                </Link>
-              </li> */}
               <li>
                 <Link href="/#About">
                   <a
+                    ref={lineRef}
                     className={classNames('nav-link-white', { active: pathname === '#About' })}
                     onClick={toggleNavbar}>
                     About
@@ -116,6 +115,7 @@ const Navigation = () => {
               <li>
                 <Link href="/#Services">
                   <a
+                    ref={lineRef}
                     className={classNames('nav-link-white', { active: pathname === '#Services' })}
                     onClick={toggleNavbar}>
                     Services
@@ -125,6 +125,7 @@ const Navigation = () => {
               <li>
                 <Link href="/#Work">
                   <a
+                    ref={lineRef}
                     className={classNames('nav-link-white', { active: pathname === '#Work' })}
                     onClick={toggleNavbar}>
                     Work
@@ -132,8 +133,19 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/#Skills">
+                  <a
+                    ref={lineRef}
+                    className={classNames('nav-link-white', { active: pathname === '#Work' })}
+                    onClick={toggleNavbar}>
+                    Skills
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/#Contact">
                   <a
+                    ref={lineRef}
                     className={classNames('nav-link-white', { active: pathname === '#Contact' })}
                     onClick={toggleNavbar}>
                     Contact

@@ -1,7 +1,9 @@
 .Service {
   background-color: rgba(242, 242, 242, 1);
-  @apply md:h-screen lg:p-14 sm:p-4 xs:p-2 text-center;
+  padding: 7% 0%;
+  @apply text-center;
 }
+// lg:p-14 sm:p-4 xs:p-2
 
 .headsec h1 {
   @apply mt-1;
@@ -12,9 +14,11 @@
   min-height: 50vh;
   @apply bg-backgroundColor-skin-button_service rounded-xl p-3 m-0 duration-300;
   &:hover {
-    box-shadow: 30px 20px 40px rgb(154, 154, 154);
-    // transform: translateZ(40rem);
-    transition-duration: 500ms;
+    > Button {
+      box-shadow: 10px 10px 10px rgb(154, 154, 154);
+      // transform: translateZ(40rem);
+      transition-duration: 500ms;
+    }
   }
 }
 
@@ -40,7 +44,7 @@
 }
 
 .topBottom {
-  @apply mb-10;
+  @apply my-4;
 }
 
 .mainbox {

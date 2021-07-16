@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import PortText from '../PortText';
 
 const Header = ({ children }) => (
-  <div className={styles.portScrollNavbar}>
+  <section className={styles.portScrollNavbar}>
     {/* <div id="NavBarScroll" className={styles.top}>
       <PortText variant="portTestimonialText">
         <a href="/">Harsh</a>
@@ -14,7 +14,7 @@ const Header = ({ children }) => (
       </span>
     </div> */}
     <div className={styles.headerCenter}>{children}</div>
-  </div>
+  </section>
 );
 
 export default Header;

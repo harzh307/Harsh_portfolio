@@ -1,22 +1,25 @@
 import Header from '../../component/Header';
+import { useRouter } from 'next/router';
 import PortText from '../../component/PortText';
 // import Contact from '../../container/Contact';
 import usePortfolio from '../../hooks/usePortfolio';
 
-const Project = ({ data }) => (
-  // const { data: portfolioData } = usePortfolio();
-  <>
-    <div className="light_theme">
-      <Header>
-        <PortText variant="portSingleBlog" className="portSingleBlog">
-          Project Details
-        </PortText>
-        <a className="backAlign" href="/portfolio">
-          Back
-        </a>
-      </Header>
-      <div className="mainDiv">
-        <div>
+const Project = ({ data }) => {
+  const router = useRouter();
+
+  return (
+    // const { data: portfolioData } = usePortfolio();
+    <>
+      <div className="light_theme">
+        <Header>
+          <PortText variant="portSingleBlog" className="portSingleBlog">
+            Project Details
+          </PortText>
+          <a className="backAlign" role="button" onClick={() => router.back()}>
+            Back
+          </a>
+        </Header>
+        <div className="mainDiv">
           <div className="singleImg">
             <img src={data?.displayImage?.formats?.small?.url} className="sImg" alt="" />
           </div>
@@ -36,16 +39,18 @@ const Project = ({ data }) => (
               {data?.technologyUsed?.map(y => (
                 <>
                   <h3 className="head">Technology Used</h3>
-                  <p className="detail">{y?.title}</p>
+                  <a role="button" href={data.link} className="detail techLink">
+                    {y?.title}
+                  </a>
                 </>
               ))}
             </div>
           </div>
         </div>
-      </div>
 
-      {/* <Contact /> */}
-    </div>
-  </>
-);
+        {/* <Contact /> */}
+      </div>
+    </>
+  );
+};
 export default Project;

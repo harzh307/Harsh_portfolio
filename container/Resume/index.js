@@ -1,17 +1,19 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable prettier/prettier */
+import { useRouter } from 'next/router';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
 import useEducationSkills from '../../hooks/useEducationSkills';
 
 const Skills = () => {
   const { data: educationSkillsData } = useEducationSkills();
+  const router = useRouter();
   return (
     // const { data: educationData } = useEducation();
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Resume</PortText>
-        <a className="backAlign" href="/">
+        <a className="backAlign" tabIndex="10" role="button" onClick={() => router.back()}>
           Back
         </a>
       </Header>
@@ -144,13 +146,13 @@ const Skills = () => {
           <div className="education">
             {educationSkillsData?.educations?.map(x => (
               <div key={x.id} className="leftTextAlign">
-                <PortText variant="portEduLeftText">{x.degree}</PortText>
-                <PortText className="dateMargin" variant="portEduLeftText">
-                  {`${x.startDate} to ${x.endDate}`}
+                <PortText variant="portEduLeftText">{`${x.startDate} to ${x.endDate}`}</PortText>
+                <PortText className="margin" variant="portEduLeftText">
+                  {x.degree}
                 </PortText>
                 <PortText variant="portEduLeftText">
-                  At{' '}
-                  <a className="college" href="https://silveroakuni.ac.in/">
+                  {/* At{' '} */}
+                  <a className="college boldText" href="https://silveroakuni.ac.in/">
                     {x.institute}
                   </a>
                 </PortText>

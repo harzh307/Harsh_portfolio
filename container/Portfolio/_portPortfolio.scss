@@ -1,9 +1,10 @@
 .center {
-  @apply flex justify-center pt-24 pb-16;
+  @apply flex justify-center py-20;
 }
+// pt-24 pb-16
 
 .portfolio {
-  @apply max-w-screen-xl px-2;
+  @apply px-2;
 }
 .row {
   @apply flex flex-col;
@@ -33,7 +34,7 @@
 }
 
 .item {
-  @apply flex flex-wrap justify-center;
+  @apply flex justify-center mt-10 flex-wrap;
 }
 .hoverContext {
   @apply flex flex-col items-center;

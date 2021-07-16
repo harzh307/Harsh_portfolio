@@ -54,59 +54,57 @@ const SignupForm = ({ data }) => {
   });
 
   return (
-    <form id="Contact">
-      <div>
-        <div className="contactContainer">
-          <div>
-            <PortText variant="portHeadingCaption" component="h1">
-              {data?.contactHeader?.Title}
-            </PortText>
-            <PortText variant="portHeadingText">{data?.contactHeader?.Caption}</PortText>
-          </div>
-          <div>
-            <div className="contactForm">
-              <div>
-                <PortTextInput
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={formik.values.name}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  variant="contactInput"
-                  placeholder={data?.name}
-                  className={formik.errors.name ? 'borderBottom' : null}
-                />
-              </div>
-              <div>
-                <PortTextInput
-                  id="email"
-                  name="email"
-                  type="email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                  variant="contactInput"
-                  placeholder={data?.email}
-                  className={formik.errors.email ? 'borderBottom' : null}
-                />
-              </div>
-            </div>
-            <PortTextInput
-              id="message"
-              variant="contactTextArea"
-              component="textarea"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.message}
-              placeholder={data?.message}
-            />
-          </div>
-          <Button type="submit" onClick={formik.handleSubmit} className="buttonMargin">
-            {data.buttonText}
-          </Button>
+    <form className="formClass" id="Contact">
+      <section className="contactContainer">
+        <div>
+          <PortText variant="portHeadingCaption" component="h1">
+            {data?.contactHeader?.Title}
+          </PortText>
+          <PortText variant="portHeadingText">{data?.contactHeader?.Caption}</PortText>
         </div>
-      </div>
+        <div>
+          <div className="contactForm">
+            <div>
+              <PortTextInput
+                id="name"
+                name="name"
+                type="text"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                variant="contactInput"
+                placeholder={data?.name}
+                className={formik.errors.name ? 'borderBottom' : null}
+              />
+            </div>
+            <div>
+              <PortTextInput
+                id="email"
+                name="email"
+                type="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+                variant="contactInput"
+                placeholder={data?.email}
+                className={formik.errors.email ? 'borderBottom' : null}
+              />
+            </div>
+          </div>
+          <PortTextInput
+            id="message"
+            variant="contactTextArea"
+            component="textarea"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.message}
+            placeholder={data?.message}
+          />
+        </div>
+        <Button type="submit" onClick={formik.handleSubmit} className="buttonMargin">
+          {data.buttonText}
+        </Button>
+      </section>
     </form>
   );
 };

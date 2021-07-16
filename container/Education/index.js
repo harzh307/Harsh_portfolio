@@ -5,7 +5,7 @@ import PortText from '../../component/PortText';
 const Education = ({ data }) => {
   const eduData = [...data.skills.slice(0, 3)];
   return (
-    <section id="Education" className="alignment">
+    <section id="Skills" className="alignment">
       <div className="textAlign">
         <PortText variant="portHeadingCaption">{data.Header?.title}</PortText>
         <PortText variant="portHeadingText" component="h1">
@@ -20,7 +20,9 @@ const Education = ({ data }) => {
               <PortText className="margin" variant="portEduLeftText">
                 {x.degree}
               </PortText>
-              <PortText variant="portEduLeftText">{x.institute}</PortText>
+              <PortText className="boldText" variant="portEduLeftText">
+                {x.institute}
+              </PortText>
             </div>
           ))}
           {/* <div className="leftTextAlign">

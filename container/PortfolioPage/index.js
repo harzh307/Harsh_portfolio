@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Card from '../../component/Card';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
@@ -7,23 +7,24 @@ import usePortfolio from '../../hooks/usePortfolio';
 
 const PortfolioPage = () => {
   const { data: portfolioData } = usePortfolio();
+  const router = useRouter();
   return (
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Portfolio List</PortText>
-        <a className="backAlign" href="/">
+        <a className="backAlign" role="button" onClick={() => router.back()}>
           Back
         </a>
       </Header>
       <section className="portfolioList">
-        <div className="pFilter">
+        {/* <div className="pFilter">
           <ul>
             <li>All</li>
             <li>Web Design</li>
             <li>Application</li>
             <li>Development</li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="portfolioItems">
           {portfolioData?.projects?.map(x => (

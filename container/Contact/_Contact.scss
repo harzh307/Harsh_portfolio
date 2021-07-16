@@ -1,3 +1,7 @@
+.formClass {
+  display: flex;
+  justify-content: center;
+}
 .contactContainer {
   @apply xs:p-10 sm:flex justify-center sm:py-24 text-base flex-col items-center gap-8 text-center bg-white;
 }

@@ -15,17 +15,19 @@ const Portfolio = ({ data }) => {
       <div className="portfolio">
         <div className="row">
           <div className="textAlign">
-            <PortText variant="portCardHeaderText">{data.header.title}</PortText>
+            <PortText variant="portHeadingCaption" component="h4">
+              {data.header.title}
+            </PortText>
             <PortText variant="portHeaderTextPCard">{data.header.caption}</PortText>
           </div>
-          <div className="pFilter">
+          {/* <div className="pFilter">
             <ul>
               <li>All</li>
               <li>Web Design</li>
               <li>Application</li>
               <li>Development</li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="item">

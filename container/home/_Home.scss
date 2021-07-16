@@ -1,5 +1,6 @@
 .banner {
   background-image: url(/blackB.jpg);
+  // max-width: 100%;
   @media only screen and (max-width: 990px) {
     background-image: url(/banner.jpg);
     @apply bg-fixed;
@@ -8,6 +9,7 @@
     background-image: url(/small.jpg);
     @apply bg-fixed;
   }
+  // max-width: 1024px;
   @apply h-screen bg-cover bg-center bg-fixed;
 }
 
@@ -20,26 +22,35 @@
   .rotating {
     z-index: 1;
     @media (min-width: 320px) {
-      top: 45%;
-      left: 4%;
+      top: 55%;
+      left: 5%;
     }
     @media (min-width: 640px) {
       top: 60%;
-      left: 5%;
+      left: 10%;
     }
     @media (min-width: 768px) {
-      top: 63%;
+      top: 68%;
+      left: 10%;
     }
-    @apply absolute text-2xl text-textColor-skin-inverted font-Raleway lg:pl-24;
+    @apply absolute text-2xl text-textColor-skin-inverted font-Raleway;
   }
   @apply container;
 }
 .caption {
   z-index: 9;
   top: 24%;
-  left: 5%;
+  @media (min-width: 320px) {
+    top: 33%;
+    left: 5%;
+  }
+  @media (min-width: 640px) {
+    top: 33%;
+    left: 10%;
+  }
   @media (min-width: 768px) {
     top: 33%;
+    left: 10%;
   }
   & h1 {
     font-size: 46px;
@@ -49,12 +60,12 @@
     @media (min-width: 1024px) {
       font-size: 88px;
     }
-    @apply m-0 text-textColor-skin-inverted font-black font-Raleway;
+    @apply text-textColor-skin-inverted font-black font-Raleway;
   }
   & h2 {
     @apply text-textColor-skin-inverted font-Raleway  mt-12;
   }
-  @apply absolute lg:pl-24;
+  @apply absolute;
 }
 .desc {
   font-size: 17px;

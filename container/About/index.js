@@ -7,6 +7,7 @@ import Linkedin from '../../public/svg/linkedin.svg';
 import Twitter from '../../public/svg/logo-twitter.svg';
 import Gmail from '../../public/svg/mail.svg';
 import useMarkdown from '../../hooks/useMarkdown';
+import Link from 'next/link';
 // import style from './_About.scss';
 
 const About = ({ data }) => {
@@ -33,7 +34,7 @@ and applications with  amazing frameworks like
           srcSet={data?.portfolioImage?.formats?.large?.url}
           type="image/jpg"
         /> */}
-        <img src={data?.portfolioImage?.formats?.small?.url} alt="imharsh" />
+        <img src={data?.portfolioImage?.formats?.small?.url} alt="Harsh Patel" />
       </picture>
       <article className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />
@@ -84,7 +85,9 @@ and applications with  amazing frameworks like
             </Button>
           </a> */}
         </div>
-        <Button>Download cv</Button>
+        <a download={data?.resume?.url} href={data?.resume?.url}>
+          <Button>{data?.downloadCVText}</Button>
+        </a>
       </article>
     </section>
   );

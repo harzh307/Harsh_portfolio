@@ -81,12 +81,29 @@
   display: inline-block;
   font-size: 12px;
   vertical-align: top;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.215em;
   font-family: sans-serif;
 }
-.header-nav .navbar-nav .nav-link-black:after,
+.header-nav .navbar-nav .nav-link-black {
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 0;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    height: 1px;
+    background: black;
+    -webkit-transition: ease all 0.2s;
+    -moz-transition: ease all 0.2s;
+    -o-transition: ease all 0.2s;
+    transition: ease all 0.2s;
+  }
+}
 .header-nav .navbar-nav .nav-link-white:after {
   content: '';
   position: absolute;
@@ -113,7 +130,7 @@
 /*Navbar Toogle*/
 .navbar-toggler {
   border: none;
-  color: white;
+  color: #f2f2f2;
   background-color: transparent;
   padding: 10px 6px;
   outline: none !important;

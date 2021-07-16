@@ -1,6 +1,7 @@
 .alignment {
   background-color: rgba(242, 242, 242, 1);
-  padding: 70px 60px;
+  padding: 80px 0%;
+
   @media (min-width: 1024px) and (max-width: 768px) {
     padding: 50px 200px;
   }
@@ -13,7 +14,7 @@
   @media (min-width: 320px) and (max-width: 640px) {
     padding: 50px 0px;
   }
-  @apply md:h-screen;
+  // @apply md:h-screen;
   // @apply py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px]
 }
 
@@ -22,23 +23,28 @@
 }
 
 .leftbox {
-  @apply flex md:flex-row xs:flex-col xs:items-center my-14;
+  padding: 0% 10.3%;
+  @apply flex md:flex-row xs:flex-col self-center justify-evenly xs:items-center my-14;
 }
 
 .leftsubbox {
   background-color: rgba(229, 229, 229, 1);
   @apply py-5 pl-5 sm:mr-5 sm:w-3/5 xs:w-11/12 rounded-xl duration-300;
-  &:hover {
-    box-shadow: 30px 20px 40px rgb(154, 154, 154);
-    transform: translateZ(40rem);
-    transition-duration: 300ms;
-  }
+  // &:hover {
+  //   box-shadow: 30px 20px 40px rgb(154, 154, 154);
+  //   transform: translateZ(40rem);
+  //   transition-duration: 300ms;
+  // }
 }
 
 .leftTextAlign {
   @apply leading-none text-black;
   .margin {
     margin: 10px 0px;
+  }
+  .boldText,
+  .margin {
+    font-weight: 700;
   }
 }
 
