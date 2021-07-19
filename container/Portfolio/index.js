@@ -5,7 +5,6 @@ import Search from '../../public/svg/search.svg';
 
 const Portfolio = ({ data }) => {
   const projectData = [...data?.projects?.slice(0, 2)];
-  console.log(data?.projects);
   function liClicked() {
     const item = document.querySelector('listItems');
     // x.classList.add('selItem');

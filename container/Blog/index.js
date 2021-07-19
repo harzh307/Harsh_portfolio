@@ -55,8 +55,6 @@ const Blog = ({ data }) => {
       // get fullwidth
       const cardWidth = cardRef.current[0].offsetWidth;
       const total = blogRef.current.scrollLeft + blogRef.current.offsetWidth;
-      console.log(blogRef.current.scrollWidth);
-      console.log(Math.round(total));
       blogRef.current.scrollLeft += cardWidth;
     }, 3000);
   }, []);
