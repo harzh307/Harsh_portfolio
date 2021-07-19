@@ -22,15 +22,15 @@
   .rotating {
     z-index: 1;
     @media (min-width: 320px) {
-      top: 55%;
+      top: 54%;
       left: 5%;
     }
     @media (min-width: 640px) {
-      top: 60%;
+      top: 50%;
       left: 10%;
     }
     @media (min-width: 768px) {
-      top: 68%;
+      top: 58%;
       left: 10%;
     }
     @apply absolute text-2xl text-textColor-skin-inverted font-Raleway;
@@ -45,11 +45,11 @@
     left: 5%;
   }
   @media (min-width: 640px) {
-    top: 33%;
+    top: 30%;
     left: 10%;
   }
   @media (min-width: 768px) {
-    top: 33%;
+    top: 30%;
     left: 10%;
   }
   & h1 {

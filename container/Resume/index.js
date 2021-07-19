@@ -127,7 +127,9 @@ const Skills = () => {
               <PortText variant="portHeadingText">Work experience</PortText>
             </div>
             <div className="workPara">
-              <PortText variant="portHeadingCaption">{x?.role} (from Nov 2020 to present)</PortText>
+              <PortText className="boldText" variant="portHeadingCaption">
+                {x?.role} (from Nov 2020 to present)
+              </PortText>
               <PortText variant="portAboutCaption">
                 At{' '}
                 <a style={{ color: 'blue' }} href={x?.companyLink}>
