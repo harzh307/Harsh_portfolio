@@ -10,7 +10,7 @@ const Card = ({ children, variant, className, ...props }) => (
 Card.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  variant: PropTypes.oneOf(['cardBlog', 'cardPort', 'hoverPort']),
+  variant: PropTypes.oneOf(['cardBlog', 'cardPort', 'hoverPort', 'cardService']),
 };
 
 Card.defaultProps = {

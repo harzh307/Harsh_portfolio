@@ -3,6 +3,12 @@
   padding-bottom: 50px;
   // @apply pt-[100px] pb-[50px];
 }
+@media (min-width: 640px) {
+  .pageCard {
+    height: 30rem;
+    width: 20rem;
+  }
+}
 .portfolioItems {
   padding: 0px 15px;
   @apply flex flex-wrap h-full w-full md:px-20 lg:px-32 justify-center;

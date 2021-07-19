@@ -1,5 +1,5 @@
 .mainDiv {
-  @apply flex md:justify-center justify-between lg:flex-row xs:p-6 xs:flex-col;
+  @apply flex justify-center gap-10 sm:flex-row sm:p-6 xs:p-2 xs:flex-col;
 
   // display: flex;
   // justify-content: center;
@@ -15,32 +15,32 @@
   height: 100%;
   width: 100%;
 }
-
-.singleImg {
-  @apply flex justify-center items-center overflow-hidden;
-  width: 20rem;
-  height: 20rem;
-  // border: solid 1px;
+@media (min-width: 640px) {
+  .singleImg {
+    @apply flex justify-center items-center overflow-hidden;
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
-// .content {
-//   @apply leading-8 text-left;
-//   padding: 20px 0;
-// }
+.content {
+  @apply leading-8 sm:space-y-10 text-left;
+  padding: 20px 0;
+}
 
 .textDiv {
   @apply flex flex-col xs:mx-4 justify-start;
   //// @apply justify-start flex-col mt-1 flex lg:p-2 md:p-5 sm:p-4 xs:p-2 gap-5
 }
-// .head {
-//   text-decoration: underline #222;
-//   font-size: x-large;
-//   font-family: sans-serif;
-// }
-// .detail {
-//   padding: 5px 0;
-//   font-family: sans-serif;
-// }
+.head {
+  text-decoration: underline #222;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.detail {
+  padding: 5px 0;
+  font-family: sans-serif;
+}
 .backAlign {
   @apply text-xs cursor-pointer mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
   // color: colors.$fontcolor-secondary;

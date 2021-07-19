@@ -3,7 +3,7 @@ import Button from '../../component/Button';
 import PortText from '../../component/PortText';
 
 const Education = ({ data }) => {
-  const eduData = [...data.skills.slice(0, 3)];
+  const eduData = [...data.skills.slice(3, 6)];
   return (
     <section id="Skills" className="alignment">
       <div className="textAlign">

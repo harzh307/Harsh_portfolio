@@ -28,7 +28,7 @@ const PortfolioPage = () => {
 
         <div className="portfolioItems">
           {portfolioData?.projects?.map(x => (
-            <Card variant="cardPort">
+            <Card variant="cardPort" className="pageCard">
               <div className="relativeP">
                 <a href={`work/${x?.id}`}>
                   <img src={x.displayImage?.formats?.small?.url} alt="" />
