@@ -43,7 +43,7 @@ const SignupForm = ({ data }) => {
       resetForm();
       return axios({
         method: 'post',
-        url: 'http://localhost:1337/contact-forms/',
+        url: 'https://harsh-portfolio-api.herokuapp.com/contact-forms/',
         data: {
           name: values.name,
           email: values.email,

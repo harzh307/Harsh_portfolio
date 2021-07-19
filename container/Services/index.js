@@ -22,7 +22,7 @@ const Services = ({ data }) => (
         <div key={x.id} className="box">
           <Card className="cardService" variant="serviceCard">
             <Button variant="portServiceButton">
-              <img src={x.icon.url} height={35} width={35} />
+              <img src={x?.icon?.url} height={35} width={35} />
             </Button>
             <PortText className="topBottom" variant="portServiceSubHeadingText">
               <b>{x.title}</b>

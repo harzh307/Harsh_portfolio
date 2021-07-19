@@ -35,22 +35,22 @@ const Footer = ({ data }) => (
       </div>
     </div>
     <div className={style.jCenter}>
-      <a href="https://github.com/iamDevanshiDesai">
+      <a href="https://github.com/harzh307">
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Github className={style.btnHover} height={18} width={18} />
         </Button>
       </a>
-      <a href="https://www.linkedin.com/in/Harsh-Patel/">
+      <a href="https://www.linkedin.com/in/harsh-patel-4b8280208/">
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Linkedin className={style.btnHover} height={18} width={18} />
         </Button>
       </a>
-      <a href="https://twitter.com/UDevanshi">
+      <a href="https://twitter.com/patelharsh307">
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Twitter className={style.btnHover} height={18} width={18} />
         </Button>
       </a>
-      <a href="mailto:Harsh.u.Patel@gmail.com">
+      <a href="mailto:harzh.patel@gmail.com">
         <Button className={style.portSocialBtn} variant="portSocialButton">
           <Gmail className={style.btnHover} height={18} width={18} />
         </Button>

@@ -21,7 +21,12 @@
 
 // card portfolio style
 .cardPort {
-  @apply w-full px-0 py-2 sm:w-1/2 sm:p-1 lg:w-1/3 md:p-2;
+  @media (min-width: 640px) {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  @apply px-0 py-2 sm:p-1 md:p-2;
   :hover {
     .hoverPort {
       @apply opacity-80 transform;
@@ -32,6 +37,12 @@
 .cardPort img {
   @apply cursor-pointer w-full h-full;
 }
+
+// @media (max-width: 640px) {
+//   .cardPort {
+//     width: 30re;
+//   }
+// }
 
 .hoverPort {
   height: 90%;
