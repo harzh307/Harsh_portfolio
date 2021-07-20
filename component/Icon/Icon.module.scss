@@ -1,51 +1,53 @@
-// .iconBtn {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border: solid 2px var(--color-button-accent);
-//   border-radius: 50%;
-//   height: 2.5rem;
-//   width: 2.5rem;
-//   background: transparent;
-//   margin: 0 0.25rem;
-//   cursor: pointer;
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #222;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background: #222;
+  margin: 0 0.25rem;
+  transition-duration: 300ms;
+  cursor: pointer;
 
-//   & svg {
-//     height: 24px;
-//     width: 24px;
-//     fill: var(--color-button-accent);
-//   }
+  & svg {
+    height: 18px;
+    width: 18px;
+    fill: white;
+  }
 
-//   &:hover {
-//     border-color: var(--color-button-accent);
-//     & svg {
-//       fill: var(--color-button-accent);
-//     }
-//   }
-// }
+  &:hover {
+    border-color: #222;
+    background-color: white;
+    & svg {
+      fill: #222;
+    }
+  }
+}
 
-// .serviceBtn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background: transparent;
-//   border: solid 2px var(--color-button-accent);
-//   border-radius: 50%;
-//   height: 5rem;
-//   width: 5rem;
+.serviceBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: solid 2px #222;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
 
-//   & svg {
-//     fill: var(--color-button-accent);
-//   }
+  & svg {
+    fill: #222;
+  }
 
-//   &:hover {
-//     background-color: var(--color-button-accent);
-//     box-shadow: 0px 0px 10px var(--color-button-accent);
-//     transform: translate(1px);
-//   }
-// }
-// .searchIcon {
-//   box-shadow: 0 0 10px rgb(0 0 0 / 45%);
-//   @apply flex items-center justify-center opacity-100 rounded-lg;
-//   background: var(--color-button-accent);
-// }
+  &:hover {
+    background-color: #222;
+    box-shadow: 0px 0px 10px #222;
+    transform: translate(1px);
+  }
+}
+.searchIcon {
+  box-shadow: 0 0 10px rgb(0 0 0 / 45%);
+  @apply flex items-center justify-center opacity-100 rounded-lg;
+  background: #222;
+}

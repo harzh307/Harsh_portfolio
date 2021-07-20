@@ -5,6 +5,7 @@ import Github from '../../public/svg/logo-github.svg';
 import Linkedin from '../../public/svg/linkedin.svg';
 import Twitter from '../../public/svg/logo-twitter.svg';
 import Gmail from '../../public/svg/mail.svg';
+import Icon from '../../component/Icon';
 
 const Footer = ({ data }) => (
   <section id="Footer" className={style.main}>
@@ -35,36 +36,9 @@ const Footer = ({ data }) => (
       </div>
     </div>
     <div className={style.jCenter}>
-      <a href="https://github.com/harzh307">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Github className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      <a href="https://www.linkedin.com/in/harsh-patel-4b8280208/">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Linkedin className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      <a href="https://twitter.com/patelharsh307">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Twitter className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      <a href="mailto:harzh.patel@gmail.com">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Gmail className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      {/* <a href="https://api.whatsapp.com/send?phone=+919737814945&amp;text=Hi there!">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Whatsapp className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a>
-      <a href="http://instagram.com/">
-        <Button className={style.portSocialBtn} variant="portSocialButton">
-          <Instagram className={style.btnHover} height={18} width={18} />
-        </Button>
-      </a> */}
+      {data?.socialLinks?.map(x => (
+        <Icon key={x.id} socialLink={x} variant="iconBtn" />
+      ))}
     </div>
     <div className={style.footText}>
       <div className={style.footerLine} />
