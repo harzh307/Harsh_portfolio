@@ -85,9 +85,9 @@ and applications with  amazing frameworks like
             </Button>
           </a> */}
         </div>
-        <a download={data?.resume?.url} href={data?.resume?.url}>
+        {/* <a download={data?.resume?.url} href={data?.resume?.url}>
           <Button>{data?.downloadCVText}</Button>
-        </a>
+        </a> */}
       </article>
     </section>
   );
