@@ -25,16 +25,6 @@ const Education = ({ data }) => {
               </PortText>
             </div>
           ))}
-          {/* <div className="leftTextAlign">
-          <PortText variant="portEduLeftText">2010-2012</PortText>
-          <PortText variant="portEduLeftText">Graphic Designer</PortText>
-          <PortText variant="portEduLeftText">International Design Institute</PortText>
-        </div>
-        <div className="leftTextAlign">
-          <PortText variant="portEduLeftText">2010-2012</PortText>
-          <PortText variant="portEduLeftText">Graphic Designer</PortText>
-          <PortText variant="portEduLeftText">International Design Institute</PortText>
-        </div> */}
         </aside>
         <div className="baralign">
           {eduData.map(x => (
@@ -50,39 +40,6 @@ const Education = ({ data }) => {
               </div>
             </div>
           ))}
-          {/* <div className="bars">
-          <PortText variant="portEduPercent" component="h1">
-            80%
-          </PortText>
-          <div className="block">
-            <PortText variant="portHeadingCaption">JAVASCRIPT</PortText>
-            <div className="bar">
-              <div className="ht2" />
-            </div>
-          </div>
-        </div>
-        <div className="bars">
-          <PortText variant="portEduPercent" component="h1">
-            72%
-          </PortText>
-          <div className="block">
-            <PortText variant="portHeadingCaption">REACT</PortText>
-            <div className="bar">
-              <div className="ht3" />
-            </div>
-          </div>
-        </div>
-        <div className="bars">
-          <PortText variant="portEduPercent" component="h1">
-            85%
-          </PortText>
-          <div className="block">
-            <PortText variant="portHeadingCaption">NEXTJS</PortText>
-            <div className="bar">
-              <div className="ht4" />
-            </div>
-          </div>
-        </div> */}
         </div>
       </div>
       <div className="align">
@@ -90,11 +47,6 @@ const Education = ({ data }) => {
           <Button>View More</Button>
         </a>
       </div>
-      {/* <div className="viewMore">
-      <a href="/skills">
-        <Button variant="portHomeButton">View more</Button>
-      </a>
-    </div> */}
     </section>
   );
 };

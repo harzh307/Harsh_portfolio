@@ -26,6 +26,7 @@ Button.propTypes = {
     'portHomeButton',
     'portResume',
     'portSocialButton',
+    'portServiceButton',
     'disable',
     'portNavButton',
   ]),
