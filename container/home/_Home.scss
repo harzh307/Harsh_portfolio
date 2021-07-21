@@ -15,7 +15,7 @@
 
 .banner::after {
   content: '';
-  @apply inset-0 bg-black opacity-50 absolute z-0;
+  @apply inset-0 h-screen bg-black opacity-50 absolute z-0;
 }
 
 .containerH {
