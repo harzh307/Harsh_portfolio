@@ -136,7 +136,7 @@ const Navigation = () => {
                 <Link href="/#Skills">
                   <a
                     ref={lineRef}
-                    className={classNames('nav-link-white', { active: pathname === '#Work' })}
+                    className={classNames('nav-link-white', { active: pathname === '#Skills' })}
                     onClick={toggleNavbar}>
                     Skills
                   </a>

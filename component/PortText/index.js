@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './portText.module.scss';
 
 const PortText = ({ variant, component, children, className }) => (
-  <div>
+  <>
     {component === 'h1' ? (
       <h1 className={`${styles[variant]} ${className}`} component={component}>
         {children}
@@ -12,7 +12,7 @@ const PortText = ({ variant, component, children, className }) => (
         {children}
       </p>
     )}
-  </div>
+  </>
 );
 
 PortText.propTypes = {

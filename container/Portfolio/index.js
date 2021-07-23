@@ -1,9 +1,12 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Button from '../../component/Button';
 import Card from '../../component/Card';
 import PortText from '../../component/PortText';
 import Search from '../../public/svg/search.svg';
 
 const Portfolio = ({ data }) => {
+  const router = useRouter();
   const projectData = [...data?.projects?.slice(0, 2)];
   function liClicked() {
     const item = document.querySelector('listItems');
@@ -33,25 +36,36 @@ const Portfolio = ({ data }) => {
           {projectData?.map(x => (
             <Card key={x.id} variant="cardPort">
               <div className="relativeP">
-                <a href={`work/${x?.id}`}>
-                  <img src={x.displayImage?.formats?.small?.url} alt="" />
-                  <div className="cardContent">
-                    <Card variant="hoverPort">
-                      <div className="hoverContext">
-                        <PortText variant="portHoverCardText">{x.title}</PortText>
-                        <span>
-                          <Search className="searchIcon" height={28} width={28} />
-                        </span>
-                      </div>
-                    </Card>
-                  </div>
-                </a>
+                <Link prefetch={false} href={`work/${x?.id}`}>
+                  <a
+                    onMouseEnter={() => {
+                      router.prefetch(`work/${x?.id}`);
+                      console.log(`prefetching ${x?.id}`);
+                    }}>
+                    <img src={x.displayImage?.formats?.small?.url} alt="" />
+                    <div className="cardContent">
+                      <Card variant="hoverPort">
+                        <div className="hoverContext">
+                          <PortText variant="portHoverCardText">{x.title}</PortText>
+                          <span>
+                            <Search className="searchIcon" height={28} width={28} />
+                          </span>
+                        </div>
+                      </Card>
+                    </div>
+                  </a>
+                </Link>
               </div>
             </Card>
           ))}
         </div>
         <div className="align">
-          <a href="/portfolio">
+          <a
+            onMouseEnter={() => {
+              router.prefetch('/portfolio');
+              console.log('prefetching portfoliopage');
+            }}
+            href="/portfolio">
             <Button>View More</Button>
           </a>
         </div>

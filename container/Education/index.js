@@ -1,8 +1,11 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+
 import Button from '../../component/Button';
 import PortText from '../../component/PortText';
 
 const Education = ({ data }) => {
+  const router = useRouter();
   const eduData = [...data.skills.slice(3, 6)];
   return (
     <section id="Skills" className="alignment">
@@ -43,7 +46,13 @@ const Education = ({ data }) => {
         </div>
       </div>
       <div className="align">
-        <a data href="/resume">
+        <a
+          data
+          onMouseEnter={() => {
+            router.prefetch('/resume');
+            console.log('prefetching resume');
+          }}
+          href="/resume">
           <Button>View More</Button>
         </a>
       </div>

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
 // import Contact from '../../container/Contact';
@@ -21,7 +22,9 @@ const Project = ({ data }) => {
         </Header>
         <div className="mainDiv">
           <div className="singleImg">
-            <img src={data?.displayImage?.formats?.small?.url} className="sImg" alt="" />
+            {data?.media?.map(x => (
+              <Image height={900} width={900} src={x?.url} className="sImg" alt="" />
+            ))}
           </div>
           <div className="textDiv">
             <div>

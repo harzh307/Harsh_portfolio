@@ -9,17 +9,17 @@
 //   .mainDiv {
 //     height: auto;
 //   }
-// }
+// } sm:h-4/5 sm:w-4/5
 .sImg {
-  @apply sm:h-4/5 sm:w-4/5 overflow-hidden;
-  height: 100%;
-  width: 100%;
+  // @apply overflow-hidden;
 }
 @media (min-width: 640px) {
   .singleImg {
-    @apply flex justify-center items-center overflow-hidden;
-    width: 30rem;
-    height: 30rem;
+    @apply flex gap-6 items-center;
+    overflow: hidden;
+    max-width: 40vw;
+    // max-width: 30rem;
+    // max-height: 30rem;
   }
 }
 
