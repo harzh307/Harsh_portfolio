@@ -43,6 +43,7 @@ const Project = ({ data }) => {
               </div>
               <h3 className="head">Technology Used</h3>
               {data?.technologyUsed?.map(y => (
+                
                 <a role="button" href={data.link} className="detail">
                   <Button>{y?.title}</Button>
                 </a>
