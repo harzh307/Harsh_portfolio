@@ -41,13 +41,11 @@ const Project = ({ data }) => {
                   <p className="detail">{y?.title}</p>
                 ))}
               </div>
+              <h3 className="head">Technology Used</h3>
               {data?.technologyUsed?.map(y => (
-                <>
-                  <h3 className="head">Technology Used</h3>
-                  <a role="button" href={data.link} className="detail">
-                    <Button>{y?.title}</Button>
-                  </a>
-                </>
+                <a role="button" href={data.link} className="detail">
+                  <Button>{y?.title}</Button>
+                </a>
               ))}
             </div>
           </div>
