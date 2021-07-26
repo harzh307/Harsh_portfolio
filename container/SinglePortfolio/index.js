@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Head from 'next/head';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
 // import Contact from '../../container/Contact';
@@ -11,6 +12,7 @@ const Project = ({ data }) => {
   return (
     // const { data: portfolioData } = usePortfolio();
     <>
+
       <div className="light_theme">
         <Header>
           <PortText variant="portSingleBlog" className="portSingleBlog">
@@ -43,8 +45,7 @@ const Project = ({ data }) => {
               </div>
               <h3 className="head">Technology Used</h3>
               {data?.technologyUsed?.map(y => (
-                
-                <a role="button" href={data.link} className="detail">
+                <a role="button" href={y?.url} className="detail">
                   <Button>{y?.title}</Button>
                 </a>
               ))}

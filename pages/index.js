@@ -15,6 +15,7 @@ import useEducationSkills from '../hooks/useEducationSkills';
 import useContact from '../hooks/useContactDetails';
 import useTestimonial from '../hooks/useTestimonial';
 import PageLoader from '../container/PageLoader';
+import Meta from '../component/meta';
 
 export default function Main() {
   const { data: bannerData, isValidating } = useBanner();
@@ -33,6 +34,7 @@ export default function Main() {
   return (
     <>
       <div className="dark-theme">
+        <Meta />
         {bannerData && <Home data={bannerData} />}
         {aboutData && <About data={aboutData} />}
         {serviceData && <Services data={serviceData} />}

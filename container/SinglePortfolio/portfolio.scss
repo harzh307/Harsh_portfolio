@@ -3,7 +3,6 @@
   background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
   display: flex;
-  // justify-content: flex-end;
   height: 100vh;
   flex-wrap: wrap;
   padding: 3rem;
@@ -58,7 +57,7 @@
 .detail {
   @apply text-lg;
   padding: 10px 0;
-  margin: 0px 10px 0px 0px;
+  margin: 10px 5px;
   margin-bottom: 20px;
 }
 .backAlign {

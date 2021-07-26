@@ -24,7 +24,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="eng">
-        <title>Harsh Patel</title>
         <Head />
         <body>
           <Main />

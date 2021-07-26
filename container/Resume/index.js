@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable prettier/prettier */
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
 import useEducationSkills from '../../hooks/useEducationSkills';
@@ -10,6 +11,7 @@ const Skills = () => {
   const router = useRouter();
   return (
     // const { data: educationData } = useEducation();
+
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Resume</PortText>
@@ -36,89 +38,6 @@ const Skills = () => {
                 </div>
               </div>
             ))}
-            {/* <div className="dayRow"> */}
-            {/* <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                92%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">HTML5</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht1" />
-                </div>
-              </div>
-            </div>
-            <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                80%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">JAVASCRIPT</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht2" />
-                </div>
-              </div>
-            </div> */}
-            {/* </div> */}
-            {/* <div className="dayRow"> */}
-            {/* <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                72%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">SASS</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht3" />
-                </div>
-              </div>
-            </div>
-            <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                92%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">REACT</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht1" />
-                </div>
-              </div>
-            </div> */}
-            {/* </div> */}
-            {/* <div className="dayRow"> */}
-            {/* <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                80%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">NEXTJS</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht2" />
-                </div>
-              </div>
-            </div>
-            <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                72%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">REACT-NATIVE</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht3" />
-                </div>
-              </div>
-            </div> */}
-            {/* </div> */}
-            {/* <div className="Skillbars">
-              <PortText variant="portEduPercent" component="h1">
-                85%
-              </PortText>
-              <div className="Skillblock">
-                <PortText variant="portHeadingCaption">TAILWINDCSS</PortText>
-                <div className="Skillbar">
-                  <div className="Skillht4" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         {educationSkillsData?.experiences?.map(x => (
@@ -160,62 +79,6 @@ const Skills = () => {
                 </PortText>
               </div>
             ))}
-            {/* <div className="leftTextAlign">
-              <PortText variant="portEduLeftText">
-                <b>Bachelor of Electronics and Communication Engineering</b>
-              </PortText>
-              <PortText className="dateMargin" variant="portEduLeftText">
-                2018-2022
-              </PortText>
-              <PortText variant="portEduLeftText">
-                At{' '}
-                <a className="college" href="https://silveroakuni.ac.in/">
-                  SilverOak University
-                </a>
-              </PortText>
-            </div>
-            <div className="leftTextAlign">
-              <PortText variant="portEduLeftText">
-                <b>Bachelor of Electronics and Communication Engineering</b>
-              </PortText>
-              <PortText className="dateMargin" variant="portEduLeftText">
-                2018-2022
-              </PortText>
-              <PortText variant="portEduLeftText">
-                At{' '}
-                <a className="college" href="https://silveroakuni.ac.in/">
-                  SilverOak University
-                </a>
-              </PortText>
-            </div>
-            <div className="leftTextAlign">
-              <PortText variant="portEduLeftText">
-                <b>Bachelor of Electronics and Communication Engineering</b>
-              </PortText>
-              <PortText className="dateMargin" variant="portEduLeftText">
-                2018-2022
-              </PortText>
-              <PortText variant="portEduLeftText">
-                At{' '}
-                <a className="college" href="https://silveroakuni.ac.in/">
-                  SilverOak University
-                </a>
-              </PortText>
-            </div> */}
-            {/* <div className="leftTextAlign">
-            <PortText variant="portEduLeftText">2020-2021</PortText>
-            <PortText variant="portEduLeftText">
-              <b>ReactJS</b>
-            </PortText>
-            <PortText variant="portEduLeftText">UpGmp inc</PortText>
-          </div>
-          <div className="leftTextAlign">
-            <PortText variant="portEduLeftText">2020-2021</PortText>
-            <PortText variant="portEduLeftText">
-              <b>ReactNative</b>
-            </PortText>
-            <PortText variant="portEduLeftText">UpGmp inc</PortText>
-          </div> */}
           </div>
         </div>
       </div>

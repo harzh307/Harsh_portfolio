@@ -1,4 +1,5 @@
 import ReactRotatingText from 'react-rotating-text';
+import Head from 'next/head';
 // import Button from '../../component/Button';
 // import Navigation from '../../component/Navigation';
 // import PortText from '../../component/PortText';
@@ -9,6 +10,9 @@ const Home = ({ data }) => {
 
   return (
     <>
+      <Head>
+        <title>Home</title>
+      </Head>
       <section id="Home" className="banner">
         <div className="containerH">
           <ReactRotatingText
