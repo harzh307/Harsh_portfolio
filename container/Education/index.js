@@ -53,7 +53,7 @@ const Education = ({ data }) => {
             console.log('prefetching resume');
           }}
           href="/resume">
-          <Button>View More</Button>
+          <Button aria-label="view more">View More</Button>
         </a>
       </div>
     </section>

@@ -140,7 +140,7 @@ const Blog = ({ data }) => {
       </div>
       <div className="textAlign">
         <a href="/BlogPage">
-          <Button>View More</Button>
+          <Button aria-label="view more">View More</Button>
         </a>
       </div>
     </section>

@@ -1,10 +1,5 @@
 import PortText from '../../component/PortText';
 import style from './portFooter.module.scss';
-import Button from '../../component/Button';
-import Github from '../../public/svg/logo-github.svg';
-import Linkedin from '../../public/svg/linkedin.svg';
-import Twitter from '../../public/svg/logo-twitter.svg';
-import Gmail from '../../public/svg/mail.svg';
 import Icon from '../../component/Icon';
 
 const Footer = ({ data }) => (

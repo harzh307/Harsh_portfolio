@@ -12,7 +12,6 @@ const Project = ({ data }) => {
   return (
     // const { data: portfolioData } = usePortfolio();
     <>
-
       <div className="light_theme">
         <Header>
           <PortText variant="portSingleBlog" className="portSingleBlog">
@@ -46,7 +45,7 @@ const Project = ({ data }) => {
               <h3 className="head">Technology Used</h3>
               {data?.technologyUsed?.map(y => (
                 <a role="button" href={y?.url} className="detail">
-                  <Button>{y?.title}</Button>
+                  <Button aria-label="technology">{y?.title}</Button>
                 </a>
               ))}
             </div>

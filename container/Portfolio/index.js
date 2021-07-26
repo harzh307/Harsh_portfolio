@@ -72,7 +72,7 @@ const Portfolio = ({ data }) => {
               console.log('prefetching portfoliopage');
             }}
             href="/portfolio">
-            <Button>View More</Button>
+            <Button aria-label="view more">View More</Button>
           </a>
         </div>
       </div>

@@ -101,7 +101,11 @@ const SignupForm = ({ data }) => {
             placeholder={data?.message}
           />
         </div>
-        <Button type="submit" onClick={formik.handleSubmit} className="buttonMargin">
+        <Button
+          type="submit"
+          onClick={formik.handleSubmit}
+          aria-label="submit form"
+          className="buttonMargin">
           {data.buttonText}
         </Button>
       </section>
