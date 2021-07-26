@@ -10,7 +10,7 @@ const BlogPage = () => {
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Blog List</PortText>
-        <a className="backAlign" href="/">
+        <a aria-label="back" className="backAlign" href="/">
           Back
         </a>
       </Header>
@@ -30,7 +30,7 @@ const BlogPage = () => {
                   {x.description}
                 </PortText>
                 <div className="cardSideData">
-                  <a href="/singleBlog">
+                  <a aria-label="read blog" href="/singleBlog">
                     <PortText variant="portCardReadText">Read More</PortText>
                   </a>
                   <PortText variant="portCardDateText">Date Here</PortText>

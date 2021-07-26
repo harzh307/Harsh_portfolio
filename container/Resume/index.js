@@ -15,7 +15,12 @@ const Skills = () => {
     <div className="light-theme">
       <Header>
         <PortText variant="portSingleBlog">Resume</PortText>
-        <a className="backAlign" tabIndex="10" role="button" onClick={() => router.back()}>
+        <a
+          aria-label="back"
+          className="backAlign"
+          tabIndex="10"
+          role="button"
+          onClick={() => router.back()}>
           Back
         </a>
       </Header>
@@ -51,7 +56,7 @@ const Skills = () => {
               </PortText>
               <PortText variant="portAboutCaption">
                 At{' '}
-                <a style={{ color: 'blue' }} href={x?.companyLink}>
+                <a aria-label="company name" style={{ color: 'blue' }} href={x?.companyLink}>
                   {x?.companyName}
                 </a>
                 {x?.description}
@@ -73,7 +78,10 @@ const Skills = () => {
                 </PortText>
                 <PortText variant="portEduLeftText">
                   {/* At{' '} */}
-                  <a className="college boldText" href="https://silveroakuni.ac.in/">
+                  <a
+                    className="college boldText"
+                    aria-label="institute"
+                    href="https://silveroakuni.ac.in/">
                     {x.institute}
                   </a>
                 </PortText>

@@ -61,7 +61,7 @@ const Blog = ({ data }) => {
                   {x.description}
                 </PortText>
                 <div className="cardSideData">
-                  <a href="/singleBlog">
+                  <a aria-label="blog page" target="_blank" href="/singleBlog">
                     <PortText variant="portCardReadText">Read More</PortText>
                   </a>
                   <PortText variant="portCardDateText">Date Here</PortText>

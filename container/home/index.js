@@ -35,7 +35,7 @@ const Home = ({ data }) => {
               data-rotate='[ "Creating Websites.", "Designing Logo.", " Designing UI/UX."]'
             />
           </PortText> */}
-          <a className="arrow" href="#About">
+          <a aria-label="scroll down" className="arrow" href="#About">
             <img src="/svg/scroll-down.svg" height="32px" alt="" />
           </a>
         </div>

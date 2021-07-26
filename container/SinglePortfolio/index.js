@@ -17,7 +17,7 @@ const Project = ({ data }) => {
           <PortText variant="portSingleBlog" className="portSingleBlog">
             Project Details
           </PortText>
-          <a className="backAlign" role="button" onClick={() => router.back()}>
+          <a className="backAlign" aria-label="back" role="button" onClick={() => router.back()}>
             Back
           </a>
         </Header>
@@ -44,7 +44,7 @@ const Project = ({ data }) => {
               </div>
               <h3 className="head">Technology Used</h3>
               {data?.technologyUsed?.map(y => (
-                <a role="button" href={y?.url} className="detail">
+                <a aria-label="technology site" role="button" href={y?.url} className="detail">
                   <Button aria-label="technology">{y?.title}</Button>
                 </a>
               ))}

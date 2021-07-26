@@ -11,19 +11,21 @@ const Footer = ({ data }) => (
       </div>
       <div className={style.footerText}>
         <PortText variant="portContactHeadingText">Phone No.</PortText>
-        <a href="tel:9737814945">
+        <a aria-label="number" href="tel:9737814945">
           <PortText variant="portContactDetailText">{data?.contact?.mobileNumber}</PortText>
         </a>
       </div>
       <div className={style.footerText}>
         <PortText variant="portContactHeadingText">Email</PortText>
-        <a href="mailto: harzh.patel@gmail.com">
+        <a aria-label="Email" href="mailto: harzh.patel@gmail.com">
           <PortText variant="portContactDetailText">{data?.contact?.email}</PortText>
         </a>
       </div>
       <div className={style.footerText}>
         <PortText variant="portContactHeadingText">Address</PortText>
-        <a href="https://www.google.com/maps/place/Radhesh+Apartment,+Radhesh+Apartment,+Opp+Luv-kush+Tower,+Thaltej+Tekra,+Jay+Ambenagar+Rd,+Patel+Society,+Jai+Ambe+Nagar,+Thaltej,+Ahmedabad,+Gujarat+380059/@23.0506982,72.5180664,17z/data=!3m1!4b1!4m5!3m4!1s0x395e9b5354506905:0x2a0f2287766643a3!8m2!3d23.0506982!4d72.5202551">
+        <a
+          aria-label="address"
+          href="https://www.google.com/maps/place/Radhesh+Apartment,+Radhesh+Apartment,+Opp+Luv-kush+Tower,+Thaltej+Tekra,+Jay+Ambenagar+Rd,+Patel+Society,+Jai+Ambe+Nagar,+Thaltej,+Ahmedabad,+Gujarat+380059/@23.0506982,72.5180664,17z/data=!3m1!4b1!4m5!3m4!1s0x395e9b5354506905:0x2a0f2287766643a3!8m2!3d23.0506982!4d72.5202551">
           <PortText variant="portContactDetailText">
             {`${data?.address?.addressLine1}, ${data?.address?.city}, ${data?.address?.state}, ${data?.address?.postalCode}`}
           </PortText>

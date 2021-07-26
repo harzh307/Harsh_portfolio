@@ -63,7 +63,7 @@ const Navigation = () => {
           <div className="sub-container">
             {/* Brand */}
             <Link href="/">
-              <a className="navbar-brand">
+              <a aria-label="Harsh patel" className="navbar-brand">
                 Harsh
                 {/* <span className="theme-bg" /> */}
               </a>
