@@ -1,15 +1,18 @@
 .banner {
   background-image: url(/blackB.jpg);
-  // max-width: 100%;
-  @media only screen and (max-width: 990px) {
-    background-image: url(/banner.jpg);
-    @apply bg-fixed;
-  }
-  @media only screen and (max-width: 745px) {
-    background-image: url(/small.jpg);
-    @apply bg-fixed;
-  }
-  // max-width: 1024px;
+  // // max-width: 100%;
+  // @media only screen and (max-width: 990px) {
+  //   background-image: url(/banner.jpg);
+  //   @apply bg-fixed;
+  // }
+  // @media only screen and (max-width: 745px) {
+  //   background-image: url(/small.jpg);
+  //   @apply bg-fixed;
+  // }
+  // // max-width: 1024px;
+  // .bannerImage {
+  //   @apply p-0 bg-fixed fixed;
+  // }
   @apply h-screen bg-cover bg-center bg-fixed;
 }
 

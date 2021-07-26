@@ -1,5 +1,6 @@
 import ReactRotatingText from 'react-rotating-text';
 import Head from 'next/head';
+import Image from 'next/image';
 // import Button from '../../component/Button';
 // import Navigation from '../../component/Navigation';
 // import PortText from '../../component/PortText';
@@ -13,7 +14,32 @@ const Home = ({ data }) => {
       <Head>
         <title>Home</title>
       </Head>
-      <section id="Home" className="banner">
+      {/* {/* <source
+        media="(min-width:1024px,min-width:768px)"
+        srcSet="/image/portfolio/about-img-lg.jpg,/image/portfolio/about-img-md.jpg"
+      /> */}
+      <section
+        id="Home"
+        style={{ backgroundImage: `url(${data?.bannerImage?.url})` }}
+        className="banner">
+        {/* <picture className="bannerImage">
+          <source
+            media="(min-width:1024px)"
+            srcSet={data?.bannerImage?.formats?.large}
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcSet={data?.bannerImage?.formats?.medium}
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:320px)"
+            srcSet={data?.bannerImage?.formats?.small}
+            type="image/jpg"
+          />
+          <Image src={data?.bannerImage?.url} layout="fill" />
+        </picture> */}
         <div className="containerH">
           <ReactRotatingText
             items={data.BannerSkills.map(x => x.bannerSkills)}
