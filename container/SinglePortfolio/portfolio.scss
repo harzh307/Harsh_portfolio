@@ -1,57 +1,156 @@
+@use '../../styles/colors.scss';
 .mainDiv {
-  @apply flex justify-center gap-10 sm:flex-row sm:p-6 xs:p-2 xs:flex-col;
-
-  // display: flex;
-  // justify-content: center;
-  // padding: 5%;;;
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
+  display: flex;
+  // justify-content: flex-end;
+  height: 100vh;
+  flex-wrap: wrap;
+  padding: 3rem;
+  // margin: 0px 40px;
+  gap: 4rem;
 }
-// @media screen and (max-width: 777px) {
-//   .mainDiv {
-//     height: auto;
-//   }
-// } sm:h-4/5 sm:w-4/5
-.sImg {
-  // @apply overflow-hidden;
-}
-@media (min-width: 640px) {
-  .singleImg {
-    @apply flex gap-6 items-center;
-    overflow: hidden;
-    max-width: 40vw;
-    // max-width: 30rem;
-    // max-height: 30rem;
+@media screen and (max-width: 777px) {
+  .mainDiv {
+    height: auto;
   }
+}
+.img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgdiv {
+  @apply flex;
+  margin: 0;
+  flex: 0.6;
+  overflow-x: scroll;
+  // scroll-behavior: smooth;
+  gap: 1rem;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior-inline: contain;
+  // width: 30rem;
+  height: 90%;
+
+  & .portImgHover {
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+  }
+}
+.imgdiv::-webkit-scrollbar {
+  display: none;
 }
 
 .content {
-  @apply leading-8 sm:space-y-10 text-left;
+  @apply leading-8 text-left;
   padding: 20px 0;
 }
 
 .textDiv {
-  @apply flex flex-col xs:mx-4 justify-start;
-  //// @apply justify-start flex-col mt-1 flex lg:p-2 md:p-5 sm:p-4 xs:p-2 gap-5
+  @apply flex-col flex px-4;
+  flex: 2;
 }
 .head {
-  text-decoration: underline #222;
+  text-decoration: underline colors.$fontcolor-secondary;
   font-size: x-large;
-  font-family: sans-serif;
 }
 .detail {
-  padding: 5px 0;
-  font-family: sans-serif;
+  @apply text-lg;
+  padding: 10px 0;
+  margin-bottom: 20px;
 }
 .backAlign {
-  @apply text-xs cursor-pointer mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
-  // color: colors.$fontcolor-secondary;
+  @apply text-lg mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  color: colors.$fontcolor-secondary;
+  border-color: colors.$fontcolor-secondary;
+  cursor: pointer;
+  background: none;
 }
-.techLink {
-  border: solid #222 1px;
-  border-radius: 4px;
-  padding: 5px;
-  transition-duration: 300ms;
-  &:hover {
-    padding: 7px;
-    transition-duration: 300ms;
+.techno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  height: 45px;
+}
+@media screen and (max-width: 777px) {
+  .imgdiv {
+    margin: 0;
+    flex: 0.6;
+    overflow-x: scroll;
+    // scroll-behavior: smooth;
+    gap: 1rem;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+    // width: 30rem;
+    height: 90%;
+  }
+  .mainDiv {
+    flex-direction: column;
+    align-items: baseline;
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
   }
 }
+
+/* my css for project page */
+// .mainDiv {
+//   @apply flex justify-center gap-10 sm:flex-row sm:p-6 xs:p-2 xs:flex-col;
+
+//   // display: flex;
+//   // justify-content: center;
+//   // padding: 5%;;;
+// }
+// // @media screen and (max-width: 777px) {
+// //   .mainDiv {
+// //     height: auto;
+// //   }
+// // } sm:h-4/5 sm:w-4/5
+// .sImg {
+//   // @apply overflow-hidden;
+// }
+// @media (min-width: 640px) {
+//   .singleImg {
+//     @apply flex gap-6 items-center;
+//     overflow: hidden;
+//     max-width: 40vw;
+//     // max-width: 30rem;
+//     // max-height: 30rem;
+//   }
+// }
+
+// .content {
+//   @apply leading-8 sm:space-y-10 text-left;
+//   padding: 20px 0;
+// }
+
+// .textDiv {
+//   @apply flex flex-col xs:mx-4 justify-start;
+//   //// @apply justify-start flex-col mt-1 flex lg:p-2 md:p-5 sm:p-4 xs:p-2 gap-5
+// }
+// .head {
+//   text-decoration: underline #222;
+//   font-size: x-large;
+//   font-family: sans-serif;
+// }
+// .detail {
+//   padding: 5px 0;
+//   font-family: sans-serif;
+// }
+// .backAlign {
+//   @apply text-xs cursor-pointer mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+//   // color: colors.$fontcolor-secondary;
+// }
+// .techLink {
+//   border: solid #222 1px;
+//   border-radius: 4px;
+//   padding: 5px;
+//   transition-duration: 300ms;
+//   &:hover {
+//     padding: 7px;
+//     transition-duration: 300ms;
+//   }
+// }

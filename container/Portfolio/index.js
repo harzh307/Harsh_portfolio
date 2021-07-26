@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Button from '../../component/Button';
@@ -42,7 +43,12 @@ const Portfolio = ({ data }) => {
                       router.prefetch(`work/${x?.id}`);
                       console.log(`prefetching ${x?.id}`);
                     }}>
-                    <img src={x.displayImage?.formats?.small?.url} alt="" />
+                    <Image
+                      src={x?.displayImage?.formats?.small?.url}
+                      height={400}
+                      width={400}
+                      alt="projects"
+                    />
                     <div className="cardContent">
                       <Card variant="hoverPort">
                         <div className="hoverContext">

@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image';
-import Button from '../../component/Button';
+// import Button from '../../component/Button';
 // import Icon from '../../component/Icon';
-import Github from '../../public/svg/logo-github.svg';
-import Linkedin from '../../public/svg/linkedin.svg';
-import Twitter from '../../public/svg/logo-twitter.svg';
-import Gmail from '../../public/svg/mail.svg';
+// import Github from '../../public/svg/logo-github.svg';
+// import Linkedin from '../../public/svg/linkedin.svg';
+// import Twitter from '../../public/svg/logo-twitter.svg';
+// import Gmail from '../../public/svg/mail.svg';
 import useMarkdown from '../../hooks/useMarkdown';
 import Icon from '../../component/Icon';
 
 const About = ({ data }) => {
-  const { HTML } = useMarkdown(data.biography);
+  const { HTML } = useMarkdown(data?.biography);
   return (
     <section id="About" className="portAbtMain">
       <picture className="abtImage">

@@ -22,8 +22,8 @@
 // card portfolio style
 .cardPort {
   @media (min-width: 640px) {
-    width: 40rem;
-    height: 35rem;
+    // width: 40rem;
+    // height: 35rem;
   }
 
   @apply px-0 py-2 sm:p-1 md:p-2;
@@ -45,8 +45,8 @@
 // }
 
 .hoverPort {
-  height: 90%;
-  width: 90%;
+  // height: 90%;
+  // width: 90%;
   @apply cursor-pointer bg-gray-50 opacity-0 absolute flex
     justify-center items-center inset-0 m-auto duration-500;
 }
@@ -68,16 +68,13 @@
 
 // card portfolio style
 .cardPort {
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
   @media (min-width: 1024px) {
-    width: 33.333333%;
-  }
-  @media (min-width: 768px) {
-    padding: 0.5rem;
+    width: fit-content;
   }
   @media (min-width: 640px) {
-    width: 50%;
-    padding: 0.25rem;
+    width: fit-content;
   }
   padding: 0.5rem 0rem;
   :hover {
@@ -104,7 +101,7 @@
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  left: 0rem;
   position: absolute;
   margin: auto;
   transition-duration: 500ms;

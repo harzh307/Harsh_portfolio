@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Card from '../../component/Card';
 import Header from '../../component/Header';
 import PortText from '../../component/PortText';
@@ -31,7 +32,12 @@ const PortfolioPage = () => {
             <Card variant="cardPort" className="pageCard">
               <div className="relativeP">
                 <a href={`work/${x?.id}`}>
-                  <img src={x.displayImage?.formats?.small?.url} alt="" />
+                  <Image
+                    src={x?.displayImage?.formats?.small?.url}
+                    height={500}
+                    width={500}
+                    alt=""
+                  />
                   <div className="cardContent">
                     <Card variant="hoverPort">
                       <div className="hoverContext">

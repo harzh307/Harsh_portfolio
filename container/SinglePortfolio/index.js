@@ -21,9 +21,9 @@ const Project = ({ data }) => {
           </a>
         </Header>
         <div className="mainDiv">
-          <div className="singleImg">
+          <div className="imgdiv">
             {data?.media?.map(x => (
-              <Image height={900} width={900} src={x?.url} className="sImg" alt="" />
+              <img src={x?.url} className="img" alt="" />
             ))}
           </div>
           <div className="textDiv">

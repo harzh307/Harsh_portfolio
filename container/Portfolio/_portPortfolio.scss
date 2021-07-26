@@ -45,8 +45,9 @@
 }
 
 .relativeP {
-  @apply relative h-5/6;
+  width: fit-content;
+  @apply relative mx-2;
 }
 .align {
-  @apply flex justify-center;
+  @apply flex pt-8 justify-center;
 }

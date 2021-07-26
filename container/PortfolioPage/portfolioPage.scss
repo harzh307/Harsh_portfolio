@@ -1,6 +1,6 @@
 .portfolioList {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 70px;
+  // padding-bottom: 50px;
   // @apply pt-[100px] pb-[50px];
 }
 @media (min-width: 640px) {
@@ -10,7 +10,7 @@
   }
 }
 .portfolioItems {
-  padding: 0px 15px;
+  // padding: 0px 15px;
   @apply flex flex-wrap h-full w-full md:px-20 lg:px-32 justify-center;
 }
 
