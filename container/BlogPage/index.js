@@ -30,7 +30,7 @@ const BlogPage = () => {
                   {x.description}
                 </PortText>
                 <div className="cardSideData">
-                  <a aria-label="read blog" href="/singleBlog">
+                  <a aria-label="read blog" href="/singleBlog" target="_blank">
                     <PortText variant="portCardReadText">Read More</PortText>
                   </a>
                   <PortText variant="portCardDateText">Date Here</PortText>

@@ -52,7 +52,8 @@ const Education = ({ data }) => {
             router.prefetch('/resume');
             console.log('prefetching resume');
           }}
-          href="/resume">
+          href="/resume"
+          target="_blank">
           <Button aria-label="view more">View More</Button>
         </a>
       </div>

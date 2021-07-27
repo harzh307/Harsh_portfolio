@@ -139,7 +139,7 @@ const Blog = ({ data }) => {
         </div>
       </div>
       <div className="textAlign">
-        <a href="/BlogPage">
+        <a href="/BlogPage" target="_blank">
           <Button aria-label="view more">View More</Button>
         </a>
       </div>

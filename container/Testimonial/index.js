@@ -1,4 +1,5 @@
 // import Slider from 'react-slick';
+import Image from 'next/image';
 import PortText from '../../component/PortText';
 
 // const settings = {
@@ -17,10 +18,15 @@ const Testimonial = ({ data }) => (
   <section className="testimonial">
     <div className="testimonialContainer">
       <figure className="slider">
-        {data.map((x) => (
+        {data.map(x => (
           <div key={x.id} className="containerTest">
             <div className="authorImg">
-              <img src={x?.profile?.formats?.small?.url} alt="testimonial" />
+              <Image
+                height={96}
+                width={98}
+                src={x?.profile?.formats?.thumbnail?.url}
+                alt="testimonial"
+              />
             </div>
             <PortText variant="portTestimonialText">{x.personName}</PortText>
             <PortText variant="portTestimonialRoleText">{x.jobTitle}</PortText>

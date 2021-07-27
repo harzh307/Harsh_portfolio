@@ -12,7 +12,7 @@ const Home = ({ data }) => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Harsh Patel | Home Page</title>
       </Head>
       {/* {/* <source
         media="(min-width:1024px,min-width:768px)"

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { Fragment } from 'react';
 // import { useCallback, useEffect, useRef } from 'react';
 import Button from '../../component/Button';
 import Header from '../../component/Header';
@@ -79,11 +80,13 @@ const Project = ({ data }) => {
                 <p className="detail">{y?.title}</p>
               ))}
               <h3 className="head">Technologies Used</h3>
-              {data?.technologyUsed?.map(y => (
-                <a aria-label="technology site" role="button" href={y?.url} className="detail">
-                  <Button aria-label="technology">{y?.title}</Button>
-                </a>
-              ))}
+              <Fragment className="btnfrag">
+                {data?.technologyUsed?.map(y => (
+                  <a aria-label="technology site" role="button" href={y?.url} className="detail">
+                    <Button aria-label="technology">{y?.title}</Button>
+                  </a>
+                ))}
+              </Fragment>
             </div>
           </div>
         </div>

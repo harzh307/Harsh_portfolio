@@ -10,8 +10,8 @@ const About = ({ data }) => {
       <picture className="abtImage">
         <Image
           src={data?.portfolioImage?.formats?.small?.url}
-          height={400}
-          width={400}
+          height={500}
+          width={470}
           alt="Harsh Patel"
         />
       </picture>

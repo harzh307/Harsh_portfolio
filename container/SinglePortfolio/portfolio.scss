@@ -13,6 +13,14 @@
     height: auto;
   }
 }
+// .btnfrag {
+.detail {
+  @apply mr-1;
+  > Button {
+    @apply mt-1;
+  }
+}
+// }
 @media screen and (min-width: 777px) {
   .mainDiv {
     height: auto;
