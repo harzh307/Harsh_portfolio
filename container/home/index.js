@@ -22,7 +22,7 @@ const Home = ({ data }) => {
       /> */}
       <section
         id="Home"
-        style={{ backgroundImage: `url(${data?.bannerImage?.url})` }}
+        style={{ backgroundImage: `url(${data?.bannerImage?.formats?.large?.url})` }}
         className="banner">
         {/* <picture className="bannerImage">
           <source

@@ -9,16 +9,14 @@ const About = ({ data }) => {
   return (
     <section id="About" className="portAbtMain">
       <picture className="abtImage">
-        <CloudinaryContext cloudName="demo" secure="true" upload_preset="my_unsigned_preset">
-          <Image
-            cloudName="djygt08th"
-            // loading="lazy"
-            publicId={data?.portfolioImage?.provider_metadata?.public_id}
-            alt="Harsh Patel">
-            <Transformation width="400" quality="auto" height="400" gravity="south" crop="fill" />
-            <Placeholder type="blur" />
-          </Image>
-        </CloudinaryContext>
+        <Image
+          cloudName="djygt08th"
+          // loading="lazy"
+          publicId={data?.portfolioImage?.provider_metadata?.public_id}
+          alt="Harsh Patel">
+          <Transformation quality="auto" gravity="south" crop="fill" />
+          <Placeholder type="blur" />
+        </Image>
       </picture>
       <article className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />
