@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-import Image from 'next/image';
+// import Image from 'next/image';
+import { Image, CloudinaryContext, Placeholder, Transformation } from 'cloudinary-react';
 import useMarkdown from '../../hooks/useMarkdown';
 import Icon from '../../component/Icon';
 
@@ -8,7 +9,16 @@ const About = ({ data }) => {
   return (
     <section id="About" className="portAbtMain">
       <picture className="abtImage">
-        <Image src={data?.portfolioImage?.url} height={500} width={470} alt="Harsh Patel" />
+        <CloudinaryContext cloudName="demo" secure="true" upload_preset="my_unsigned_preset">
+          <Image
+            cloudName="djygt08th"
+            // loading="lazy"
+            publicId={data?.portfolioImage?.provider_metadata?.public_id}
+            alt="Harsh Patel">
+            <Transformation width="400" quality="auto" height="400" gravity="south" crop="fill" />
+            <Placeholder type="blur" />
+          </Image>
+        </CloudinaryContext>
       </picture>
       <article className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />
