@@ -9,6 +9,8 @@ import useMarkdown from '../../hooks/useMarkdown';
 const Home = ({ data }) => {
   const { HTML } = useMarkdown(data.description);
 
+  console.log(window.innerWidth, window.innerHeight, 'home page');
+
   return (
     <>
       <Head>

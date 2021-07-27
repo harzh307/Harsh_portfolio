@@ -13,6 +13,7 @@ const Portfolio = ({ data }) => {
     const item = document.querySelector('listItems');
     // x.classList.add('selItem');
   }
+
   return (
     <section id="Work" className="center">
       <div className="portfolio">

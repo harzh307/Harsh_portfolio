@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PortText from '../../component/PortText';
 import Button from '../../component/Button';
 import Card from '../../component/Card';
@@ -22,7 +23,7 @@ const Services = ({ data }) => (
         <div key={x.id} className="box">
           <Card className="cardService" variant="serviceCard">
             <Button aria-label="icon" variant="portServiceButton">
-              <img src={x?.icon?.url} height={35} width={35} />
+              <Image src={x?.icon?.url} height={35} width={35} />
             </Button>
             <PortText className="topBottom" variant="portServiceSubHeadingText">
               <b>{x.title}</b>

@@ -8,12 +8,7 @@ const About = ({ data }) => {
   return (
     <section id="About" className="portAbtMain">
       <picture className="abtImage">
-        <Image
-          src={data?.portfolioImage?.formats?.small?.url}
-          height={500}
-          width={470}
-          alt="Harsh Patel"
-        />
+        <Image src={data?.portfolioImage?.url} height={500} width={470} alt="Harsh Patel" />
       </picture>
       <article className="portTextDiv">
         <div dangerouslySetInnerHTML={{ __html: HTML }} />

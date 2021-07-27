@@ -18,7 +18,7 @@ import PageLoader from '../container/PageLoader';
 import Meta from '../component/meta';
 
 export default function Main() {
-  const { data: bannerData, isValidating } = useBanner();
+  const { data: bannerData, isLoading } = useBanner();
   const { data: aboutData } = useAbout();
   const { data: serviceData } = useServices();
   const { data: portfolioData } = usePortfolio();
@@ -27,7 +27,7 @@ export default function Main() {
   const { data: testimonialData } = useTestimonial();
   const { data: contactData } = useContact();
 
-  if (isValidating) {
+  if (isLoading) {
     return <PageLoader />;
   }
 
