@@ -36,7 +36,7 @@ const PortfolioPage = () => {
                     src={x?.displayImage?.formats?.small?.url}
                     height={500}
                     width={500}
-                    alt=""
+                    alt="my projects"
                   />
                   <div className="cardContent">
                     <Card variant="hoverPort">

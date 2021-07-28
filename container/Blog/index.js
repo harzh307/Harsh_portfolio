@@ -54,6 +54,7 @@ const Blog = ({ data }) => {
                 className="portImgHover"
                 height="250vh"
                 width="360vw"
+                alt="my blog"
               />
               <div className="cardPadding">
                 <PortText variant="portCardHeaderText">{x.title}</PortText>

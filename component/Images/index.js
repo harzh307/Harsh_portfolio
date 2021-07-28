@@ -6,7 +6,7 @@ import styles from './_Images.module.scss';
 
 const PortImages = () => (
   <div>
-    <Image className={styles.simple} src="/image/Home/Home.jpg" alt="" layout="fill" />
+    <Image className={styles.simple} src="/image/Home/Home.jpg" alt="demo layout" layout="fill" />
   </div>
 );
 
