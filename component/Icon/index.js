@@ -23,6 +23,7 @@ const Icon = ({ socialLink, variant, className }) => {
     <a
       href={socialLink.url}
       target="_blank"
+      aria-label="icon"
       role="button"
       className={`${styles[variant]} ${className}`}
       ref={iconRef}
