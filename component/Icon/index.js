@@ -27,7 +27,7 @@ const Icon = ({ socialLink, variant, className }) => {
       className={`${styles[variant]} ${className}`}
       ref={iconRef}
       rel="noreferrer">
-      socialIcons
+      social Icons
     </a>
   );
 };
