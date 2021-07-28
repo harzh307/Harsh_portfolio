@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/prop-types */
 import { SWRConfig } from 'swr';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Layout from '../container/Layout';
 import '../styles/_globals.scss';
 import fetcher from '../lib/fetch';
@@ -14,9 +14,6 @@ function MyApp({ Component, pageProps }) {
       }}>
       <div className="light-theme">
         <Layout>
-          <Head>
-            <link rel="manifest" href="/manifest.json" />
-          </Head>
           <Component {...pageProps} />
         </Layout>
       </div>

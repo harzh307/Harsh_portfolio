@@ -13,6 +13,7 @@ export default function Meta() {
       <meta name="msapplication-config" content="/browserconfig.xml" />
       <meta name="msapplication-tap-highlight" content="no" />
       <meta name="theme-color" content="#000000" />
+      <link rel="manifest" href="/manifest.json" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="apple-touch-icon" href="apple-icon-180.png" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
