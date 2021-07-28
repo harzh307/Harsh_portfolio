@@ -62,7 +62,7 @@ const Blog = ({ data }) => {
                   {x.description}
                 </PortText>
                 <div className="cardSideData">
-                  <a aria-label="blog page" target="_blank" href="/singleBlog">
+                  <a aria-label="blog page" href="/singleBlog">
                     <PortText variant="portCardReadText">Read More</PortText>
                   </a>
                   <PortText variant="portCardDateText">Date Here</PortText>
@@ -140,7 +140,7 @@ const Blog = ({ data }) => {
         </div>
       </div>
       <div className="textAlign">
-        <a href="/BlogPage" target="_blank">
+        <a href="/BlogPage">
           <Button aria-label="view more">View More</Button>
         </a>
       </div>

@@ -38,9 +38,8 @@ const Portfolio = ({ data }) => {
           {projectData?.map(x => (
             <Card key={x.id} variant="cardPort">
               <div className="relativeP">
-                <Link prefetch={false} target="_blank" href={`work/${x?.id}`}>
+                <Link prefetch={false} href={`work/${x?.id}`}>
                   <a
-                    target="_blank"
                     onMouseEnter={() => {
                       router.prefetch(`work/${x?.id}`);
                       console.log(`prefetching ${x?.id}`);
@@ -73,8 +72,7 @@ const Portfolio = ({ data }) => {
               router.prefetch('/portfolio');
               console.log('prefetching portfoliopage');
             }}
-            href="/portfolio"
-            target="_blank">
+            href="/portfolio">
             <Button aria-label="view more">View More</Button>
           </a>
         </div>

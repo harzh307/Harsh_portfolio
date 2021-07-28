@@ -31,7 +31,7 @@ const PortfolioPage = () => {
           {portfolioData?.projects?.map(x => (
             <Card variant="cardPort" className="pageCard">
               <div className="relativeP">
-                <a aria-label="project" target="_blank" href={`work/${x?.id}`} rel="noreferrer">
+                <a aria-label="project" href={`work/${x?.id}`} rel="noreferrer">
                   <Image
                     src={x?.displayImage?.formats?.small?.url}
                     height={500}

@@ -10,7 +10,7 @@ const Skills = () => {
   const { data: educationSkillsData } = useEducationSkills();
   const router = useRouter();
   return (
-  // const { data: educationData } = useEducation();
+    // const { data: educationData } = useEducation();
 
     <div className="light-theme">
       <Header>
@@ -20,8 +20,7 @@ const Skills = () => {
           className="backAlign"
           tabIndex="10"
           role="button"
-          onClick={() => router.back()}
-        >
+          onClick={() => router.back()}>
           Back
         </a>
       </Header>
@@ -31,7 +30,7 @@ const Skills = () => {
             Technologies
           </PortText>
           <div className="day">
-            {educationSkillsData?.skills?.map((x) => (
+            {educationSkillsData?.skills?.map(x => (
               <div className="Skillbars">
                 <PortText variant="portEduPercent" component="h1">
                   {`${x.rating}%`}
@@ -46,7 +45,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        {educationSkillsData?.experiences?.map((x) => (
+        {educationSkillsData?.experiences?.map(x => (
           <div className="workEp">
             <div className="workExp">
               <PortText variant="portHeadingText">Work experience</PortText>
@@ -57,7 +56,11 @@ const Skills = () => {
               </PortText>
               <PortText variant="portAboutCaption">
                 At{' '}
-                <a aria-label="company name" target="_blank" style={{ color: 'blue' }} href={x?.companyLink} rel="noreferrer">
+                <a
+                  aria-label="company name"
+                  style={{ color: 'blue' }}
+                  href={x?.companyLink}
+                  rel="noreferrer">
                   {x?.companyName}
                 </a>
                 {x?.description}
@@ -71,7 +74,7 @@ const Skills = () => {
             Education
           </PortText>
           <div className="education">
-            {educationSkillsData?.educations?.map((x) => (
+            {educationSkillsData?.educations?.map(x => (
               <div key={x.id} className="leftTextAlign">
                 <PortText variant="portEduLeftText">{`${x.startDate} to ${x.endDate}`}</PortText>
                 <PortText className="margin" variant="portEduLeftText">
@@ -82,8 +85,7 @@ const Skills = () => {
                   <a
                     className="college boldText"
                     aria-label="institute"
-                    href="https://silveroakuni.ac.in/"
-                  >
+                    href="https://silveroakuni.ac.in/">
                     {x.institute}
                   </a>
                 </PortText>
