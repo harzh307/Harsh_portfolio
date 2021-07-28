@@ -36,7 +36,7 @@ export default function Main() {
     <>
       <div className="dark-theme">
         <Head>
-          <link rel="icon" href="/h.png" />
+          <link rel="icon" href="/H.png" />
         </Head>
         <Meta />
         {bannerData && <Home data={bannerData} />}
