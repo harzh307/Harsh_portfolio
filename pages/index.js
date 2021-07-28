@@ -16,6 +16,7 @@ import useContact from '../hooks/useContactDetails';
 import useTestimonial from '../hooks/useTestimonial';
 import PageLoader from '../container/PageLoader';
 import Meta from '../component/meta';
+import Head from 'next/head';
 
 export default function Main() {
   const { data: bannerData, isLoading } = useBanner();
@@ -34,6 +35,9 @@ export default function Main() {
   return (
     <>
       <div className="dark-theme">
+        <Head>
+          <link rel="icon" href="/h.png" />
+        </Head>
         <Meta />
         {bannerData && <Home data={bannerData} />}
         {aboutData && <About data={aboutData} />}
