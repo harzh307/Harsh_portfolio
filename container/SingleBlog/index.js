@@ -56,7 +56,7 @@ const SingleBlog = () => (
           </div>
           <div>
             <div className="commentImg">
-              <img src="/image/portfolio/img-6.jpg" alt="" className="Cmtimg" />
+              <img src="/image/portfolio/img-6.jpg" alt="blog post" className="Cmtimg" />
               <div className="nameContent">
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
@@ -77,12 +77,14 @@ const SingleBlog = () => (
           </div>
           <div>
             <div className="commentImg">
-              <img src="/image/portfolio/img-6.jpg" alt="" className="Cmtimg" />
+              <img src="/image/portfolio/img-6.jpg" alt="blog post" className="Cmtimg" />
               <div className="nameContent">
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
                   <PortText variant="portHeadingCaption">
-                    <a aria-label="reply" href="/Singleblog">Reply</a>
+                    <a aria-label="reply" href="/Singleblog">
+                      Reply
+                    </a>
                   </PortText>
                 </div>
                 <PortText variant="portCardDateText">May 1, 2018 at 14:35</PortText>
@@ -96,7 +98,7 @@ const SingleBlog = () => (
           </div>
           <div>
             <div className="commentImg">
-              <img src="/image/portfolio/img-6.jpg" alt="" className="Cmtimg" />
+              <img src="/image/portfolio/img-6.jpg" alt="blog post" className="Cmtimg" />
               <div className="nameContent">
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>

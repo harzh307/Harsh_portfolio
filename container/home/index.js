@@ -64,7 +64,7 @@ const Home = ({ data }) => {
             />
           </PortText> */}
           <a aria-label="scroll down" className="arrow" href="#About">
-            <img src="/svg/scroll-down.svg" height="32px" alt="" />
+            <img src="/svg/scroll-down.svg" height="32px" alt="scroll Down" />
           </a>
         </div>
       </section>

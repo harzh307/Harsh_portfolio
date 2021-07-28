@@ -63,7 +63,7 @@ const Project = ({ data }) => {
             <img src="../../WhatsApp Image 2021-06-18 at 12.25.39.jpeg" alt="project" />
             <img src="../../WhatsApp Image 2021-06-18 at 12.25.39.jpeg" alt="project" /> */}
             {data?.media?.map(x => (
-              <img src={x?.url} className="img" alt="" />
+              <img src={x?.url} className="img" alt="projects" />
             ))}
           </div>
           <div className="textDiv">
