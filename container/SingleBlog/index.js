@@ -103,7 +103,9 @@ const SingleBlog = () => (
                 <div className="reply">
                   <PortText variant="portHeadingCaption">Jane Doe</PortText>
                   <PortText variant="portHeadingCaption">
-                    <a href="/Singleblog">Reply</a>
+                    <a aria-label="reply" href="/Singleblog">
+                      Reply
+                    </a>
                   </PortText>
                 </div>
                 <PortText variant="portCardDateText">May 1, 2018 at 14:35</PortText>
