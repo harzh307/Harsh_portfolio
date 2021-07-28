@@ -18,7 +18,7 @@ const Testimonial = ({ data }) => {
   console.log(data, 'testimonials');
 
   return (
-    <section className="testimonial">
+    <section style={{ backgroundImage: `url(${process.env.Bg_image})` }} className="testimonial">
       <div className="testimonialContainer">
         <figure className="slider">
           {data.map(x => (
