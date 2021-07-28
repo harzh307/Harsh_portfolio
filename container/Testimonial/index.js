@@ -14,28 +14,31 @@ import PortText from '../../component/PortText';
 //   customPaging: i => <div className="slickDotsUp" />,
 // };
 
-const Testimonial = ({ data }) => (
-  <section className="testimonial">
-    <div className="testimonialContainer">
-      <figure className="slider">
-        {data.map(x => (
-          <div key={x.id} className="containerTest">
-            <div className="authorImg">
-              <Image
-                height={96}
-                width={98}
-                src={x?.profile?.formats?.thumbnail?.url}
-                alt="testimonial"
-              />
+const Testimonial = ({ data }) => {
+  console.log(data, 'testimonials');
+
+  return (
+    <section className="testimonial">
+      <div className="testimonialContainer">
+        <figure className="slider">
+          {data.map(x => (
+            <div key={x.id} className="containerTest">
+              <div className="authorImg">
+                <Image
+                  height={96}
+                  width={98}
+                  src={x?.profile?.formats?.thumbnail?.url}
+                  alt="testimonial"
+                />
+              </div>
+              <PortText variant="portTestimonialText">{x.personName}</PortText>
+              <PortText variant="portTestimonialRoleText">{x.jobTitle}</PortText>
+              <PortText variant="portTestimonialPText" className="description">
+                {x.description}
+              </PortText>
             </div>
-            <PortText variant="portTestimonialText">{x.personName}</PortText>
-            <PortText variant="portTestimonialRoleText">{x.jobTitle}</PortText>
-            <PortText variant="portTestimonialPText" className="description">
-              {x.description}
-            </PortText>
-          </div>
-        ))}
-        {/* <div className="containerTest">
+          ))}
+          {/* <div className="containerTest">
           <div className="authorImg">
             <img src="/image/testimonial/img-1.jpg" alt="" />
           </div>
@@ -63,9 +66,10 @@ const Testimonial = ({ data }) => (
             quas!
           </PortText>
         </div> */}
-      </figure>
-    </div>
-  </section>
-);
+        </figure>
+      </div>
+    </section>
+  );
+};
 
 export default Testimonial;
