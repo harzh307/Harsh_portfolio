@@ -57,6 +57,7 @@
   }
   & h1 {
     font-size: 46px;
+    font-display: swap;
     @media (min-width: 768px) {
       font-size: 75px;
     }
@@ -66,6 +67,7 @@
     @apply text-textColor-skin-inverted font-black font-Raleway;
   }
   & h2 {
+    font-display: swap;
     @apply text-textColor-skin-inverted font-Raleway  mt-12;
   }
   @apply absolute;
