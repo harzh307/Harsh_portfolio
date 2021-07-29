@@ -49,6 +49,9 @@
 // .dayRow {
 //   @apply flex md:flex-row xs:flex-col;
 // }
+.boldText {
+  font-weight: 800;
+}
 
 .college {
   @apply hover:border-solid border-t-0 hover:transform border-b border-l-0 border-r-0 border-black;
