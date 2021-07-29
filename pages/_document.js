@@ -26,6 +26,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>Harsh Patel | Portfolio Website</title>
           <Meta />
         </Head>
         <body>
