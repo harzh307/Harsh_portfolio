@@ -57,5 +57,21 @@
       "purpose": "any maskable"
     }
   ],
+  "shortcuts": [
+    {
+      "name": "Harsh Patel | Resume",
+      "short_name": "Resume",
+      "description": "My skills and what I know",
+      "url": "/resume",
+      "icons": [{ "src": "/h.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Harsh Patel | Projects",
+      "short_name": "Projects",
+      "description": "List of work I've done",
+      "url": "/protfolio",
+      "icons": [{ "src": "/h.png", "sizes": "192x192" }]
+    }
+  ],
   "splash_pages": null
 }
