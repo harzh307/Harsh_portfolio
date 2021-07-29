@@ -69,7 +69,7 @@
       "name": "Harsh Patel | Projects",
       "short_name": "Projects",
       "description": "List of work I've done",
-      "url": "/protfolio",
+      "url": "/portfolio",
       "icons": [{ "src": "/h.png", "sizes": "192x192" }]
     }
   ],
