@@ -25,9 +25,9 @@ const About = ({ data }) => {
             <Icon key={x.id} socialLink={x} variant="iconBtn" />
           ))}
         </div>
-        {/* <a download={data?.resume?.url} href={data?.resume?.url}>
+        <a download={data?.resume?.url} href="/Harsh_Patel_Resume.pdf">
           <Button>{data?.downloadCVText}</Button>
-        </a> */}
+        </a>
       </article>
     </section>
   );
