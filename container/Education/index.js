@@ -47,10 +47,8 @@ const Education = ({ data }) => {
       </div>
       <div className="align">
         <a
-          data
           onMouseEnter={() => {
             router.prefetch('/resume');
-            console.log('prefetching resume');
           }}
           href="/resume">
           <Button aria-label="view more">View More</Button>

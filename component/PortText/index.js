@@ -29,7 +29,7 @@ PortText.propTypes = {
     'portHeadingCaption',
     'portParaText',
     'portAboutCaption',
-    'portFootertext',
+    'portFooterText',
     'portParaAboutText',
     'portButtonText',
     'portServiceSubHeadingText',

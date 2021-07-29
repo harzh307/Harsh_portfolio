@@ -42,7 +42,6 @@ const Portfolio = ({ data }) => {
                   <a
                     onMouseEnter={() => {
                       router.prefetch(`work/${x?.id}`);
-                      console.log(`prefetching ${x?.id}`);
                     }}>
                     <Image
                       src={x?.displayImage?.formats?.small?.url}
@@ -70,7 +69,6 @@ const Portfolio = ({ data }) => {
           <a
             onMouseEnter={() => {
               router.prefetch('/portfolio');
-              console.log('prefetching portfoliopage');
             }}
             href="/portfolio">
             <Button aria-label="view more">View More</Button>

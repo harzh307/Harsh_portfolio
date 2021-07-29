@@ -21,7 +21,7 @@ const Services = ({ data }) => (
       {/* r1 c1 */}
       {data.services.map(x => (
         <div key={x.id} className="box">
-          <Card className="cardService" variant="serviceCard">
+          <Card variant="cardService">
             <Button aria-label="icon" variant="portServiceButton">
               <Image alt="icon for card" src={x?.icon?.url} height={35} width={35} />
             </Button>
