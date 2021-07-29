@@ -3,6 +3,7 @@
 import { Image, CloudinaryContext, Placeholder, Transformation } from 'cloudinary-react';
 import useMarkdown from '../../hooks/useMarkdown';
 import Icon from '../../component/Icon';
+import Button from '../../component/Button';
 
 const About = ({ data }) => {
   const { HTML } = useMarkdown(data?.biography);
