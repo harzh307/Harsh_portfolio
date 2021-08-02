@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 // import Image from 'next/image';
-import { Image, CloudinaryContext, Placeholder, Transformation } from 'cloudinary-react';
+import { Image, Placeholder, Transformation } from 'cloudinary-react';
 import useMarkdown from '../../hooks/useMarkdown';
 import Icon from '../../component/Icon';
 import Button from '../../component/Button';
@@ -12,8 +12,7 @@ const About = ({ data }) => {
       <picture className="abtImage">
         <Image
           cloudName="djygt08th"
-          // loading="lazy"
-          publicId={data?.portfolioImage?.provider_metadata?.public_id}
+          publicId={data?.portfolioImage?.formats?.medium?.provider_metadata?.public_id}
           alt="Harsh Patel">
           <Transformation quality="auto" gravity="south" crop="fill" />
           <Placeholder type="blur" />
