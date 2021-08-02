@@ -15,7 +15,7 @@ import PortText from '../../component/PortText';
 // };
 
 const Testimonial = ({ data }) => {
-  const imgUrl = 'https://res.cloudinary.com/djygt08th/image/upload/v1627476859/laptop_avprc1.jpg';
+  const imgUrl = 'https://res.cloudinary.com/djygt08th/image/upload/v1627476859/laptop_avprc1.webp';
   return (
     <section style={{ backgroundImage: `url(${imgUrl})` }} className="testimonial">
       <div className="testimonialContainer">
