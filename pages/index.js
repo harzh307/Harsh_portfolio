@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import About from '../container/About';
 import Services from '../container/Services';
 import Contact from '../container/Contact';
@@ -16,7 +17,6 @@ import useContact from '../hooks/useContactDetails';
 import useTestimonial from '../hooks/useTestimonial';
 import PageLoader from '../container/PageLoader';
 import Meta from '../component/meta';
-import Head from 'next/head';
 
 export default function Main() {
   const { data: bannerData, isLoading } = useBanner();
