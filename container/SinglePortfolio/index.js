@@ -75,13 +75,19 @@ const Project = ({ data }) => {
               </PortText>
             </div>
             <div className="content">
-              <h3 className="head">Role</h3>
-              <p className="detail">{data?.role}</p>
-              <h3 className="head">Project Category</h3>
+              <PortText variant="h3" className="head">
+                Role
+              </PortText>
+              <PortText className="detail">{data?.role}</PortText>
+              <PortText variant="h3" className="head">
+                Project Category
+              </PortText>
               {data?.category?.map(y => (
-                <p className="detail">{y?.title}</p>
+                <PortText className="detail">{y?.title}</PortText>
               ))}
-              <h3 className="head">Technologies Used</h3>
+              <PortText variant="h3" className="head">
+                Technologies Used
+              </PortText>
               <Fragment className="btnfrag">
                 {data?.technologyUsed?.map(y => (
                   <a aria-label="technology site" role="button" href={y?.url} className="detail">
