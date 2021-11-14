@@ -78,12 +78,16 @@ const Project = ({ data }) => {
               <PortText variant="h3" className="head">
                 Role
               </PortText>
-              <PortText className="detail">{data?.role}</PortText>
+              <PortText variant="h3" className="detail">
+                {data?.role}
+              </PortText>
               <PortText variant="h3" className="head">
                 Project Category
               </PortText>
               {data?.category?.map(y => (
-                <PortText className="detail">{y?.title}</PortText>
+                <PortText variant="h3" className="detail">
+                  {y?.title}
+                </PortText>
               ))}
               <PortText variant="h3" className="head">
                 Technologies Used

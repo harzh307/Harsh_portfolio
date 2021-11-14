@@ -9,10 +9,10 @@ import Search from '../../public/svg/search.svg';
 const Portfolio = ({ data }) => {
   const router = useRouter();
   const projectData = [...data?.projects?.slice(0, 2)];
-  function liClicked() {
-    const item = document.querySelector('listItems');
-    // x.classList.add('selItem');
-  }
+  // function liClicked() {
+  //   const item = document.querySelector('listItems');
+  //   // x.classList.add('selItem');
+  // }
 
   return (
     <section id="Work" className="center">
