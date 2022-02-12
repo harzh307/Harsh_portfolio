@@ -45,15 +45,16 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        {educationSkillsData?.experiences?.map(x => (
+        {educationSkillsData?.experiences?.map((x, i) => (
           <div className="workEp">
-            <div className="workExp">
-              <PortText variant="portHeadingText">Work experience</PortText>
-            </div>
+            {i === 0 && (
+              <div className="workExp">
+                <PortText variant="portHeadingText">Work experience</PortText>
+              </div>
+            )}
             <div className="workPara">
               <PortText className="boldText" variant="portHeadingCaption">
-                {x?.role}
-                {x?.startDate} to {x?.endDate ?? 'PRESENT'}
+                {x?.role} {x?.startDate} to {x?.endDate ?? 'PRESENT'}
               </PortText>
               <PortText variant="portAboutCaption">
                 At{' '}
