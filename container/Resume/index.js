@@ -47,11 +47,10 @@ const Skills = () => {
         </div>
         {educationSkillsData?.experiences?.map((x, i) => (
           <div className="workEp">
-            {i === 0 && (
-              <div className="workExp">
-                <PortText variant="portHeadingText">Work experience</PortText>
-              </div>
-            )}
+            <div className="workExp">
+              <PortText variant="portHeadingText">{i === 0 && 'Work experience'}</PortText>
+            </div>
+
             <div className="workPara">
               <PortText className="boldText" variant="portHeadingCaption">
                 {x?.role} {x?.startDate} to {x?.endDate ?? 'PRESENT'}
