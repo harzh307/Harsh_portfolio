@@ -22,7 +22,7 @@
 
 .workExp {
   padding: -20px;
-  @apply line-clamp-2;
+  @apply line-clamp-2 flex flex-row;
 }
 
 .education {
