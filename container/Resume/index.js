@@ -52,7 +52,8 @@ const Skills = () => {
             </div>
             <div className="workPara">
               <PortText className="boldText" variant="portHeadingCaption">
-                {x?.role} (from Nov 2020 to present)
+                {x?.role}
+                {x?.startDate} to {x?.endDate ?? 'PRESENT'}
               </PortText>
               <PortText variant="portAboutCaption">
                 At{' '}
