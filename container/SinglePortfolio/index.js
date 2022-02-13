@@ -70,7 +70,7 @@ const Project = ({ data }) => {
           </div>
           <div className="textDiv">
             <div>
-              <PortText variant="portHeadingText" className="portHeadingText">
+              <PortText variant="portHeadingText" className="headingTXT">
                 {data?.title}
               </PortText>
               <PortText variant="portHeadingCaption">{data?.description}</PortText>
