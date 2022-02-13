@@ -12,31 +12,35 @@ const Project = ({ data }) => {
   const intervalRef = useRef();
   const cardRef = useRef([]);
 
-  const startScroll = useCallback(() => {
-    intervalRef.current = setInterval(() => {
-      const cardWidth = cardRef.current[0].offsetWidth;
-      const total = imgRef.current.scrollLeft + imgRef.current.offsetWidth;
-      if (Math.round(total) === imgRef.current.scrollWidth) {
-        imgRef.current.scrollLeft = 0;
-      } else {
-        imgRef.current.scrollLeft += cardWidth;
-      }
-    }, 2000);
-  }, []);
+  // const startScroll = useCallback(() => {
+  //   intervalRef.current = setInterval(() => {
+  //     const cardWidth = cardRef?.current[0]?.offsetWidth;
+  //     const total = imgRef?.current?.scrollLeft + imgRef?.current?.offsetWidth;
+  //     if (Math.round(total) === imgRef?.current?.scrollWidth) {
+  //       imgRef.current.scrollLeft = 0;
+  //     } else {
+  //       imgRef.current.scrollLeft += cardWidth;
+  //     }
+  //   }, 2000);
+  // }, []);
 
-  const stopScroll = useCallback(() => {
-    clearInterval(intervalRef.current);
-  }, []);
+  // const stopScroll = useCallback(() => {
+  //   clearInterval(intervalRef.current);
+  // }, []);
 
-  useEffect(() => {
-    startScroll();
-    imgRef.current.addEventListener('mouseover', stopScroll);
-    imgRef.current.addEventListener('mouseout', startScroll);
-    return () => {
-      imgRef.current.removeEventListener('mouseover', stopScroll);
-      imgRef.current.removeEventListener('mouseout', startScroll);
-    };
-  }, [startScroll, stopScroll]);
+  // useEffect(() => {
+  //   startScroll();
+  //   imgRef.current.addEventListener('mouseover', stopScroll);
+  //   imgRef.current.addEventListener('mouseout', startScroll);
+  //   return () => {
+  //     imgRef.current.removeEventListener('mouseover', stopScroll);
+  //     imgRef.current.removeEventListener('mouseout', startScroll);
+  //   };
+  // }, [startScroll, stopScroll]);
+  console.warn(
+    data,
+    'wudouwboudcwuorco wrfowruhf woruhf owr fuowhrfo wurhf ouwhf wourfh wouf hworf hrwfo luwhf owruh orwlfh owhb',
+  );
 
   return (
     <>
@@ -73,23 +77,24 @@ const Project = ({ data }) => {
               <PortText variant="portHeadingText" className="portHeadingText">
                 {data?.title}
               </PortText>
+              <PortText variant="portHeadingCaption">{data?.description}</PortText>
             </div>
             <div className="content">
-              <PortText variant="h3" className="head">
+              <PortText variant="portButtonText" className="head">
                 Role
               </PortText>
-              <PortText variant="h3" className="detail">
+              <PortText variant="portHeadingCaption" className="detail">
                 {data?.role}
               </PortText>
-              <PortText variant="h3" className="head">
+              <PortText variant="portButtonText" className="head">
                 Project Category
               </PortText>
               {data?.category?.map(y => (
-                <PortText variant="h3" className="detail">
+                <PortText variant="portHeadingCaption" className="detail">
                   {y?.title}
                 </PortText>
               ))}
-              <PortText variant="h3" className="head">
+              <PortText variant="portHeadingCaption" className="head">
                 Technologies Used
               </PortText>
               <Fragment className="btnfrag">

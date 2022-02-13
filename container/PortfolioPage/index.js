@@ -32,12 +32,7 @@ const PortfolioPage = () => {
             <Card variant="cardPort" className="pageCard">
               <div className="relativeP">
                 <a aria-label="project" href={`work/${x?.id}`} rel="noreferrer">
-                  <Image
-                    src={x?.displayImage?.formats?.small?.url}
-                    height={500}
-                    width={500}
-                    alt="my projects"
-                  />
+                  <Image src={x?.displayImage?.url} height={500} width={500} alt="my projects" />
                   <div className="cardContent">
                     <Card variant="hoverPort">
                       <div className="hoverContext">
