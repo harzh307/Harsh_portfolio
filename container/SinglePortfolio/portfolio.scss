@@ -11,6 +11,7 @@
 @media screen and (max-width: 777px) {
   .mainDiv {
     height: auto;
+    padding: 1rem;
   }
 }
 // .btnfrag {
@@ -68,8 +69,12 @@
 }
 
 .textDiv {
-  @apply flex-col flex px-4;
+  @apply flex-col flex md:px-4 sm:py-4 sm:mt-0 xs:mt-2;
+
   flex: 2;
+}
+.portHeadingText {
+  margin-bottom: 10px;
 }
 .head {
   text-decoration: underline colors.$fontcolor-secondary;

@@ -37,10 +37,6 @@ const Project = ({ data }) => {
   //     imgRef.current.removeEventListener('mouseout', startScroll);
   //   };
   // }, [startScroll, stopScroll]);
-  console.warn(
-    data,
-    'wudouwboudcwuorco wrfowruhf woruhf owr fuowhrfo wurhf ouwhf wourfh wouf hworf hrwfo luwhf owruh orwlfh owhb',
-  );
 
   return (
     <>
