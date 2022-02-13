@@ -10,7 +10,6 @@ const Skills = () => {
   const { data: educationSkillsData } = useEducationSkills();
   const router = useRouter();
   return (
-    // const { data: educationData } = useEducation();
 
     <div className="light-theme">
       <Header>
@@ -49,24 +48,27 @@ const Skills = () => {
           <div className="workExp">
             <PortText variant="portHeadingText">Work experience</PortText>
           </div>
-          {educationSkillsData?.experiences?.map((x, i) => (
-            <div className="workPara">
-              <PortText className="boldText" variant="portHeadingCaption">
-                {x?.role} {x?.startDate} to {x?.endDate ?? 'PRESENT'}
-              </PortText>
-              <PortText variant="portAboutCaption">
-                At{' '}
-                <a
-                  aria-label="company name"
-                  style={{ color: 'blue' }}
-                  href={x?.companyLink}
-                  rel="noreferrer">
-                  {x?.companyName}
-                </a>
-                {x?.description}
-              </PortText>
-            </div>
-          ))}
+          <div className="expDiv">
+            {educationSkillsData?.experiences?.map((x, i) => (
+              <div className="workPara">
+                {i !== 0 && <div className="divider" />}
+                <PortText className="boldText" variant="portHeadingCaption">
+                  {x?.role} {x?.startDate} to {x?.endDate ?? 'PRESENT'}
+                </PortText>
+                <PortText variant="portAboutCaption">
+                  At{' '}
+                  <a
+                    aria-label="company name"
+                    style={{ color: 'blue' }}
+                    href={x?.companyLink}
+                    rel="noreferrer">
+                    {x?.companyName}
+                  </a>
+                  {x?.description}
+                </PortText>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="blockTable">

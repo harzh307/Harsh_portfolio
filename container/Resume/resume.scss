@@ -7,6 +7,19 @@
   @apply p-24 sm:p-16 xs:p-4 leading-10 space-y-24;
 }
 
+.expDiv {
+  flex: 1;
+  flex-direction: column;
+  @apply flex;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #222;
+  margin: 10px 0px;
+}
+
 .workPara {
   @media (min-width: 1280px) {
     margin-left: 4em;
@@ -17,12 +30,12 @@
   @media (min-width: 768px) {
     margin-left: 2em;
   }
-  @apply flex-1 flex flex-col;
+  @apply flex-1;
 }
 
 .workExp {
   padding: -20px;
-  @apply line-clamp-2 flex flex-col;
+  @apply line-clamp-2;
 }
 
 .education {
@@ -44,7 +57,7 @@
   @apply my-6;
 }
 .day {
-  @apply grid w-full lg:grid-cols-2 md:grid-cols-1 lg:px-24 md:pl-14 -mt-6;
+  @apply grid flex-1 lg:grid-cols-2 md:grid-cols-1  md:pl-14;
 }
 // .dayRow {
 //   @apply flex md:flex-row xs:flex-col;

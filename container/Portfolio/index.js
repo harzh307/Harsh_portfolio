@@ -43,12 +43,7 @@ const Portfolio = ({ data }) => {
                     onMouseEnter={() => {
                       router.prefetch(`work/${x?.id}`);
                     }}>
-                    <Image
-                      src={x?.displayImage?.formats?.small?.url}
-                      height={500}
-                      width={475}
-                      alt="projects"
-                    />
+                    <Image src={x?.displayImage?.url} height={500} width={475} alt="projects" />
                     <div className="cardContent">
                       <Card variant="hoverPort">
                         <div className="hoverContext">
