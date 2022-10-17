@@ -18,11 +18,7 @@ const Home = ({ data }) => {
       <section
         id="Home"
         style={{
-          backgroundImage: `url(${
-            data?.bannerImage?.formats?.large?.url
-              ? data?.bannerImage?.formats?.large?.url
-              : bannerUrl
-          })`,
+          backgroundImage: `url(${data?.bannerImage?.url ? data?.bannerImage?.url : bannerUrl})`,
         }}
         className="banner">
         <div className="containerH">
