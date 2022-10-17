@@ -33,7 +33,7 @@ const Navigation = () => {
   }, []);
 
   const toggleNavbar = () => {
-    // const element = document.getElementById('navbarYagnesh');
+    // const element = document.getElementById('navbarHarsh');
     if (collapseRef.current.style.display === 'flex') {
       collapseRef.current.style.display = 'none';
     } else {
@@ -41,7 +41,7 @@ const Navigation = () => {
     }
     window.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
-        // const element = document.getElementById('navbarYagnesh');
+        // const element = document.getElementById('navbarHarsh');
         if (collapseRef.current.style.display === 'flex') {
           collapseRef.current.style.display = 'none';
         }
@@ -76,8 +76,8 @@ const Navigation = () => {
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
-              data-target="#navbarYagnesh"
-              aria-controls="navbarYagnesh"
+              data-target="#navbarHarsh"
+              aria-controls="navbarHarsh"
               aria-expanded="false"
               aria-label="Toggle navigation"
               onClick={toggleNavbar}>
@@ -88,7 +88,7 @@ const Navigation = () => {
           </div>
           {/* / */}
           {/* Top Menu */}
-          <div className="navbar-collapse" ref={collapseRef} id="navbarYagnesh">
+          <div className="navbar-collapse" ref={collapseRef} id="navbarHarsh">
             {/* <a href="#!" onClick={toggleNavbar} className="blankSpace" /> */}
             <button onClick={toggleNavbar} className="blankSpace" />
             <ul ref={ulRef} className="navbar-nav">
