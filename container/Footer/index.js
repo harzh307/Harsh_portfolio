@@ -17,7 +17,7 @@ const Footer = ({ data }) => (
       </div>
       <div className={style.footerText}>
         <PortText variant="portContactHeadingText">Email</PortText>
-        <a aria-label="Email" href="mailto: harzh.patel@gmail.com">
+        <a aria-label="Email" href="mailto:harzh.patel@gmail.com">
           <PortText variant="portContactDetailText">{data?.contact?.email}</PortText>
         </a>
       </div>
