@@ -8,7 +8,8 @@ import useMarkdown from '../../hooks/useMarkdown';
 
 const Home = ({ data }) => {
   const { HTML } = useMarkdown(data.description);
-
+  const bannerUrl =
+    'https://res.cloudinary.com/djygt08th/image/upload/v1626243560/black_B_cc9a060276.jpg';
   return (
     <>
       <Head>
@@ -16,11 +17,17 @@ const Home = ({ data }) => {
       </Head>
       <section
         id="Home"
-        style={{ backgroundImage: `url(${data?.bannerImage?.formats?.large?.url})` }}
+        style={{
+          backgroundImage: `url(${
+            data?.bannerImage?.formats?.large?.url
+              ? data?.bannerImage?.formats?.large?.url
+              : bannerUrl
+          })`,
+        }}
         className="banner">
         <div className="containerH">
           <ReactRotatingText
-            items={data.BannerSkills.map(x => x.bannerSkills)}
+            items={data?.BannerSkills?.map(x => x.bannerSkills)}
             className="rotating"
             style={{ color: 'white' }}
           />
